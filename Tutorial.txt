@@ -1,0 +1,8 @@
+Megnyitod a VS-t és ott rámész a "Clone repository"-ra. Beírod ezt: " https://github.com/Karusz/DavidProjekt " és már csatlakoztál is.
+Oldalt látod a projektben a file-okat. Már szerkeztheted is!
+----------------------FELTÖLTÉS-----------------------------
+Ha fel szeretnéd tölteni, akkor jobb oldalt alul kiválasztod a "Git Changes" fület. jobb felül leírod néhány szóban, hogy mit változtattál és a "Commit All"-ra nyomsz.
+Utánna a push-ra (Felfele nyíl alul egy vonallal)
+Kész is! Mi látjuk, hogy Te mit változtattál a kódban
+----------------------BETÖLTÉS------------------------------
+Az upload mellett van a "Sync" (körba nyíl). Azt megnyomod és be is tölt az új programkód
