@@ -23,5 +23,33 @@ namespace Menu
         {
 
         }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void red_Click(object sender, EventArgs e)
+        {
+            Image img = Image.FromFile("backg/redbg.jpg");
+            BackgroundImage = img;
+        }
+
+        private void lime_Click(object sender, EventArgs e)
+        {
+            Image img = Image.FromFile("backg/sajatbg.png");
+            BackgroundImage = img;
+        }
+
+        private void green_Click(object sender, EventArgs e)
+        {
+            Image img = Image.FromFile("backg/zoldbg.jpg");
+            BackgroundImage = img;
+        }
+
+        private void help_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
