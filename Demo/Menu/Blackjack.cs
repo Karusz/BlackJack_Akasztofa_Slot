@@ -52,5 +52,20 @@ namespace Menu
             string text = "Szöveg";
             string title = "Segítség";
         }
+
+        private void betpull_Click(object sender, EventArgs e)
+        {
+            int num;
+            if(int.TryParse(bet.Text, out int id))
+            {
+                num = int.Parse(bet.Text);
+            }
+            else
+            {
+                string text = "Nem számot adtál meg";
+                string title = "HIBA";
+                MessageBox.Show(text,title);
+            }
+        }
     }
 }
