@@ -62,7 +62,7 @@ namespace Menu
 
                 List<Card> deck = GetDeck();
                 //Keverés
-                ShuffleDeck(deck);
+                //ShuffleDeck(deck);
 
                 //Laposztás
                 Card playerCard1 = deck[0];
@@ -77,7 +77,9 @@ namespace Menu
                 Card dealerCard2 = deck[1];
                 deck[1].Kezben = true;
                 deck.RemoveAt(0);
-
+                //osztott kártya lista
+                var playerCards = new List<Card> { playerCard1, playerCard2 };
+                var dealerCards = new List<Card> { dealerCard1, dealerCard2 };
             }
             else
             {
