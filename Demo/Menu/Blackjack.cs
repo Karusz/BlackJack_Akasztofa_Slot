@@ -49,7 +49,8 @@ namespace Menu
 
         private void help_Click(object sender, EventArgs e)
         {
-
+            string text = "Szöveg";
+            string title = "Segítség";
         }
     }
 }
