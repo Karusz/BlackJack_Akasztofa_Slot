@@ -59,6 +59,25 @@ namespace Menu
             if(int.TryParse(bet.Text, out int id))
             {
                 num = int.Parse(bet.Text);
+
+                List<Card> deck = GetDeck();
+                //Keverés
+                ShuffleDeck(deck);
+
+                //Laposztás
+                Card playerCard1 = deck[0];
+                deck[0].Kezben = true;
+                deck.RemoveAt(0);
+                Card playerCard2 = deck[1];
+                deck[1].Kezben = true;
+                deck.RemoveAt(0);
+                Card dealerCard1 = deck[1];
+                deck[0].Kezben = true;
+                deck.RemoveAt(0);
+                Card dealerCard2 = deck[1];
+                deck[1].Kezben = true;
+                deck.RemoveAt(0);
+
             }
             else
             {
@@ -66,6 +85,16 @@ namespace Menu
                 string title = "HIBA";
                 MessageBox.Show(text,title);
             }
+        }
+
+        private void ShuffleDeck(List<Card> deck)
+        {
+            throw new NotImplementedException();
+        }
+
+        private List<Card> GetDeck()
+        {
+            throw new NotImplementedException();
         }
     }
 }
