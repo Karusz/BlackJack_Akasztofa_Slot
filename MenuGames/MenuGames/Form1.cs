@@ -44,7 +44,12 @@ namespace MenuGames
 
         private void easteregg_Click(object sender, EventArgs e)
         {
+            Image img = Image.FromFile("eastereggpicss/hnmenu.jpg");
             eggtext.Visible = true;
+            BackgroundImage = img;
+            blackjack.BackColor = Color.DeepPink;
+            Akaszto.BackColor = Color.DeepPink;
+            Slot.BackColor = Color.DeepPink;
         }
 
         private void Form1_Load(object sender, EventArgs e)

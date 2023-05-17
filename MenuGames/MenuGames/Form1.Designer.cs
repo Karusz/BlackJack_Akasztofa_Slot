@@ -83,12 +83,14 @@
             // 
             // eggtext
             // 
+            this.eggtext.BackColor = System.Drawing.Color.Transparent;
             this.eggtext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.eggtext.Location = new System.Drawing.Point(288, 54);
+            this.eggtext.ForeColor = System.Drawing.SystemColors.Control;
+            this.eggtext.Location = new System.Drawing.Point(275, 1);
             this.eggtext.Name = "eggtext";
             this.eggtext.Size = new System.Drawing.Size(205, 84);
             this.eggtext.TabIndex = 4;
-            this.eggtext.Text = "Hanna Montana Style";
+            this.eggtext.Text = "Hannah Montana Style";
             this.eggtext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.eggtext.Visible = false;
             // 
