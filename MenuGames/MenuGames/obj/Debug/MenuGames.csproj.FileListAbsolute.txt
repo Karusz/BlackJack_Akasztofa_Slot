@@ -1,0 +1,11 @@
+C:\Users\karus\Desktop\MenuGames\MenuGames\bin\Debug\MenuGames.exe.config
+C:\Users\karus\Desktop\MenuGames\MenuGames\bin\Debug\MenuGames.exe
+C:\Users\karus\Desktop\MenuGames\MenuGames\bin\Debug\MenuGames.pdb
+C:\Users\karus\Desktop\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.AssemblyReference.cache
+C:\Users\karus\Desktop\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.SuggestedBindingRedirects.cache
+C:\Users\karus\Desktop\MenuGames\MenuGames\obj\Debug\MenuGames.Form1.resources
+C:\Users\karus\Desktop\MenuGames\MenuGames\obj\Debug\MenuGames.Properties.Resources.resources
+C:\Users\karus\Desktop\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.GenerateResource.cache
+C:\Users\karus\Desktop\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.CoreCompileInputs.cache
+C:\Users\karus\Desktop\MenuGames\MenuGames\obj\Debug\MenuGames.exe
+C:\Users\karus\Desktop\MenuGames\MenuGames\obj\Debug\MenuGames.pdb
