@@ -42,5 +42,14 @@ namespace MenuGames
             slotMachineForm.Show();
         }
 
+        private void easteregg_Click(object sender, EventArgs e)
+        {
+            eggtext.Visible = true;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            eggtext.Visible = false;
+        }
     }
 }
