@@ -37,7 +37,19 @@
             this.segítségToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.betting = new System.Windows.Forms.Button();
             this.bet = new System.Windows.Forms.TextBox();
+            this.buttonpanel = new System.Windows.Forms.Panel();
+            this.cardspanel = new System.Windows.Forms.Panel();
+            this.dc1 = new System.Windows.Forms.PictureBox();
+            this.dc2 = new System.Windows.Forms.PictureBox();
+            this.pc1 = new System.Windows.Forms.PictureBox();
+            this.pc2 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            this.buttonpanel.SuspendLayout();
+            this.cardspanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dc1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dc2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -66,7 +78,7 @@
             this.greenbg,
             this.redbg});
             this.háttérToolStripMenuItem.Name = "háttérToolStripMenuItem";
-            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.háttérToolStripMenuItem.Text = "Háttér";
             // 
             // limebg
@@ -99,7 +111,7 @@
             // 
             // betting
             // 
-            this.betting.Location = new System.Drawing.Point(668, 397);
+            this.betting.Location = new System.Drawing.Point(109, 367);
             this.betting.Name = "betting";
             this.betting.Size = new System.Drawing.Size(104, 32);
             this.betting.TabIndex = 6;
@@ -109,26 +121,97 @@
             // 
             // bet
             // 
-            this.bet.Location = new System.Drawing.Point(637, 346);
+            this.bet.Location = new System.Drawing.Point(87, 328);
             this.bet.Multiline = true;
             this.bet.Name = "bet";
             this.bet.Size = new System.Drawing.Size(144, 33);
             this.bet.TabIndex = 5;
             // 
+            // buttonpanel
+            // 
+            this.buttonpanel.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.buttonpanel.Controls.Add(this.bet);
+            this.buttonpanel.Controls.Add(this.betting);
+            this.buttonpanel.Location = new System.Drawing.Point(525, 27);
+            this.buttonpanel.Name = "buttonpanel";
+            this.buttonpanel.Size = new System.Drawing.Size(275, 422);
+            this.buttonpanel.TabIndex = 7;
+            // 
+            // cardspanel
+            // 
+            this.cardspanel.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.cardspanel.Controls.Add(this.pc2);
+            this.cardspanel.Controls.Add(this.pc1);
+            this.cardspanel.Controls.Add(this.dc2);
+            this.cardspanel.Controls.Add(this.dc1);
+            this.cardspanel.Location = new System.Drawing.Point(0, 27);
+            this.cardspanel.Name = "cardspanel";
+            this.cardspanel.Size = new System.Drawing.Size(526, 422);
+            this.cardspanel.TabIndex = 7;
+            // 
+            // dc1
+            // 
+            this.dc1.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.dc1.Location = new System.Drawing.Point(47, 46);
+            this.dc1.Name = "dc1";
+            this.dc1.Size = new System.Drawing.Size(98, 125);
+            this.dc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dc1.TabIndex = 0;
+            this.dc1.TabStop = false;
+            // 
+            // dc2
+            // 
+            this.dc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.dc2.Location = new System.Drawing.Point(151, 46);
+            this.dc2.Name = "dc2";
+            this.dc2.Size = new System.Drawing.Size(98, 125);
+            this.dc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dc2.TabIndex = 1;
+            this.dc2.TabStop = false;
+            // 
+            // pc1
+            // 
+            this.pc1.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.pc1.Location = new System.Drawing.Point(47, 274);
+            this.pc1.Name = "pc1";
+            this.pc1.Size = new System.Drawing.Size(98, 125);
+            this.pc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pc1.TabIndex = 2;
+            this.pc1.TabStop = false;
+            // 
+            // pc2
+            // 
+            this.pc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.pc2.Location = new System.Drawing.Point(151, 274);
+            this.pc2.Name = "pc2";
+            this.pc2.Size = new System.Drawing.Size(98, 125);
+            this.pc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pc2.TabIndex = 3;
+            this.pc2.TabStop = false;
+            // 
             // BlackJack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.betting);
-            this.Controls.Add(this.bet);
+            this.Controls.Add(this.cardspanel);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.buttonpanel);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "BlackJack";
             this.Text = "BlackJack";
             this.Load += new System.EventHandler(this.BlackJack_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.buttonpanel.ResumeLayout(false);
+            this.buttonpanel.PerformLayout();
+            this.cardspanel.ResumeLayout(false);
+            this.cardspanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dc1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dc2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,5 +228,11 @@
         private System.Windows.Forms.ToolStripMenuItem segítségToolStripMenuItem;
         private System.Windows.Forms.Button betting;
         public System.Windows.Forms.TextBox bet;
+        private System.Windows.Forms.Panel buttonpanel;
+        private System.Windows.Forms.Panel cardspanel;
+        private System.Windows.Forms.PictureBox pc2;
+        private System.Windows.Forms.PictureBox pc1;
+        private System.Windows.Forms.PictureBox dc2;
+        private System.Windows.Forms.PictureBox dc1;
     }
 }
