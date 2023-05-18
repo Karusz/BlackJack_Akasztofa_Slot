@@ -75,6 +75,36 @@ namespace MenuGames
             dc2.Image = Image.FromFile("bjfiles/cards/hatlap.png");
             pc1.Image = Image.FromFile("bjfiles/cards/hatlap.png");
             pc2.Image = Image.FromFile("bjfiles/cards/hatlap.png");
+
+            List<Card> deck = GetDeck();
+
+            //Deck keverés
+            DeckKeveres();
+
+            //Játékos lapjai
+            Jatekkez();
+            //Géplapjai
+            Gepkez();
+        }
+
+        private void Gepkez()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Jatekkez()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void DeckKeveres()
+        {
+            throw new NotImplementedException();
+        }
+
+        private List<Card> GetDeck()
+        {
+            throw new NotImplementedException();
         }
     }
 }
