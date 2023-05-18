@@ -79,30 +79,44 @@ namespace MenuGames
             List<Card> deck = GetDeck();
 
             //Deck keverés
-            DeckKeveres();
+            DeckKeveres(deck);
 
             //Játékos lapjai
-            Jatekkez();
+            Jatekkez(deck);
             //Géplapjai
-            Gepkez();
-        }
-
-        private void Gepkez()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Jatekkez()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void DeckKeveres()
-        {
-            throw new NotImplementedException();
+            Gepkez(deck);
         }
 
         private List<Card> GetDeck()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Gepkez(List<Card> deck)
+        {
+            Card dealerCard1 = deck[0];
+            deck[0].Kezben = true;
+            deck.RemoveAt(0);
+            Card dealerCard2 = deck[1];
+            deck[1].Kezben = true;
+            deck.RemoveAt(1);
+
+            var dealerCards = new List<Card> { dealerCard1, dealerCard2 };
+        }
+
+        private void Jatekkez(List<Card> deck)
+        {
+            Card playerCard1 = deck[0];
+            deck[0].Kezben = true;
+            deck.RemoveAt(0);
+            Card playerCard2 = deck[1];
+            deck[1].Kezben = true;
+            deck.RemoveAt(1);
+
+            var playerCards = new List<Card> { playerCard1, playerCard2 };
+        }
+
+        private void DeckKeveres(List<Card> deck)
         {
             throw new NotImplementedException();
         }
