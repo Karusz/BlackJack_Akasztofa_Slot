@@ -59,7 +59,7 @@ namespace MenuGames
         {
             string title = "Segítség";
             string text = "Ide a szöveg majd";
-            MessageBox.Show(text,title);
+            MessageBox.Show(text, title);
         }
 
         private void betting_Click(object sender, EventArgs e)
@@ -77,14 +77,16 @@ namespace MenuGames
             pc2.Image = Image.FromFile("bjfiles/cards/hatlap.png");
 
             List<Card> deck = GetDeck();
+            var dealerCards = new List<Card>();
+            var playerCards = new List<Card>();
 
             //Deck keverés
             DeckKeveres(deck);
 
             //Játékos lapjai
-            Jatekkez(deck);
+            Jatekkez(deck, playerCards);
             //Géplapjai
-            Gepkez(deck);
+            Gepkez(deck,dealerCards);
         }
 
         private List<Card> GetDeck()
@@ -92,7 +94,7 @@ namespace MenuGames
             throw new NotImplementedException();
         }
 
-        private void Gepkez(List<Card> deck)
+        private void Gepkez(List<Card> deck, List<Card> dealerCards)
         {
             Card dealerCard1 = deck[0];
             deck[0].Kezben = true;
@@ -101,10 +103,12 @@ namespace MenuGames
             deck[1].Kezben = true;
             deck.RemoveAt(1);
 
-            var dealerCards = new List<Card> { dealerCard1, dealerCard2 };
+            dealerCards.Add(dealerCard1);
+            dealerCards.Add(dealerCard2);
+            
         }
 
-        private void Jatekkez(List<Card> deck)
+        private void Jatekkez(List<Card> deck, List<Card> playerCards)
         {
             Card playerCard1 = deck[0];
             deck[0].Kezben = true;
@@ -113,7 +117,9 @@ namespace MenuGames
             deck[1].Kezben = true;
             deck.RemoveAt(1);
 
-            var playerCards = new List<Card> { playerCard1, playerCard2 };
+            playerCards.Add(playerCard1);
+            playerCards.Add(playerCard2);
+            
         }
 
         private void DeckKeveres(List<Card> deck)
