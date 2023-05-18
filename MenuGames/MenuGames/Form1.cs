@@ -56,5 +56,12 @@ namespace MenuGames
         {
             eggtext.Visible = false;
         }
+
+        private void creators_Click(object sender, EventArgs e)
+        {
+            string text = "Fábián László, Karsai Bence, Mód Károly";
+            string title = "Készítők";
+            MessageBox.Show(text, title);
+        }
     }
 }

@@ -33,6 +33,7 @@
             this.Akaszto = new System.Windows.Forms.Button();
             this.easteregg = new System.Windows.Forms.Button();
             this.eggtext = new System.Windows.Forms.Label();
+            this.creators = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // blackjack
@@ -72,9 +73,10 @@
             // 
             this.easteregg.BackColor = System.Drawing.SystemColors.Window;
             this.easteregg.Cursor = System.Windows.Forms.Cursors.No;
+            this.easteregg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.easteregg.Location = new System.Drawing.Point(0, 1);
             this.easteregg.Name = "easteregg";
-            this.easteregg.Size = new System.Drawing.Size(75, 23);
+            this.easteregg.Size = new System.Drawing.Size(26, 23);
             this.easteregg.TabIndex = 3;
             this.easteregg.Text = " ";
             this.easteregg.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -94,11 +96,26 @@
             this.eggtext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.eggtext.Visible = false;
             // 
+            // creators
+            // 
+            this.creators.BackColor = System.Drawing.SystemColors.Window;
+            this.creators.Cursor = System.Windows.Forms.Cursors.No;
+            this.creators.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.creators.Location = new System.Drawing.Point(773, 1);
+            this.creators.Name = "creators";
+            this.creators.Size = new System.Drawing.Size(26, 23);
+            this.creators.TabIndex = 5;
+            this.creators.Text = " ";
+            this.creators.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.creators.UseVisualStyleBackColor = false;
+            this.creators.Click += new System.EventHandler(this.creators_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.creators);
             this.Controls.Add(this.eggtext);
             this.Controls.Add(this.easteregg);
             this.Controls.Add(this.Akaszto);
@@ -119,6 +136,7 @@
         public System.Windows.Forms.Button Akaszto;
         private System.Windows.Forms.Button easteregg;
         private System.Windows.Forms.Label eggtext;
+        private System.Windows.Forms.Button creators;
     }
 }
 

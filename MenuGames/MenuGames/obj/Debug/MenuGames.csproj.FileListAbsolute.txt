@@ -20,3 +20,14 @@ C:\Users\karus\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\Me
 C:\Users\karus\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.CoreCompileInputs.cache
 C:\Users\karus\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.exe
 C:\Users\karus\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.pdb
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.exe.config
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.exe
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.pdb
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csprojAssemblyReference.cache
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Form1.resources
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Properties.Resources.resources
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.GenerateResource.cache
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.CoreCompileInputs.cache
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.exe
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.pdb
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.BlackJack.resources
