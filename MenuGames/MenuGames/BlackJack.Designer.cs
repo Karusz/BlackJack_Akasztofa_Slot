@@ -35,8 +35,8 @@
             this.greenbg = new System.Windows.Forms.ToolStripMenuItem();
             this.redbg = new System.Windows.Forms.ToolStripMenuItem();
             this.segítségToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bet = new System.Windows.Forms.TextBox();
             this.betting = new System.Windows.Forms.Button();
+            this.bet = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,27 +66,27 @@
             this.greenbg,
             this.redbg});
             this.háttérToolStripMenuItem.Name = "háttérToolStripMenuItem";
-            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.háttérToolStripMenuItem.Text = "Háttér";
             // 
             // limebg
             // 
             this.limebg.Name = "limebg";
-            this.limebg.Size = new System.Drawing.Size(180, 22);
+            this.limebg.Size = new System.Drawing.Size(100, 22);
             this.limebg.Text = "Lime";
             this.limebg.Click += new System.EventHandler(this.limebg_Click);
             // 
             // greenbg
             // 
             this.greenbg.Name = "greenbg";
-            this.greenbg.Size = new System.Drawing.Size(180, 22);
+            this.greenbg.Size = new System.Drawing.Size(100, 22);
             this.greenbg.Text = "Zöld";
             this.greenbg.Click += new System.EventHandler(this.greenbg_Click);
             // 
             // redbg
             // 
             this.redbg.Name = "redbg";
-            this.redbg.Size = new System.Drawing.Size(180, 22);
+            this.redbg.Size = new System.Drawing.Size(100, 22);
             this.redbg.Text = "Piros";
             this.redbg.Click += new System.EventHandler(this.redbg_Click);
             // 
@@ -97,23 +97,23 @@
             this.segítségToolStripMenuItem.Text = "Segítség";
             this.segítségToolStripMenuItem.Click += new System.EventHandler(this.segítségToolStripMenuItem_Click);
             // 
-            // bet
-            // 
-            this.bet.Location = new System.Drawing.Point(644, 342);
-            this.bet.Multiline = true;
-            this.bet.Name = "bet";
-            this.bet.Size = new System.Drawing.Size(144, 33);
-            this.bet.TabIndex = 1;
-            // 
             // betting
             // 
-            this.betting.Location = new System.Drawing.Point(667, 393);
+            this.betting.Location = new System.Drawing.Point(668, 397);
             this.betting.Name = "betting";
-            this.betting.Size = new System.Drawing.Size(104, 45);
-            this.betting.TabIndex = 2;
+            this.betting.Size = new System.Drawing.Size(104, 32);
+            this.betting.TabIndex = 6;
             this.betting.Text = "Tétrakás";
             this.betting.UseVisualStyleBackColor = true;
             this.betting.Click += new System.EventHandler(this.betting_Click);
+            // 
+            // bet
+            // 
+            this.bet.Location = new System.Drawing.Point(637, 346);
+            this.bet.Multiline = true;
+            this.bet.Name = "bet";
+            this.bet.Size = new System.Drawing.Size(144, 33);
+            this.bet.TabIndex = 5;
             // 
             // BlackJack
             // 
@@ -143,7 +143,7 @@
         private System.Windows.Forms.ToolStripMenuItem greenbg;
         private System.Windows.Forms.ToolStripMenuItem redbg;
         private System.Windows.Forms.ToolStripMenuItem segítségToolStripMenuItem;
-        public System.Windows.Forms.TextBox bet;
         private System.Windows.Forms.Button betting;
+        public System.Windows.Forms.TextBox bet;
     }
 }

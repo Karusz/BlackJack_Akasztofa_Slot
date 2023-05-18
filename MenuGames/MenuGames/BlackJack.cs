@@ -58,8 +58,6 @@ namespace MenuGames
                 string text = "Nem számot adtál meg!";
                 MessageBox.Show(text, title);
             }
-            Console.WriteLine(betnum);
-
         }
     }
 }
