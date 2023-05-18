@@ -86,12 +86,49 @@ namespace MenuGames
             //Játékos lapjai
             Jatekkez(deck, playerCards);
             //Géplapjai
-            Gepkez(deck,dealerCards);
+            Gepkez(deck, dealerCards);
         }
+
 
         private List<Card> GetDeck()
         {
-            throw new NotImplementedException();
+            var deck = new List<Card>();
+            List<string> ertek = new List<string>()
+            {
+                "Ász",
+                "Kettő",
+                "Három",
+                "Négy",
+                "Öt",
+                "Hat",
+                "Hét",
+                "Nyolc",
+                "Kilenc",
+                "Tíz",
+                "Jumbó",
+                "Dáma",
+                "Király"
+            };
+            List<string> tipus = new List<string>()
+            {
+                "Pikk",
+                "Kőr",
+                "Káró",
+                "Treff"
+            };
+
+            for (int i = 0; i < 2; i++)
+            {
+                foreach (string Tipus in tipus)
+                {
+                    foreach (string Ertek in ertek)
+                    {
+                        deck.Add(new Card(Tipus, Ertek));
+                    }
+                } 
+            }
+            Console.WriteLine(deck);
+            return deck;
         }
 
         private void Gepkez(List<Card> deck, List<Card> dealerCards)
@@ -105,7 +142,7 @@ namespace MenuGames
 
             dealerCards.Add(dealerCard1);
             dealerCards.Add(dealerCard2);
-            
+
         }
 
         private void Jatekkez(List<Card> deck, List<Card> playerCards)
@@ -119,12 +156,21 @@ namespace MenuGames
 
             playerCards.Add(playerCard1);
             playerCards.Add(playerCard2);
-            
+
         }
 
         private void DeckKeveres(List<Card> deck)
         {
-            throw new NotImplementedException();
+            Random rnd = new Random();
+            int j;
+            Card tmp;
+            for (int i = 0; i < deck.Count - 1; i--)
+            {
+                j = rnd.Next(i + 1);
+                tmp = deck[i];
+                deck[i] = deck[j];
+                deck[j] = tmp;
+            }
         }
     }
 }
