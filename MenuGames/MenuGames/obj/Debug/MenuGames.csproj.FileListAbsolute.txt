@@ -31,3 +31,5 @@ C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Deb
 C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.exe
 C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.pdb
 C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.BlackJack.resources
+C:\Users\karus\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.BlackJack.resources
+C:\Users\karus\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.SlotMachine.resources

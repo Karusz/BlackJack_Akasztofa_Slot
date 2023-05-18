@@ -133,6 +133,7 @@ namespace MenuGames
 
         private void Gepkez(List<Card> deck, List<Card> dealerCards)
         {
+            cardback.Visible = true;
             Card dealerCard1 = deck[0];
             deck[0].Kezben = true;
             deck.RemoveAt(0);
@@ -161,15 +162,16 @@ namespace MenuGames
 
         private void DeckKeveres(List<Card> deck)
         {
-            Random rnd = new Random();
-            int j;
-            Card tmp;
-            for (int i = 0; i < deck.Count - 1; i--)
+            Random random = new Random();
+
+            int n = deck.Count;
+            while (n > 1)
             {
-                j = rnd.Next(i + 1);
-                tmp = deck[i];
-                deck[i] = deck[j];
-                deck[j] = tmp;
+                n--;
+                int k = random.Next(n + 1);
+                Card temp = deck[k];
+                deck[k] = deck[n];
+                deck[n] = temp;
             }
         }
     }

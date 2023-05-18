@@ -108,5 +108,8 @@
   <ItemGroup>
     <None Include="bin\Debug\bjfiles\backg\sajatbg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\hatlap.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

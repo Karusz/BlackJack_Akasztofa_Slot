@@ -39,17 +39,19 @@
             this.bet = new System.Windows.Forms.TextBox();
             this.buttonpanel = new System.Windows.Forms.Panel();
             this.cardspanel = new System.Windows.Forms.Panel();
-            this.dc1 = new System.Windows.Forms.PictureBox();
-            this.dc2 = new System.Windows.Forms.PictureBox();
-            this.pc1 = new System.Windows.Forms.PictureBox();
+            this.cardback = new System.Windows.Forms.PictureBox();
             this.pc2 = new System.Windows.Forms.PictureBox();
+            this.pc1 = new System.Windows.Forms.PictureBox();
+            this.dc2 = new System.Windows.Forms.PictureBox();
+            this.dc1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.buttonpanel.SuspendLayout();
             this.cardspanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dc1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dc2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pc1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardback)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pc2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dc2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dc1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -78,7 +80,7 @@
             this.greenbg,
             this.redbg});
             this.háttérToolStripMenuItem.Name = "háttérToolStripMenuItem";
-            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.háttérToolStripMenuItem.Text = "Háttér";
             // 
             // limebg
@@ -140,6 +142,7 @@
             // cardspanel
             // 
             this.cardspanel.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.cardspanel.Controls.Add(this.cardback);
             this.cardspanel.Controls.Add(this.pc2);
             this.cardspanel.Controls.Add(this.pc1);
             this.cardspanel.Controls.Add(this.dc2);
@@ -149,25 +152,25 @@
             this.cardspanel.Size = new System.Drawing.Size(526, 422);
             this.cardspanel.TabIndex = 7;
             // 
-            // dc1
+            // cardback
             // 
-            this.dc1.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.dc1.Location = new System.Drawing.Point(47, 46);
-            this.dc1.Name = "dc1";
-            this.dc1.Size = new System.Drawing.Size(98, 125);
-            this.dc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dc1.TabIndex = 0;
-            this.dc1.TabStop = false;
+            this.cardback.Image = global::MenuGames.Properties.Resources.hatlap;
+            this.cardback.Location = new System.Drawing.Point(154, 46);
+            this.cardback.Name = "cardback";
+            this.cardback.Size = new System.Drawing.Size(66, 96);
+            this.cardback.TabIndex = 4;
+            this.cardback.TabStop = false;
+            this.cardback.Visible = false;
             // 
-            // dc2
+            // pc2
             // 
-            this.dc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.dc2.Location = new System.Drawing.Point(151, 46);
-            this.dc2.Name = "dc2";
-            this.dc2.Size = new System.Drawing.Size(98, 125);
-            this.dc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dc2.TabIndex = 1;
-            this.dc2.TabStop = false;
+            this.pc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.pc2.Location = new System.Drawing.Point(151, 274);
+            this.pc2.Name = "pc2";
+            this.pc2.Size = new System.Drawing.Size(98, 125);
+            this.pc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pc2.TabIndex = 3;
+            this.pc2.TabStop = false;
             // 
             // pc1
             // 
@@ -179,15 +182,25 @@
             this.pc1.TabIndex = 2;
             this.pc1.TabStop = false;
             // 
-            // pc2
+            // dc2
             // 
-            this.pc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.pc2.Location = new System.Drawing.Point(151, 274);
-            this.pc2.Name = "pc2";
-            this.pc2.Size = new System.Drawing.Size(98, 125);
-            this.pc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pc2.TabIndex = 3;
-            this.pc2.TabStop = false;
+            this.dc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.dc2.Location = new System.Drawing.Point(151, 46);
+            this.dc2.Name = "dc2";
+            this.dc2.Size = new System.Drawing.Size(98, 125);
+            this.dc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dc2.TabIndex = 1;
+            this.dc2.TabStop = false;
+            // 
+            // dc1
+            // 
+            this.dc1.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.dc1.Location = new System.Drawing.Point(47, 46);
+            this.dc1.Name = "dc1";
+            this.dc1.Size = new System.Drawing.Size(98, 125);
+            this.dc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dc1.TabIndex = 0;
+            this.dc1.TabStop = false;
             // 
             // BlackJack
             // 
@@ -208,10 +221,11 @@
             this.buttonpanel.PerformLayout();
             this.cardspanel.ResumeLayout(false);
             this.cardspanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dc1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dc2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pc1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardback)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pc2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dc2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dc1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,5 +248,6 @@
         private System.Windows.Forms.PictureBox pc1;
         private System.Windows.Forms.PictureBox dc2;
         private System.Windows.Forms.PictureBox dc1;
+        private System.Windows.Forms.PictureBox cardback;
     }
 }
