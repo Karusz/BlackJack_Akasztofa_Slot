@@ -8,15 +8,16 @@ namespace MenuGames
 {
     class Card
     {
+         public string Ertek { get; set; }
         public string Tipus { get; set; }
-        public string Ertek { get; set; }
         public bool Kezben { get; set; }
+        public string Link { get; set; }
 
-        public Card(string tipus, string ertek)
+        public Card(string tipus, string ertek, string link)
         {
-            Tipus = tipus;
             Ertek = ertek;
+            Tipus = tipus;
             Kezben = false;
+            Link = link;
         }
-    }
 }
