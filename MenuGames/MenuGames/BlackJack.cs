@@ -92,42 +92,74 @@ namespace MenuGames
 
         private List<Card> GetDeck()
         {
+            //Csinálni egy lsitaát 1 pakli - ertek, tipus, kezben, link
             var deck = new List<Card>();
-            List<string> ertek = new List<string>()
-            {
-                "Ász",
-                "Kettő",
-                "Három",
-                "Négy",
-                "Öt",
-                "Hat",
-                "Hét",
-                "Nyolc",
-                "Kilenc",
-                "Tíz",
-                "Jumbó",
-                "Dáma",
-                "Király"
-            };
-            List<string> tipus = new List<string>()
-            {
-                "Pikk",
-                "Kőr",
-                "Káró",
-                "Treff"
-            };
 
             for (int i = 0; i < 2; i++)
             {
-                foreach (string Tipus in tipus)
-                {
-                    foreach (string Ertek in ertek)
-                    {
-                        deck.Add(new Card(Tipus, Ertek));
-                    }
-                } 
+                #region Pikk
+                deck.Add(new Card("2", "Pikk", "bjfilse/cards/P2"));
+                deck.Add(new Card("3", "Pikk", "bjfilse/cards/P3"));
+                deck.Add(new Card("4", "Pikk", "bjfilse/cards/P4"));
+                deck.Add(new Card("5", "Pikk", "bjfilse/cards/P5"));
+                deck.Add(new Card("6", "Pikk", "bjfilse/cards/P6"));
+                deck.Add(new Card("7", "Pikk", "bjfilse/cards/P7"));
+                deck.Add(new Card("8", "Pikk", "bjfilse/cards/P8"));
+                deck.Add(new Card("9", "Pikk", "bjfilse/cards/P9"));
+                deck.Add(new Card("10", "Pikk", "bjfilse/cards/P10"));
+                deck.Add(new Card("10", "Pikk", "bjfilse/cards/PJ"));
+                deck.Add(new Card("10", "Pikk", "bjfilse/cards/PD"));
+                deck.Add(new Card("10", "Pikk", "bjfilse/cards/PK"));
+                deck.Add(new Card("11", "Pikk", "bjfilse/cards/PA"));
+                #endregion
+                #region Kőr
+                deck.Add(new Card("2", "Kőr", "bjfiles/cards/Ko2"));
+                deck.Add(new Card("3", "Kőr", "bjfiles/cards/Ko3"));
+                deck.Add(new Card("4", "Kőr", "bjfiles/cards/Ko4"));
+                deck.Add(new Card("5", "Kőr", "bjfiles/cards/Ko5"));
+                deck.Add(new Card("6", "Kőr", "bjfiles/cards/Ko6"));
+                deck.Add(new Card("7", "Kőr", "bjfiles/cards/Ko7"));
+                deck.Add(new Card("8", "Kőr", "bjfiles/cards/Ko8"));
+                deck.Add(new Card("9", "Kőr", "bjfiles/cards/Ko9"));
+                deck.Add(new Card("10", "Kőr", "bjfiles/cards/Ko10"));
+                deck.Add(new Card("10", "Kőr", "bjfiles/cards/KoJ"));
+                deck.Add(new Card("10", "Kőr", "bjfiles/cards/KoD"));
+                deck.Add(new Card("10", "Kőr", "bjfiles/cards/KoK"));
+                deck.Add(new Card("11", "Kőr", "bjfiles/cards/KoA"));
+                #endregion
+                #region Káro
+                deck.Add(new Card("2", "Káró", "bjfiles/cards/Ka2"));
+                deck.Add(new Card("3", "Káró", "bjfiles/cards/Ka3"));
+                deck.Add(new Card("4", "Káró", "bjfiles/cards/Ka4"));
+                deck.Add(new Card("5", "Káró", "bjfiles/cards/Ka5"));
+                deck.Add(new Card("6", "Káró", "bjfiles/cards/Ka6"));
+                deck.Add(new Card("7", "Káró", "bjfiles/cards/Ka7"));
+                deck.Add(new Card("8", "Káró", "bjfiles/cards/Ka8"));
+                deck.Add(new Card("9", "Káró", "bjfiles/cards/Ka9"));
+                deck.Add(new Card("10", "Káró", "bjfiles/cards/Ka10"));
+                deck.Add(new Card("10", "Káró", "bjfiles/cards/KaJ"));
+                deck.Add(new Card("10", "Káró", "bjfiles/cards/KaD"));
+                deck.Add(new Card("10", "Káró", "bjfiles/cards/KaK"));
+                deck.Add(new Card("11", "Káró", "bjfiles/cards/KaA"));
+                #endregion
+                #region Treff
+                deck.Add(new Card("2", "Treff", "bjfiles/cards/T2"));
+                deck.Add(new Card("3", "Treff", "bjfiles/cards/T3"));
+                deck.Add(new Card("4", "Treff", "bjfiles/cards/T4"));
+                deck.Add(new Card("5", "Treff", "bjfiles/cards/T5"));
+                deck.Add(new Card("6", "Treff", "bjfiles/cards/T6"));
+                deck.Add(new Card("7", "Treff", "bjfiles/cards/T7"));
+                deck.Add(new Card("8", "Treff", "bjfiles/cards/T8"));
+                deck.Add(new Card("9", "Treff", "bjfiles/cards/T9"));
+                deck.Add(new Card("10", "Treff", "bjfiles/cards/T10"));
+                deck.Add(new Card("10", "Treff", "bjfiles/cards/TJ"));
+                deck.Add(new Card("10", "Treff", "bjfiles/cards/TD"));
+                deck.Add(new Card("10", "Treff", "bjfiles/cards/TK"));
+                deck.Add(new Card("11", "Treff", "bjfiles/cards/TA"));
+                #endregion 
             }
-            Console.WriteLine(deck);
+
+            
             return deck;
         }
 
