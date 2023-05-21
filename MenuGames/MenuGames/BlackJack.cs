@@ -38,7 +38,7 @@ namespace MenuGames
             newcard.Enabled = false;
             stop.Enabled = false;
             dealerponts.Visible = false;
-            
+
 
         }
 
@@ -62,7 +62,7 @@ namespace MenuGames
             pc2.BackgroundImage = lbg;
 
             dealernewcardpanel.BackgroundImage = lbg;
-            
+
         }
 
         private void greenbg_Click(object sender, EventArgs e)
@@ -204,6 +204,9 @@ namespace MenuGames
             bool playerwinin21 = false;
             bool dealerwin = false;
             bool tie = false;
+            int nyer;
+            int alapchips = int.Parse(chips.Text);//jelenlegi zseton 
+
             if (int.Parse(playerpoint.Text) == 21)
             {
 
@@ -224,15 +227,17 @@ namespace MenuGames
             if (playerwinin21)
             {
                 int playerbet21 = int.Parse(bet.Text);
-                winbet.Text = $"{(playerbet21 * 2) + (playerbet21)}";
-                chips.Text = $"{(playerbet21 * 2) + (playerbet21)}";
+                nyer = ((playerbet21 * 2) + playerbet21);
+                winbet.Text = $"{nyer}";
+                chips.Text = $"{nyer + alapchips}";
                 ResetGame();
             }
             else if (playerwin)
             {
                 int playerbet = int.Parse(bet.Text);
                 winbet.Text = $"{playerbet * 2}";
-                chips.Text = $"{playerbet * 2}";
+                nyer = playerbet * 2;
+                chips.Text = $"{nyer + alapchips}";
                 ResetGame();
             }
             //Ha a gép nyert = Zseton elvesztés
@@ -240,9 +245,8 @@ namespace MenuGames
             else if (dealerwin)
             {
                 int playerbetlose = int.Parse(bet.Text);
-                int playerchipslose = int.Parse(chips.Text);
                 losebet.Text = $"{playerbetlose}";
-                chips.Text = $"{playerchipslose - playerbetlose}";
+                chips.Text = $"{alapchips - playerbetlose}";
                 ResetGame();
             }
 
@@ -251,8 +255,7 @@ namespace MenuGames
             else if (tie)
             {
                 int playerbettie = int.Parse(bet.Text); //Feltett tét
-                int playertie = int.Parse(chips.Text); //Amennyi zseton van a játékosnál
-                chips.Text = $"{playerbettie + playertie}";
+                chips.Text = $"{playerbettie + alapchips}";
             }
 
 
@@ -306,12 +309,12 @@ namespace MenuGames
             int ert = int.Parse(playerpoint.Text);
             int sum = ert + int.Parse(playerNewCard1.Ertek);
             playerpoint.Text = $"{sum}";
-            if (int.Parse(playerpoint.Text) > 20 )
+            if (int.Parse(playerpoint.Text) > 20)
             {
                 Dealermove();
             }
             Vegevizsga();
-            
+
         }
 
         private void Dealermove()
@@ -320,7 +323,7 @@ namespace MenuGames
             //----
             dealerponts.Visible = true;
             //----
-            while(int.Parse(dealerponts.Text)<= 7)
+            while (int.Parse(dealerponts.Text) <= 7)
             {
                 Card dealerNewCard = Card.deck[0];
                 Card.deck[0].Kezben = true;
@@ -330,7 +333,7 @@ namespace MenuGames
                 newDCard.Height = 96;
                 newDCard.Width = 72;
                 dealernewcardpanel.Controls.Add(newDCard);
-                newDCard.Image = Image.FromFile(dealerNewCard.Link); 
+                newDCard.Image = Image.FromFile(dealerNewCard.Link);
             }
         }
 
