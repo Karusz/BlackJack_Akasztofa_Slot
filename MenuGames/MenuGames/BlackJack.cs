@@ -1,10 +1,12 @@
-﻿using System;
+﻿using MenuGames;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,6 +21,14 @@ namespace MenuGames
 
         private void BlackJack_Load(object sender, EventArgs e)
         {
+            pccardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
+            dccardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
+            cardspanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
+            buttonpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
+            split.Enabled = false;
+            newcard.Enabled = false;
+            stop.Enabled = false;
+            dealerponts.Visible = false;
 
         }
 
@@ -31,6 +41,8 @@ namespace MenuGames
             dc2.BackgroundImage = lbg;
             pc1.BackgroundImage = lbg;
             pc2.BackgroundImage = lbg;
+            pccardpanel.BackgroundImage = lbg;
+            dccardpanel.BackgroundImage = lbg;
         }
 
         private void greenbg_Click(object sender, EventArgs e)
@@ -42,6 +54,8 @@ namespace MenuGames
             dc2.BackgroundImage = gbg;
             pc1.BackgroundImage = gbg;
             pc2.BackgroundImage = gbg;
+            pccardpanel.BackgroundImage = gbg;
+            dccardpanel.BackgroundImage = gbg;
         }
 
         private void redbg_Click(object sender, EventArgs e)
@@ -53,17 +67,25 @@ namespace MenuGames
             dc2.BackgroundImage = rbg;
             pc1.BackgroundImage = rbg;
             pc2.BackgroundImage = rbg;
+            pccardpanel.BackgroundImage = rbg;
+            dccardpanel.BackgroundImage = rbg;
         }
-
+        //Félkész:
         private void segítségToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string title = "Segítség";
-            string text = "Ide a szöveg majd";
+            string text = "A játék lényege, hogy több pontod legyen, mint az osztónak.\n" +
+                "Viszont kevesebb kell legyen, mint 21, de ha instant 21-et kapsz, akkor nyertél!\n" +
+                "Az ász minden esetben 11-et ér. Sajnálom :c\n" +
+                "Minden kártyának az értéke a rajta látható szám.\n" +
+                "A Jumbó, Dáma, Király kártyák 10-et érnek minden esetben.\n" +
+                "SOK SIKERT A JÁTÉKHOZ!!";
             MessageBox.Show(text, title);
         }
 
         private void betting_Click(object sender, EventArgs e)
         {
+
             int betnum;
             if (!int.TryParse(bet.Text, out betnum))
             {
@@ -71,140 +93,141 @@ namespace MenuGames
                 string text = "Nem számot adtál meg!";
                 MessageBox.Show(text, title);
             }
-            dc1.Image = Image.FromFile("bjfiles/cards/hatlap.png");
-            dc2.Image = Image.FromFile("bjfiles/cards/hatlap.png");
-            pc1.Image = Image.FromFile("bjfiles/cards/hatlap.png");
-            pc2.Image = Image.FromFile("bjfiles/cards/hatlap.png");
-
-            List<Card> deck = GetDeck();
-            var dealerCards = new List<Card>();
-            var playerCards = new List<Card>();
-
-            //Deck keverés
-            DeckKeveres(deck);
-
-            //Játékos lapjai
-            Jatekkez(deck, playerCards);
-            //Géplapjai
-            Gepkez(deck, dealerCards);
-        }
-
-
-        private List<Card> GetDeck()
-        {
-            //Csinálni egy lsitaát 1 pakli - ertek, tipus, kezben, link
-            var deck = new List<Card>();
-
-            for (int i = 0; i < 2; i++)
+            else
             {
-                #region Pikk
-                deck.Add(new Card("2", "Pikk", "bjfilse/cards/P2"));
-                deck.Add(new Card("3", "Pikk", "bjfilse/cards/P3"));
-                deck.Add(new Card("4", "Pikk", "bjfilse/cards/P4"));
-                deck.Add(new Card("5", "Pikk", "bjfilse/cards/P5"));
-                deck.Add(new Card("6", "Pikk", "bjfilse/cards/P6"));
-                deck.Add(new Card("7", "Pikk", "bjfilse/cards/P7"));
-                deck.Add(new Card("8", "Pikk", "bjfilse/cards/P8"));
-                deck.Add(new Card("9", "Pikk", "bjfilse/cards/P9"));
-                deck.Add(new Card("10", "Pikk", "bjfilse/cards/P10"));
-                deck.Add(new Card("10", "Pikk", "bjfilse/cards/PJ"));
-                deck.Add(new Card("10", "Pikk", "bjfilse/cards/PD"));
-                deck.Add(new Card("10", "Pikk", "bjfilse/cards/PK"));
-                deck.Add(new Card("11", "Pikk", "bjfilse/cards/PA"));
-                #endregion
-                #region Kőr
-                deck.Add(new Card("2", "Kőr", "bjfiles/cards/Ko2"));
-                deck.Add(new Card("3", "Kőr", "bjfiles/cards/Ko3"));
-                deck.Add(new Card("4", "Kőr", "bjfiles/cards/Ko4"));
-                deck.Add(new Card("5", "Kőr", "bjfiles/cards/Ko5"));
-                deck.Add(new Card("6", "Kőr", "bjfiles/cards/Ko6"));
-                deck.Add(new Card("7", "Kőr", "bjfiles/cards/Ko7"));
-                deck.Add(new Card("8", "Kőr", "bjfiles/cards/Ko8"));
-                deck.Add(new Card("9", "Kőr", "bjfiles/cards/Ko9"));
-                deck.Add(new Card("10", "Kőr", "bjfiles/cards/Ko10"));
-                deck.Add(new Card("10", "Kőr", "bjfiles/cards/KoJ"));
-                deck.Add(new Card("10", "Kőr", "bjfiles/cards/KoD"));
-                deck.Add(new Card("10", "Kőr", "bjfiles/cards/KoK"));
-                deck.Add(new Card("11", "Kőr", "bjfiles/cards/KoA"));
-                #endregion
-                #region Káro
-                deck.Add(new Card("2", "Káró", "bjfiles/cards/Ka2"));
-                deck.Add(new Card("3", "Káró", "bjfiles/cards/Ka3"));
-                deck.Add(new Card("4", "Káró", "bjfiles/cards/Ka4"));
-                deck.Add(new Card("5", "Káró", "bjfiles/cards/Ka5"));
-                deck.Add(new Card("6", "Káró", "bjfiles/cards/Ka6"));
-                deck.Add(new Card("7", "Káró", "bjfiles/cards/Ka7"));
-                deck.Add(new Card("8", "Káró", "bjfiles/cards/Ka8"));
-                deck.Add(new Card("9", "Káró", "bjfiles/cards/Ka9"));
-                deck.Add(new Card("10", "Káró", "bjfiles/cards/Ka10"));
-                deck.Add(new Card("10", "Káró", "bjfiles/cards/KaJ"));
-                deck.Add(new Card("10", "Káró", "bjfiles/cards/KaD"));
-                deck.Add(new Card("10", "Káró", "bjfiles/cards/KaK"));
-                deck.Add(new Card("11", "Káró", "bjfiles/cards/KaA"));
-                #endregion
-                #region Treff
-                deck.Add(new Card("2", "Treff", "bjfiles/cards/T2"));
-                deck.Add(new Card("3", "Treff", "bjfiles/cards/T3"));
-                deck.Add(new Card("4", "Treff", "bjfiles/cards/T4"));
-                deck.Add(new Card("5", "Treff", "bjfiles/cards/T5"));
-                deck.Add(new Card("6", "Treff", "bjfiles/cards/T6"));
-                deck.Add(new Card("7", "Treff", "bjfiles/cards/T7"));
-                deck.Add(new Card("8", "Treff", "bjfiles/cards/T8"));
-                deck.Add(new Card("9", "Treff", "bjfiles/cards/T9"));
-                deck.Add(new Card("10", "Treff", "bjfiles/cards/T10"));
-                deck.Add(new Card("10", "Treff", "bjfiles/cards/TJ"));
-                deck.Add(new Card("10", "Treff", "bjfiles/cards/TD"));
-                deck.Add(new Card("10", "Treff", "bjfiles/cards/TK"));
-                deck.Add(new Card("11", "Treff", "bjfiles/cards/TA"));
-                #endregion 
+                int chipnum = int.Parse(chips.Text);
+                chips.Text = $"{chipnum - betnum}";
+                betting.Enabled = false;
+                stop.Enabled = true;
+                //Deck keverés
+                DeckKeveres();
+                //Játékos lapjai
+                Jatekkez();
+                //Géplapjai
+                Gepkez();
             }
-
-            
-            return deck;
         }
 
-        private void Gepkez(List<Card> deck, List<Card> dealerCards)
+        private void Gepkez()
         {
             cardback.Visible = true;
-            Card dealerCard1 = deck[0];
-            deck[0].Kezben = true;
-            deck.RemoveAt(0);
-            Card dealerCard2 = deck[1];
-            deck[1].Kezben = true;
-            deck.RemoveAt(1);
+            Card dealerCard1 = Card.deck[0];
+            Card.deck[0].Kezben = true;
+            Card.deck.RemoveAt(0);
+            Card dealerCard2 = Card.deck[1];
+            Card.deck[1].Kezben = true;
+            Card.deck.RemoveAt(1);
 
-            dealerCards.Add(dealerCard1);
-            dealerCards.Add(dealerCard2);
+            Card.dealerCards.Add(dealerCard1);
+            Card.dealerCards.Add(dealerCard2);
+            dc1.Image = Image.FromFile(dealerCard1.Link);
+            dc2.Image = Image.FromFile(dealerCard2.Link);
+            newcard.Enabled = true;
+
+            int ert1 = int.Parse(dealerCard1.Ertek);
+            int ert2 = int.Parse(dealerCard2.Ertek);
+            dealerponts.Text = $"{ert1 + ert2}";
 
         }
 
-        private void Jatekkez(List<Card> deck, List<Card> playerCards)
+        private void Jatekkez()
         {
-            Card playerCard1 = deck[0];
-            deck[0].Kezben = true;
-            deck.RemoveAt(0);
-            Card playerCard2 = deck[1];
-            deck[1].Kezben = true;
-            deck.RemoveAt(1);
+            Card playerCard1 = Card.deck[0];
+            Card.deck[0].Kezben = true;
+            Card.deck.RemoveAt(0);
+            Card playerCard2 = Card.deck[1];
+            Card.deck[1].Kezben = true;
+            Card.deck.RemoveAt(1);
 
-            playerCards.Add(playerCard1);
-            playerCards.Add(playerCard2);
+            Card.playerCards.Add(playerCard1);
+            Card.playerCards.Add(playerCard2);
+            pc1.Image = Image.FromFile(playerCard1.Link);
+            pc2.Image = Image.FromFile(playerCard2.Link);
+
+            int ert1 = int.Parse(playerCard1.Ertek);
+            int ert2 = int.Parse(playerCard2.Ertek);
+            playerpoint.Text = $"{ert1 + ert2}";
+
+            if (playerpoint.Text == "21")
+            {
+                Vegevizsga();
+            }
+
+            //Dlc
+            if (playerCard1.Ertek == "10" && playerCard2.Ertek == "10")
+            {
+                split.Enabled = true;
+            }
 
         }
 
-        private void DeckKeveres(List<Card> deck)
+        private void Vegevizsga()
+        {
+            bool playerwin = false;
+            bool dealerwin = false;
+            bool tie = false;
+
+            if (int.Parse(playerpoint.Text) > int.Parse(dealerponts.Text))
+            {
+                playerwin = true;
+            }
+            else if (int.Parse(dealerponts.Text) > int.Parse(playerpoint.Text))
+            {
+                dealerwin = true;
+            }
+            else { tie = false; }
+
+
+
+        }
+
+        private void DeckKeveres()
         {
             Random random = new Random();
 
-            int n = deck.Count;
+            int n = Card.deck.Count;
             while (n > 1)
             {
                 n--;
                 int k = random.Next(n + 1);
-                Card temp = deck[k];
-                deck[k] = deck[n];
-                deck[n] = temp;
+                Card temp = Card.deck[k];
+                Card.deck[k] = Card.deck[n];
+                Card.deck[n] = temp;
             }
+        }
+
+        private void split_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Vedd meg a DLC-t hozzá", "Hiba");
+            //DLC :D
+        }
+
+        private void newcard_Click(object sender, EventArgs e)
+        {
+            Card playerNewCard1 = Card.deck[0];
+            Card.deck[0].Kezben = true;
+            Card.deck.RemoveAt(0);
+            Card.playerCards.Add(playerNewCard1);
+            //Hozzáadni a pcnewcardpanel-hez a kapott kártyá(ka)t
+            //Megjeleníteni egyben
+            //Hozzáadni az értékhez
+            int ert = int.Parse(playerpoint.Text);
+            int sum = ert + int.Parse(playerNewCard1.Ertek);
+            playerpoint.Text = $"{sum}";
+        }
+
+        private void backmenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.FormClosed += (s, args) => this.Close();
+            form1.Show();
+        }
+
+        private void stop_Click(object sender, EventArgs e)
+        {
+            newcard.Enabled = false;
+            Vegevizsga();
         }
     }
 }

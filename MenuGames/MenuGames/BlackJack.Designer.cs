@@ -39,26 +39,49 @@
             this.bet = new System.Windows.Forms.TextBox();
             this.buttonpanel = new System.Windows.Forms.Panel();
             this.cardspanel = new System.Windows.Forms.Panel();
-            this.cardback = new System.Windows.Forms.PictureBox();
-            this.pc2 = new System.Windows.Forms.PictureBox();
+            this.backmenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.nowbet = new System.Windows.Forms.Label();
+            this.chips = new System.Windows.Forms.Label();
+            this.winpont = new System.Windows.Forms.Label();
+            this.winbet = new System.Windows.Forms.Label();
+            this.losepont = new System.Windows.Forms.Label();
+            this.losebet = new System.Windows.Forms.Label();
+            this.split = new System.Windows.Forms.Button();
+            this.newcard = new System.Windows.Forms.Button();
+            this.stop = new System.Windows.Forms.Button();
+            this.playerpoint = new System.Windows.Forms.Label();
+            this.pccardpanel = new System.Windows.Forms.Panel();
             this.pc1 = new System.Windows.Forms.PictureBox();
-            this.dc2 = new System.Windows.Forms.PictureBox();
+            this.pc2 = new System.Windows.Forms.PictureBox();
+            this.dccardpanel = new System.Windows.Forms.Panel();
             this.dc1 = new System.Windows.Forms.PictureBox();
+            this.cardback = new System.Windows.Forms.PictureBox();
+            this.dc2 = new System.Windows.Forms.PictureBox();
+            this.dcnew2 = new System.Windows.Forms.PictureBox();
+            this.dcnew1 = new System.Windows.Forms.PictureBox();
+            this.dcnew3 = new System.Windows.Forms.PictureBox();
+            this.dealerponts = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.buttonpanel.SuspendLayout();
             this.cardspanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cardback)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pc2)).BeginInit();
+            this.pccardpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pc1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dc2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc2)).BeginInit();
+            this.dccardpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dc1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardback)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dc2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dcnew2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dcnew1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dcnew3)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.beállításokToolStripMenuItem,
-            this.segítségToolStripMenuItem});
+            this.segítségToolStripMenuItem,
+            this.backmenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -113,7 +136,7 @@
             // 
             // betting
             // 
-            this.betting.Location = new System.Drawing.Point(109, 367);
+            this.betting.Location = new System.Drawing.Point(84, 367);
             this.betting.Name = "betting";
             this.betting.Size = new System.Drawing.Size(104, 32);
             this.betting.TabIndex = 6;
@@ -123,7 +146,7 @@
             // 
             // bet
             // 
-            this.bet.Location = new System.Drawing.Point(87, 328);
+            this.bet.Location = new System.Drawing.Point(69, 328);
             this.bet.Multiline = true;
             this.bet.Name = "bet";
             this.bet.Size = new System.Drawing.Size(144, 33);
@@ -131,7 +154,15 @@
             // 
             // buttonpanel
             // 
-            this.buttonpanel.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.buttonpanel.Controls.Add(this.stop);
+            this.buttonpanel.Controls.Add(this.newcard);
+            this.buttonpanel.Controls.Add(this.split);
+            this.buttonpanel.Controls.Add(this.losebet);
+            this.buttonpanel.Controls.Add(this.losepont);
+            this.buttonpanel.Controls.Add(this.winbet);
+            this.buttonpanel.Controls.Add(this.winpont);
+            this.buttonpanel.Controls.Add(this.chips);
+            this.buttonpanel.Controls.Add(this.nowbet);
             this.buttonpanel.Controls.Add(this.bet);
             this.buttonpanel.Controls.Add(this.betting);
             this.buttonpanel.Location = new System.Drawing.Point(525, 27);
@@ -141,72 +172,243 @@
             // 
             // cardspanel
             // 
-            this.cardspanel.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.cardspanel.Controls.Add(this.cardback);
-            this.cardspanel.Controls.Add(this.pc2);
-            this.cardspanel.Controls.Add(this.pc1);
-            this.cardspanel.Controls.Add(this.dc2);
-            this.cardspanel.Controls.Add(this.dc1);
+            this.cardspanel.Controls.Add(this.dealerponts);
+            this.cardspanel.Controls.Add(this.dccardpanel);
+            this.cardspanel.Controls.Add(this.pccardpanel);
+            this.cardspanel.Controls.Add(this.playerpoint);
             this.cardspanel.Location = new System.Drawing.Point(0, 27);
             this.cardspanel.Name = "cardspanel";
             this.cardspanel.Size = new System.Drawing.Size(526, 422);
             this.cardspanel.TabIndex = 7;
             // 
-            // cardback
+            // backmenu
             // 
-            this.cardback.Image = global::MenuGames.Properties.Resources.hatlap;
-            this.cardback.Location = new System.Drawing.Point(154, 46);
-            this.cardback.Name = "cardback";
-            this.cardback.Size = new System.Drawing.Size(66, 96);
-            this.cardback.TabIndex = 4;
-            this.cardback.TabStop = false;
-            this.cardback.Visible = false;
+            this.backmenu.Name = "backmenu";
+            this.backmenu.Size = new System.Drawing.Size(106, 20);
+            this.backmenu.Text = "Vissza a menübe";
+            this.backmenu.Click += new System.EventHandler(this.backmenu_Click);
             // 
-            // pc2
+            // nowbet
             // 
-            this.pc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.pc2.Location = new System.Drawing.Point(151, 274);
-            this.pc2.Name = "pc2";
-            this.pc2.Size = new System.Drawing.Size(98, 125);
-            this.pc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pc2.TabIndex = 3;
-            this.pc2.TabStop = false;
+            this.nowbet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nowbet.Location = new System.Drawing.Point(2, 0);
+            this.nowbet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nowbet.Name = "nowbet";
+            this.nowbet.Size = new System.Drawing.Size(92, 28);
+            this.nowbet.TabIndex = 17;
+            this.nowbet.Text = "Zsetonjaid:";
+            // 
+            // chips
+            // 
+            this.chips.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.chips.Location = new System.Drawing.Point(104, 0);
+            this.chips.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.chips.Name = "chips";
+            this.chips.Size = new System.Drawing.Size(84, 28);
+            this.chips.TabIndex = 18;
+            this.chips.Text = "1000";
+            // 
+            // winpont
+            // 
+            this.winpont.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.winpont.Location = new System.Drawing.Point(2, 28);
+            this.winpont.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.winpont.Name = "winpont";
+            this.winpont.Size = new System.Drawing.Size(107, 28);
+            this.winpont.TabIndex = 19;
+            this.winpont.Text = "Nyeremény:";
+            // 
+            // winbet
+            // 
+            this.winbet.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.winbet.Location = new System.Drawing.Point(113, 28);
+            this.winbet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.winbet.Name = "winbet";
+            this.winbet.Size = new System.Drawing.Size(84, 28);
+            this.winbet.TabIndex = 20;
+            this.winbet.Text = "0";
+            // 
+            // losepont
+            // 
+            this.losepont.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.losepont.Location = new System.Drawing.Point(2, 56);
+            this.losepont.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.losepont.Name = "losepont";
+            this.losepont.Size = new System.Drawing.Size(107, 28);
+            this.losepont.TabIndex = 21;
+            this.losepont.Text = "Veszteség:";
+            // 
+            // losebet
+            // 
+            this.losebet.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.losebet.Location = new System.Drawing.Point(113, 56);
+            this.losebet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.losebet.Name = "losebet";
+            this.losebet.Size = new System.Drawing.Size(84, 28);
+            this.losebet.TabIndex = 22;
+            this.losebet.Text = "0";
+            // 
+            // split
+            // 
+            this.split.Location = new System.Drawing.Point(6, 245);
+            this.split.Margin = new System.Windows.Forms.Padding(2);
+            this.split.Name = "split";
+            this.split.Size = new System.Drawing.Size(92, 28);
+            this.split.TabIndex = 23;
+            this.split.Text = "Split";
+            this.split.UseVisualStyleBackColor = true;
+            this.split.Click += new System.EventHandler(this.split_Click);
+            // 
+            // newcard
+            // 
+            this.newcard.Location = new System.Drawing.Point(172, 245);
+            this.newcard.Margin = new System.Windows.Forms.Padding(2);
+            this.newcard.Name = "newcard";
+            this.newcard.Size = new System.Drawing.Size(92, 28);
+            this.newcard.TabIndex = 24;
+            this.newcard.Text = "Újlap";
+            this.newcard.UseVisualStyleBackColor = true;
+            this.newcard.Click += new System.EventHandler(this.newcard_Click);
+            // 
+            // stop
+            // 
+            this.stop.Location = new System.Drawing.Point(87, 295);
+            this.stop.Margin = new System.Windows.Forms.Padding(2);
+            this.stop.Name = "stop";
+            this.stop.Size = new System.Drawing.Size(92, 28);
+            this.stop.TabIndex = 25;
+            this.stop.Text = "Megáll";
+            this.stop.UseVisualStyleBackColor = true;
+            this.stop.Click += new System.EventHandler(this.stop_Click);
+            // 
+            // playerpoint
+            // 
+            this.playerpoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.playerpoint.Location = new System.Drawing.Point(432, 333);
+            this.playerpoint.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.playerpoint.Name = "playerpoint";
+            this.playerpoint.Size = new System.Drawing.Size(46, 28);
+            this.playerpoint.TabIndex = 14;
+            this.playerpoint.Text = "0";
+            // 
+            // pccardpanel
+            // 
+            this.pccardpanel.Controls.Add(this.pc1);
+            this.pccardpanel.Controls.Add(this.pc2);
+            this.pccardpanel.Location = new System.Drawing.Point(11, 295);
+            this.pccardpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.pccardpanel.Name = "pccardpanel";
+            this.pccardpanel.Size = new System.Drawing.Size(388, 101);
+            this.pccardpanel.TabIndex = 15;
             // 
             // pc1
             // 
             this.pc1.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.pc1.Location = new System.Drawing.Point(47, 274);
+            this.pc1.Location = new System.Drawing.Point(-9, -1);
             this.pc1.Name = "pc1";
             this.pc1.Size = new System.Drawing.Size(98, 125);
             this.pc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pc1.TabIndex = 2;
             this.pc1.TabStop = false;
             // 
-            // dc2
+            // pc2
             // 
-            this.dc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.dc2.Location = new System.Drawing.Point(151, 46);
-            this.dc2.Name = "dc2";
-            this.dc2.Size = new System.Drawing.Size(98, 125);
-            this.dc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dc2.TabIndex = 1;
-            this.dc2.TabStop = false;
+            this.pc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.pc2.Location = new System.Drawing.Point(80, -1);
+            this.pc2.Name = "pc2";
+            this.pc2.Size = new System.Drawing.Size(98, 125);
+            this.pc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pc2.TabIndex = 3;
+            this.pc2.TabStop = false;
+            // 
+            // dccardpanel
+            // 
+            this.dccardpanel.Controls.Add(this.dcnew3);
+            this.dccardpanel.Controls.Add(this.dc1);
+            this.dccardpanel.Controls.Add(this.cardback);
+            this.dccardpanel.Controls.Add(this.dc2);
+            this.dccardpanel.Controls.Add(this.dcnew2);
+            this.dccardpanel.Controls.Add(this.dcnew1);
+            this.dccardpanel.Location = new System.Drawing.Point(11, 28);
+            this.dccardpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.dccardpanel.Name = "dccardpanel";
+            this.dccardpanel.Size = new System.Drawing.Size(388, 101);
+            this.dccardpanel.TabIndex = 16;
             // 
             // dc1
             // 
             this.dc1.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.dc1.Location = new System.Drawing.Point(47, 46);
+            this.dc1.Location = new System.Drawing.Point(0, -2);
             this.dc1.Name = "dc1";
             this.dc1.Size = new System.Drawing.Size(98, 125);
             this.dc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.dc1.TabIndex = 0;
             this.dc1.TabStop = false;
             // 
+            // cardback
+            // 
+            this.cardback.Image = global::MenuGames.Properties.Resources.hatlap;
+            this.cardback.Location = new System.Drawing.Point(80, -1);
+            this.cardback.Name = "cardback";
+            this.cardback.Size = new System.Drawing.Size(74, 102);
+            this.cardback.TabIndex = 4;
+            this.cardback.TabStop = false;
+            this.cardback.Visible = false;
+            // 
+            // dc2
+            // 
+            this.dc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.dc2.Location = new System.Drawing.Point(80, -1);
+            this.dc2.Name = "dc2";
+            this.dc2.Size = new System.Drawing.Size(98, 125);
+            this.dc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dc2.TabIndex = 1;
+            this.dc2.TabStop = false;
+            // 
+            // dcnew2
+            // 
+            this.dcnew2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.dcnew2.Location = new System.Drawing.Point(238, -1);
+            this.dcnew2.Name = "dcnew2";
+            this.dcnew2.Size = new System.Drawing.Size(98, 125);
+            this.dcnew2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dcnew2.TabIndex = 9;
+            this.dcnew2.TabStop = false;
+            // 
+            // dcnew1
+            // 
+            this.dcnew1.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.dcnew1.Location = new System.Drawing.Point(159, -1);
+            this.dcnew1.Name = "dcnew1";
+            this.dcnew1.Size = new System.Drawing.Size(98, 125);
+            this.dcnew1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dcnew1.TabIndex = 8;
+            this.dcnew1.TabStop = false;
+            // 
+            // dcnew3
+            // 
+            this.dcnew3.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
+            this.dcnew3.Location = new System.Drawing.Point(307, -24);
+            this.dcnew3.Name = "dcnew3";
+            this.dcnew3.Size = new System.Drawing.Size(98, 125);
+            this.dcnew3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dcnew3.TabIndex = 11;
+            this.dcnew3.TabStop = false;
+            // 
+            // dealerponts
+            // 
+            this.dealerponts.AutoSize = true;
+            this.dealerponts.Location = new System.Drawing.Point(507, 5);
+            this.dealerponts.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.dealerponts.Name = "dealerponts";
+            this.dealerponts.Size = new System.Drawing.Size(13, 13);
+            this.dealerponts.TabIndex = 17;
+            this.dealerponts.Text = "0";
+            // 
             // BlackJack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.cardspanel);
             this.Controls.Add(this.menuStrip1);
@@ -221,11 +423,18 @@
             this.buttonpanel.PerformLayout();
             this.cardspanel.ResumeLayout(false);
             this.cardspanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cardback)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pc2)).EndInit();
+            this.pccardpanel.ResumeLayout(false);
+            this.pccardpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pc1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dc2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc2)).EndInit();
+            this.dccardpanel.ResumeLayout(false);
+            this.dccardpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dc1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardback)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dc2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dcnew2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dcnew1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dcnew3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,10 +453,27 @@
         public System.Windows.Forms.TextBox bet;
         private System.Windows.Forms.Panel buttonpanel;
         private System.Windows.Forms.Panel cardspanel;
-        private System.Windows.Forms.PictureBox pc2;
-        private System.Windows.Forms.PictureBox pc1;
-        private System.Windows.Forms.PictureBox dc2;
+        private System.Windows.Forms.ToolStripMenuItem backmenu;
+        private System.Windows.Forms.Button stop;
+        private System.Windows.Forms.Button newcard;
+        private System.Windows.Forms.Button split;
+        public System.Windows.Forms.Label losebet;
+        public System.Windows.Forms.Label losepont;
+        public System.Windows.Forms.Label winbet;
+        public System.Windows.Forms.Label winpont;
+        public System.Windows.Forms.Label chips;
+        public System.Windows.Forms.Label nowbet;
+        private System.Windows.Forms.Panel dccardpanel;
+        private System.Windows.Forms.PictureBox dcnew3;
         private System.Windows.Forms.PictureBox dc1;
         private System.Windows.Forms.PictureBox cardback;
+        private System.Windows.Forms.PictureBox dc2;
+        private System.Windows.Forms.PictureBox dcnew2;
+        private System.Windows.Forms.PictureBox dcnew1;
+        private System.Windows.Forms.Panel pccardpanel;
+        private System.Windows.Forms.PictureBox pc1;
+        private System.Windows.Forms.PictureBox pc2;
+        public System.Windows.Forms.Label playerpoint;
+        private System.Windows.Forms.Label dealerponts;
     }
 }
