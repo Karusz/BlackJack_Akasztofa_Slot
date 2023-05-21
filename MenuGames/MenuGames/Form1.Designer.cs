@@ -31,8 +31,8 @@
             this.blackjack = new System.Windows.Forms.Button();
             this.Slot = new System.Windows.Forms.Button();
             this.Akaszto = new System.Windows.Forms.Button();
-            this.easteregg = new System.Windows.Forms.Button();
             this.eggtext = new System.Windows.Forms.Label();
+            this.easteregg = new System.Windows.Forms.CheckBox();
             this.creators = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -69,20 +69,6 @@
             this.Akaszto.UseVisualStyleBackColor = true;
             this.Akaszto.Click += new System.EventHandler(this.Akaszto_Click);
             // 
-            // easteregg
-            // 
-            this.easteregg.BackColor = System.Drawing.SystemColors.Window;
-            this.easteregg.Cursor = System.Windows.Forms.Cursors.No;
-            this.easteregg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.easteregg.Location = new System.Drawing.Point(0, 1);
-            this.easteregg.Name = "easteregg";
-            this.easteregg.Size = new System.Drawing.Size(26, 23);
-            this.easteregg.TabIndex = 3;
-            this.easteregg.Text = " ";
-            this.easteregg.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.easteregg.UseVisualStyleBackColor = false;
-            this.easteregg.Click += new System.EventHandler(this.easteregg_Click);
-            // 
             // eggtext
             // 
             this.eggtext.BackColor = System.Drawing.Color.Transparent;
@@ -96,18 +82,25 @@
             this.eggtext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.eggtext.Visible = false;
             // 
+            // easteregg
+            // 
+            this.easteregg.AutoSize = true;
+            this.easteregg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.easteregg.Location = new System.Drawing.Point(1, 12);
+            this.easteregg.Name = "easteregg";
+            this.easteregg.Size = new System.Drawing.Size(12, 11);
+            this.easteregg.TabIndex = 6;
+            this.easteregg.UseVisualStyleBackColor = true;
+            this.easteregg.CheckedChanged += new System.EventHandler(this.easteregg_CheckedChanged);
+            // 
             // creators
             // 
-            this.creators.BackColor = System.Drawing.SystemColors.Window;
-            this.creators.Cursor = System.Windows.Forms.Cursors.No;
-            this.creators.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.creators.Location = new System.Drawing.Point(773, 1);
+            this.creators.Location = new System.Drawing.Point(326, 316);
             this.creators.Name = "creators";
-            this.creators.Size = new System.Drawing.Size(26, 23);
-            this.creators.TabIndex = 5;
-            this.creators.Text = " ";
-            this.creators.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.creators.UseVisualStyleBackColor = false;
+            this.creators.Size = new System.Drawing.Size(107, 33);
+            this.creators.TabIndex = 7;
+            this.creators.Text = "Készítők";
+            this.creators.UseVisualStyleBackColor = true;
             this.creators.Click += new System.EventHandler(this.creators_Click);
             // 
             // Form1
@@ -116,8 +109,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.creators);
-            this.Controls.Add(this.eggtext);
             this.Controls.Add(this.easteregg);
+            this.Controls.Add(this.eggtext);
             this.Controls.Add(this.Akaszto);
             this.Controls.Add(this.Slot);
             this.Controls.Add(this.blackjack);
@@ -126,6 +119,7 @@
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -134,8 +128,8 @@
         public System.Windows.Forms.Button blackjack;
         public System.Windows.Forms.Button Slot;
         public System.Windows.Forms.Button Akaszto;
-        private System.Windows.Forms.Button easteregg;
         private System.Windows.Forms.Label eggtext;
+        private System.Windows.Forms.CheckBox easteregg;
         private System.Windows.Forms.Button creators;
     }
 }

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -42,24 +43,42 @@ namespace MenuGames
             slotMachineForm.Show();
         }
 
-        private void easteregg_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
+            eggtext.Visible = false;
+        }
+
+        private void easteregg_CheckedChanged(object sender, EventArgs e)
+        {
+            if (easteregg.Checked)
+            {
+            SoundPlayer opening = new SoundPlayer("eastereggpicss/eemusicwaw.wav");
+            opening.Play();
             Image img = Image.FromFile("eastereggpicss/hnmenu.jpg");
             eggtext.Visible = true;
             BackgroundImage = img;
             blackjack.BackColor = Color.DeepPink;
             Akaszto.BackColor = Color.DeepPink;
             Slot.BackColor = Color.DeepPink;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            eggtext.Visible = false;
+            creators.BackColor = Color.DeepPink;
+            }
+            else
+            {
+                SoundPlayer opening = new SoundPlayer("eastereggpicss/eemusicwaw.wav");
+                opening.Stop();
+                Image img = Image.FromFile("eastereggpicss/hnmenu.jpg");
+                eggtext.Visible = false;
+                BackgroundImage = null;
+                blackjack.BackColor = Color.White;
+                Akaszto.BackColor = Color.White;
+                Slot.BackColor = Color.White;
+                creators.BackColor = Color.White;
+            }
         }
 
         private void creators_Click(object sender, EventArgs e)
         {
-            string text = "Fábián László, Karsai Bence, Mód Károly";
+            string text = "Fábián László, Karsai Bence, Mód Károly\nSegítők: Szieber Lili (Karesz barátnője)";
             string title = "Készítők";
             MessageBox.Show(text, title);
         }

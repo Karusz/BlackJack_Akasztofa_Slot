@@ -191,7 +191,7 @@ namespace MenuGames
             }
 
             //Dlc
-            if (playerCard1.Ertek == "10" && playerCard2.Ertek == "10")
+            if (playerCard1.Ertek == playerCard2.Ertek)
             {
                 split.Enabled = true;
             }
@@ -320,9 +320,6 @@ namespace MenuGames
         private void Dealermove()
         {
             cardback.Visible = false;
-            //----
-            dealerponts.Visible = true;
-            //----
             while (int.Parse(dealerponts.Text) <= 7)
             {
                 Card dealerNewCard = Card.deck[0];
