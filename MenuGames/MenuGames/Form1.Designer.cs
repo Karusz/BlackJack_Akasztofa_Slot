@@ -86,7 +86,7 @@
             // 
             this.easteregg.AutoSize = true;
             this.easteregg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.easteregg.Location = new System.Drawing.Point(1, 12);
+            this.easteregg.Location = new System.Drawing.Point(-4, 446);
             this.easteregg.Name = "easteregg";
             this.easteregg.Size = new System.Drawing.Size(12, 11);
             this.easteregg.TabIndex = 6;
@@ -95,7 +95,7 @@
             // 
             // creators
             // 
-            this.creators.Location = new System.Drawing.Point(326, 316);
+            this.creators.Location = new System.Drawing.Point(326, 301);
             this.creators.Name = "creators";
             this.creators.Size = new System.Drawing.Size(107, 33);
             this.creators.TabIndex = 7;
@@ -115,6 +115,7 @@
             this.Controls.Add(this.Slot);
             this.Controls.Add(this.blackjack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Form1_Load);
