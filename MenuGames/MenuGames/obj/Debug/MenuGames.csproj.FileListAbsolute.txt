@@ -46,3 +46,4 @@ D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.Gener
 D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.CoreCompileInputs.cache
 D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.exe
 D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.pdb
+D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Akasztofa.resources

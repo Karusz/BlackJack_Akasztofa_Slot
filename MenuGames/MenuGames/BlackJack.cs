@@ -21,7 +21,7 @@ namespace MenuGames
 
         private void BlackJack_Load(object sender, EventArgs e)
         {
-
+            //cardback.Image = Image.FromFile("bjfiles/cards/hatlap.png");
             dealernewcardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
             cardspanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
             pcnewcardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
@@ -129,6 +129,7 @@ namespace MenuGames
                 string text = "Nem számot adtál meg!";
                 MessageBox.Show(text, title);
             }
+            else if (int.Parse(bet.Text) > 0) { string title = "Hiba!"; string text = "0-t adtál meg!"; MessageBox.Show(text, title); }
             else
             {
                 int chipnum = int.Parse(chips.Text);
@@ -146,6 +147,8 @@ namespace MenuGames
 
         private void Gepkez()
         {
+            losebet.Text = "0";
+            winbet.Text = "0";
             cardback.Visible = true;
             Card dealerCard1 = Card.deck[0];
             Card.deck[0].Kezben = true;
@@ -163,7 +166,10 @@ namespace MenuGames
             int ert1 = int.Parse(dealerCard1.Ertek);
             int ert2 = int.Parse(dealerCard2.Ertek);
             dealerponts.Text = $"{ert1 + ert2}";
-
+            //if (dealerponts.Text == "21")
+            //{
+            //    Vegevizsga();
+            //}
         }
 
         private void Jatekkez()
@@ -256,6 +262,7 @@ namespace MenuGames
             {
                 int playerbettie = int.Parse(bet.Text); //Feltett tét
                 chips.Text = $"{playerbettie + alapchips}";
+                ResetGame();
             }
 
 
@@ -263,12 +270,15 @@ namespace MenuGames
 
         private void ResetGame()
         {
+            pc1.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            pc2.Image = Image.FromFile("bjfiles/backg/sajatbg.png"); ;
+            dc1.Image = Image.FromFile("bjfiles/backg/sajatbg.png"); ;
+            dc2.Image = Image.FromFile("bjfiles/backg/sajatbg.png"); ;
             cardback.Visible = true;
             betting.Enabled = true;
+            pcnewcardpanel.Controls.Clear();
+            dealernewcardpanel.Controls.Clear();
             bet.Text = string.Empty;
-            DeckKeveres();
-            Jatekkez();
-            Gepkez();
         }
 
         private void DeckKeveres()
@@ -299,8 +309,8 @@ namespace MenuGames
             Card.deck.RemoveAt(0);
             Card.playerCards.Add(playerNewCard1);
             PictureBox newPCard = new PictureBox();
-            newcard.Height = 72;
-            newcard.Width = 96;
+            newPCard.Height = 96;
+            newPCard.Width = 72;
             pcnewcardpanel.Controls.Add(newPCard);
             newPCard.Image = Image.FromFile(playerNewCard1.Link);
             //Hozzáadni a pcnewcardpanel-hez a kapott kártyá(ka)t
@@ -309,18 +319,15 @@ namespace MenuGames
             int ert = int.Parse(playerpoint.Text);
             int sum = ert + int.Parse(playerNewCard1.Ertek);
             playerpoint.Text = $"{sum}";
-            if (int.Parse(playerpoint.Text) > 20)
-            {
-                Dealermove();
-            }
-            Vegevizsga();
 
         }
 
         private void Dealermove()
         {
+            int dealernewpont;
+            int dealerpont = int.Parse(dealerponts.Text);
             cardback.Visible = false;
-            while (int.Parse(dealerponts.Text) <= 7)
+            while (dealerpont < 7)
             {
                 Card dealerNewCard = Card.deck[0];
                 Card.deck[0].Kezben = true;
@@ -331,6 +338,10 @@ namespace MenuGames
                 newDCard.Width = 72;
                 dealernewcardpanel.Controls.Add(newDCard);
                 newDCard.Image = Image.FromFile(dealerNewCard.Link);
+                dealernewpont = int.Parse(dealerNewCard.Ertek);
+                dealerpont += dealernewpont;
+                dealerponts.Text = $"{dealerpont}";
+
             }
         }
 
@@ -344,7 +355,10 @@ namespace MenuGames
 
         private void stop_Click(object sender, EventArgs e)
         {
+            cardback.BackgroundImage = null;
+            cardback.BackColor = Color.Transparent;
             stop.Enabled = false;
+            betting.Enabled = false;
             newcard.Enabled = false;
             Dealermove();
             Vegevizsga();
