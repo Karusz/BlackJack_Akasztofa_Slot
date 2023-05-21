@@ -21,54 +21,90 @@ namespace MenuGames
 
         private void BlackJack_Load(object sender, EventArgs e)
         {
-            pccardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
-            dccardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
+
+            dealernewcardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
             cardspanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
+            pcnewcardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
+            playerpoint.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            chips.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            winpont.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            losepont.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            winbet.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            losebet.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            nowbet.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            label1.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
             buttonpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
             split.Enabled = false;
             newcard.Enabled = false;
             stop.Enabled = false;
             dealerponts.Visible = false;
+            
 
         }
 
         private void limebg_Click(object sender, EventArgs e)
         {
+            playerpoint.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            chips.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            winpont.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            losepont.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            winbet.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            losebet.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            nowbet.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
+            label1.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
             Image lbg = Image.FromFile("bjfiles/backg/sajatbg.png");
             cardspanel.BackgroundImage = lbg;
             buttonpanel.BackgroundImage = lbg;
+            pcnewcardpanel.BackgroundImage = lbg;
             dc1.BackgroundImage = lbg;
             dc2.BackgroundImage = lbg;
             pc1.BackgroundImage = lbg;
             pc2.BackgroundImage = lbg;
-            pccardpanel.BackgroundImage = lbg;
-            dccardpanel.BackgroundImage = lbg;
+
+            dealernewcardpanel.BackgroundImage = lbg;
+            
         }
 
         private void greenbg_Click(object sender, EventArgs e)
         {
             Image gbg = Image.FromFile("bjfiles/backg/zoldbg.jpg");
+            playerpoint.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
+            chips.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
+            winpont.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
+            losepont.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
+            winbet.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
+            losebet.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
+            nowbet.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
+            label1.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
             cardspanel.BackgroundImage = gbg;
             buttonpanel.BackgroundImage = gbg;
             dc1.BackgroundImage = gbg;
             dc2.BackgroundImage = gbg;
             pc1.BackgroundImage = gbg;
             pc2.BackgroundImage = gbg;
-            pccardpanel.BackgroundImage = gbg;
-            dccardpanel.BackgroundImage = gbg;
+            pcnewcardpanel.BackgroundImage = gbg;
+            dealernewcardpanel.BackgroundImage = gbg;
         }
 
         private void redbg_Click(object sender, EventArgs e)
         {
             Image rbg = Image.FromFile("bjfiles/backg/redbg.jpg");
+            playerpoint.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
+            chips.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
+            winpont.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
+            losepont.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
+            winbet.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
+            losebet.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
+            nowbet.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
+            label1.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
             cardspanel.BackgroundImage = rbg;
             buttonpanel.BackgroundImage = rbg;
             dc1.BackgroundImage = rbg;
             dc2.BackgroundImage = rbg;
             pc1.BackgroundImage = rbg;
             pc2.BackgroundImage = rbg;
-            pccardpanel.BackgroundImage = rbg;
-            dccardpanel.BackgroundImage = rbg;
+            pcnewcardpanel.BackgroundImage = rbg;
+            dealernewcardpanel.BackgroundImage = rbg;
         }
         //Félkész:
         private void segítségToolStripMenuItem_Click(object sender, EventArgs e)
@@ -132,6 +168,7 @@ namespace MenuGames
 
         private void Jatekkez()
         {
+            newcard.Enabled = true;
             Card playerCard1 = Card.deck[0];
             Card.deck[0].Kezben = true;
             Card.deck.RemoveAt(0);
@@ -164,21 +201,71 @@ namespace MenuGames
         private void Vegevizsga()
         {
             bool playerwin = false;
+            bool playerwinin21 = false;
             bool dealerwin = false;
             bool tie = false;
-
-            if (int.Parse(playerpoint.Text) > int.Parse(dealerponts.Text))
+            if (int.Parse(playerpoint.Text) == 21)
             {
-                playerwin = true;
+
+            }
+            else if (int.Parse(playerpoint.Text) > int.Parse(dealerponts.Text))
+            {
+                playerwinin21 = true;
             }
             else if (int.Parse(dealerponts.Text) > int.Parse(playerpoint.Text))
             {
                 dealerwin = true;
             }
-            else { tie = false; }
+            else { tie = true; }
+
+            //Ha a játékos nyert = 2x ezze a zsetont
+            // Jóváírás
+            //Reset game
+            if (playerwinin21)
+            {
+                int playerbet21 = int.Parse(bet.Text);
+                winbet.Text = $"{(playerbet21 * 2) + (playerbet21)}";
+                chips.Text = $"{(playerbet21 * 2) + (playerbet21)}";
+                ResetGame();
+            }
+            else if (playerwin)
+            {
+                int playerbet = int.Parse(bet.Text);
+                winbet.Text = $"{playerbet * 2}";
+                chips.Text = $"{playerbet * 2}";
+                ResetGame();
+            }
+            //Ha a gép nyert = Zseton elvesztés
+            //Reset game
+            else if (dealerwin)
+            {
+                int playerbetlose = int.Parse(bet.Text);
+                int playerchipslose = int.Parse(chips.Text);
+                losebet.Text = $"{playerbetlose}";
+                chips.Text = $"{playerchipslose - playerbetlose}";
+                ResetGame();
+            }
+
+            //Ha Döntetlen = Zseton visszakap
+            //Reset game
+            else if (tie)
+            {
+                int playerbettie = int.Parse(bet.Text); //Feltett tét
+                int playertie = int.Parse(chips.Text); //Amennyi zseton van a játékosnál
+                chips.Text = $"{playerbettie + playertie}";
+            }
 
 
+        }
 
+        private void ResetGame()
+        {
+            cardback.Visible = true;
+            betting.Enabled = true;
+            bet.Text = string.Empty;
+            DeckKeveres();
+            Jatekkez();
+            Gepkez();
         }
 
         private void DeckKeveres()
@@ -208,12 +295,43 @@ namespace MenuGames
             Card.deck[0].Kezben = true;
             Card.deck.RemoveAt(0);
             Card.playerCards.Add(playerNewCard1);
+            PictureBox newPCard = new PictureBox();
+            newcard.Height = 72;
+            newcard.Width = 96;
+            pcnewcardpanel.Controls.Add(newPCard);
+            newPCard.Image = Image.FromFile(playerNewCard1.Link);
             //Hozzáadni a pcnewcardpanel-hez a kapott kártyá(ka)t
             //Megjeleníteni egyben
             //Hozzáadni az értékhez
             int ert = int.Parse(playerpoint.Text);
             int sum = ert + int.Parse(playerNewCard1.Ertek);
             playerpoint.Text = $"{sum}";
+            if (int.Parse(playerpoint.Text) > 20 )
+            {
+                Dealermove();
+            }
+            Vegevizsga();
+            
+        }
+
+        private void Dealermove()
+        {
+            cardback.Visible = false;
+            //----
+            dealerponts.Visible = true;
+            //----
+            while(int.Parse(dealerponts.Text)<= 7)
+            {
+                Card dealerNewCard = Card.deck[0];
+                Card.deck[0].Kezben = true;
+                Card.deck.RemoveAt(0);
+                Card.dealerCards.Add(dealerNewCard);
+                PictureBox newDCard = new PictureBox();
+                newDCard.Height = 96;
+                newDCard.Width = 72;
+                dealernewcardpanel.Controls.Add(newDCard);
+                newDCard.Image = Image.FromFile(dealerNewCard.Link); 
+            }
         }
 
         private void backmenu_Click(object sender, EventArgs e)
@@ -226,7 +344,9 @@ namespace MenuGames
 
         private void stop_Click(object sender, EventArgs e)
         {
+            stop.Enabled = false;
             newcard.Enabled = false;
+            Dealermove();
             Vegevizsga();
         }
     }
