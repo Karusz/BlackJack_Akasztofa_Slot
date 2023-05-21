@@ -33,3 +33,16 @@ C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Deb
 C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.BlackJack.resources
 C:\Users\karus\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.BlackJack.resources
 C:\Users\karus\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.SlotMachine.resources
+D:\Programming\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.exe.config
+D:\Programming\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.exe
+D:\Programming\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.pdb
+D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.AssemblyReference.cache
+D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.SuggestedBindingRedirects.cache
+D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.BlackJack.resources
+D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Form1.resources
+D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Properties.Resources.resources
+D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.SlotMachine.resources
+D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.GenerateResource.cache
+D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.CoreCompileInputs.cache
+D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.exe
+D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.pdb

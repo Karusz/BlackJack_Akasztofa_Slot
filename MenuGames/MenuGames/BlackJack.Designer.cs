@@ -61,6 +61,7 @@
             this.dcnew1 = new System.Windows.Forms.PictureBox();
             this.dcnew3 = new System.Windows.Forms.PictureBox();
             this.dealerponts = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.buttonpanel.SuspendLayout();
             this.cardspanel.SuspendLayout();
@@ -172,6 +173,7 @@
             // 
             // cardspanel
             // 
+            this.cardspanel.Controls.Add(this.label1);
             this.cardspanel.Controls.Add(this.dealerponts);
             this.cardspanel.Controls.Add(this.dccardpanel);
             this.cardspanel.Controls.Add(this.pccardpanel);
@@ -284,7 +286,7 @@
             // playerpoint
             // 
             this.playerpoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.playerpoint.Location = new System.Drawing.Point(432, 333);
+            this.playerpoint.Location = new System.Drawing.Point(462, 328);
             this.playerpoint.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.playerpoint.Name = "playerpoint";
             this.playerpoint.Size = new System.Drawing.Size(46, 28);
@@ -294,6 +296,7 @@
             // pccardpanel
             // 
             this.pccardpanel.Controls.Add(this.pc1);
+            this.pccardpanel.Controls.Add(this.dcnew2);
             this.pccardpanel.Controls.Add(this.pc2);
             this.pccardpanel.Location = new System.Drawing.Point(11, 295);
             this.pccardpanel.Margin = new System.Windows.Forms.Padding(2);
@@ -304,7 +307,7 @@
             // pc1
             // 
             this.pc1.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.pc1.Location = new System.Drawing.Point(-9, -1);
+            this.pc1.Location = new System.Drawing.Point(3, -1);
             this.pc1.Name = "pc1";
             this.pc1.Size = new System.Drawing.Size(98, 125);
             this.pc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -314,7 +317,7 @@
             // pc2
             // 
             this.pc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.pc2.Location = new System.Drawing.Point(80, -1);
+            this.pc2.Location = new System.Drawing.Point(107, 0);
             this.pc2.Name = "pc2";
             this.pc2.Size = new System.Drawing.Size(98, 125);
             this.pc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -325,10 +328,9 @@
             // 
             this.dccardpanel.Controls.Add(this.dcnew3);
             this.dccardpanel.Controls.Add(this.dc1);
+            this.dccardpanel.Controls.Add(this.dcnew1);
             this.dccardpanel.Controls.Add(this.cardback);
             this.dccardpanel.Controls.Add(this.dc2);
-            this.dccardpanel.Controls.Add(this.dcnew2);
-            this.dccardpanel.Controls.Add(this.dcnew1);
             this.dccardpanel.Location = new System.Drawing.Point(11, 28);
             this.dccardpanel.Margin = new System.Windows.Forms.Padding(2);
             this.dccardpanel.Name = "dccardpanel";
@@ -338,7 +340,7 @@
             // dc1
             // 
             this.dc1.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.dc1.Location = new System.Drawing.Point(0, -2);
+            this.dc1.Location = new System.Drawing.Point(3, 0);
             this.dc1.Name = "dc1";
             this.dc1.Size = new System.Drawing.Size(98, 125);
             this.dc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -348,7 +350,7 @@
             // cardback
             // 
             this.cardback.Image = global::MenuGames.Properties.Resources.hatlap;
-            this.cardback.Location = new System.Drawing.Point(80, -1);
+            this.cardback.Location = new System.Drawing.Point(107, 0);
             this.cardback.Name = "cardback";
             this.cardback.Size = new System.Drawing.Size(74, 102);
             this.cardback.TabIndex = 4;
@@ -358,7 +360,7 @@
             // dc2
             // 
             this.dc2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.dc2.Location = new System.Drawing.Point(80, -1);
+            this.dc2.Location = new System.Drawing.Point(107, -2);
             this.dc2.Name = "dc2";
             this.dc2.Size = new System.Drawing.Size(98, 125);
             this.dc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -368,7 +370,7 @@
             // dcnew2
             // 
             this.dcnew2.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.dcnew2.Location = new System.Drawing.Point(238, -1);
+            this.dcnew2.Location = new System.Drawing.Point(211, -1);
             this.dcnew2.Name = "dcnew2";
             this.dcnew2.Size = new System.Drawing.Size(98, 125);
             this.dcnew2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -378,7 +380,7 @@
             // dcnew1
             // 
             this.dcnew1.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.dcnew1.Location = new System.Drawing.Point(159, -1);
+            this.dcnew1.Location = new System.Drawing.Point(211, 0);
             this.dcnew1.Name = "dcnew1";
             this.dcnew1.Size = new System.Drawing.Size(98, 125);
             this.dcnew1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -388,7 +390,7 @@
             // dcnew3
             // 
             this.dcnew3.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
-            this.dcnew3.Location = new System.Drawing.Point(307, -24);
+            this.dcnew3.Location = new System.Drawing.Point(315, -24);
             this.dcnew3.Name = "dcnew3";
             this.dcnew3.Size = new System.Drawing.Size(98, 125);
             this.dcnew3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -404,6 +406,15 @@
             this.dealerponts.Size = new System.Drawing.Size(13, 13);
             this.dealerponts.TabIndex = 17;
             this.dealerponts.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(404, 328);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 23);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Points:";
             // 
             // BlackJack
             // 
@@ -475,5 +486,6 @@
         private System.Windows.Forms.PictureBox pc2;
         public System.Windows.Forms.Label playerpoint;
         private System.Windows.Forms.Label dealerponts;
+        private System.Windows.Forms.Label label1;
     }
 }
