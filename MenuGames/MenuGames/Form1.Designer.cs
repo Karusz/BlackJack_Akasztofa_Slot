@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.blackjack = new System.Windows.Forms.Button();
             this.Slot = new System.Windows.Forms.Button();
             this.Akaszto = new System.Windows.Forms.Button();
@@ -115,6 +116,7 @@
             this.Controls.Add(this.Slot);
             this.Controls.Add(this.blackjack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Menu";

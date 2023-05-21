@@ -73,6 +73,9 @@
     <Compile Include="SlotMachine.Designer.cs">
       <DependentUpon>SlotMachine.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Akasztofa.resx">
+      <DependentUpon>Akasztofa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BlackJack.resx">
       <DependentUpon>BlackJack.cs</DependentUpon>
     </EmbeddedResource>
