@@ -16,5 +16,20 @@ namespace MenuGames
         {
             InitializeComponent();
         }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Akasztofa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _1_1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
