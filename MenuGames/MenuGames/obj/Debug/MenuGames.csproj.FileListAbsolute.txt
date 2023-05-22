@@ -62,3 +62,16 @@ C:\Users\focil\Desktop\schola\csharp\David\MenuGames\MenuGames\obj\Debug\MenuGam
 C:\Users\focil\Desktop\schola\csharp\David\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.CoreCompileInputs.cache
 C:\Users\focil\Desktop\schola\csharp\David\MenuGames\MenuGames\obj\Debug\MenuGames.exe
 C:\Users\focil\Desktop\schola\csharp\David\MenuGames\MenuGames\obj\Debug\MenuGames.pdb
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.exe.config
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.exe
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.pdb
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.AssemblyReference.cache
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Akasztofa.resources
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.BlackJack.resources
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Form1.resources
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Properties.Resources.resources
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.SlotMachine.resources
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.GenerateResource.cache
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.CoreCompileInputs.cache
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.exe
+C:\Users\focil\Desktop\schola\csharp\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.pdb
