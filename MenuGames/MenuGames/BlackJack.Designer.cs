@@ -307,6 +307,7 @@
             // 
             // cardback
             // 
+            this.cardback.BackgroundImage = global::MenuGames.Properties.Resources.sajatbg;
             this.cardback.Location = new System.Drawing.Point(91, 28);
             this.cardback.Name = "cardback";
             this.cardback.Size = new System.Drawing.Size(71, 95);
