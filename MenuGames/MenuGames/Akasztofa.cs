@@ -26,5 +26,10 @@ namespace MenuGames
         {
 
         }
+
+        private void _1_1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -155,6 +155,7 @@
             this._1_1.Size = new System.Drawing.Size(61, 68);
             this._1_1.TabIndex = 0;
             this._1_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this._1_1.TextChanged += new System.EventHandler(this._1_1_TextChanged);
             // 
             // _1_2
             // 
