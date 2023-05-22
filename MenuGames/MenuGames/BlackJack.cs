@@ -21,7 +21,7 @@ namespace MenuGames
 
         private void BlackJack_Load(object sender, EventArgs e)
         {
-            //cardback.Image = Image.FromFile("bjfiles/cards/hatlap.png");
+            
             dealernewcardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
             cardspanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
             pcnewcardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
@@ -121,6 +121,7 @@ namespace MenuGames
 
         private void betting_Click(object sender, EventArgs e)
         {
+            cardback.Image = Image.FromFile("bjfiles/cards/hatlap.png");
 
             int betnum;
             if (!int.TryParse(bet.Text, out betnum))
@@ -129,7 +130,7 @@ namespace MenuGames
                 string text = "Nem számot adtál meg!";
                 MessageBox.Show(text, title);
             }
-            else if (int.Parse(bet.Text) > 0) { string title = "Hiba!"; string text = "0-t adtál meg!"; MessageBox.Show(text, title); }
+            //else if (int.Parse(bet.Text) > 0) { string title = "Hiba!"; string text = "0-t adtál meg!"; MessageBox.Show(text, title); }
             else
             {
                 int chipnum = int.Parse(chips.Text);
@@ -274,7 +275,6 @@ namespace MenuGames
             pc2.Image = Image.FromFile("bjfiles/backg/sajatbg.png"); ;
             dc1.Image = Image.FromFile("bjfiles/backg/sajatbg.png"); ;
             dc2.Image = Image.FromFile("bjfiles/backg/sajatbg.png"); ;
-            cardback.Visible = true;
             betting.Enabled = true;
             pcnewcardpanel.Controls.Clear();
             dealernewcardpanel.Controls.Clear();
@@ -356,6 +356,7 @@ namespace MenuGames
         private void stop_Click(object sender, EventArgs e)
         {
             cardback.BackgroundImage = null;
+            cardback.Visible = false;
             cardback.BackColor = Color.Transparent;
             stop.Enabled = false;
             betting.Enabled = false;

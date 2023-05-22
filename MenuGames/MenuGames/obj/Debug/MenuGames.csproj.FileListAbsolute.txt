@@ -47,3 +47,5 @@ D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.CoreC
 D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.exe
 D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.pdb
 D:\Programming\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Akasztofa.resources
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Akasztofa.resources
+C:\Users\mod.karoly\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.SlotMachine.resources
