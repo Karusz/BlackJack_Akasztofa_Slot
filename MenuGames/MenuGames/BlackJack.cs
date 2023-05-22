@@ -38,6 +38,7 @@ namespace MenuGames
             newcard.Enabled = false;
             stop.Enabled = false;
             dealerponts.Visible = false;
+            bet.Text = "0";
 
 
         }
@@ -219,6 +220,9 @@ namespace MenuGames
 
         private async void Vegevizsga()
         {
+            betting.Enabled = false;
+            split.Enabled = false;
+            stop.Enabled = false;
             bool playerwin = false;
             bool dealerwin = false;
             bool tie = false;
@@ -276,6 +280,16 @@ namespace MenuGames
                     ResetGame();
                 }
             }
+            else
+            {
+                MessageBox.Show("Besokkaltál!");
+                int playerbetlose = int.Parse(bet.Text);
+                losebet.Text = $"{playerbetlose}";
+                chips.Text = $"{alapchips - playerbetlose}";
+                await Task.Delay(3500);
+                ResetGame();
+
+            }
 
 
         }
@@ -330,6 +344,10 @@ namespace MenuGames
             int ert = int.Parse(playerpoint.Text);
             int sum = ert + int.Parse(playerNewCard1.Ertek);
             playerpoint.Text = $"{sum}";
+            if (sum > 21)
+            {
+                Vegevizsga();
+            }
             
 
         }
