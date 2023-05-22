@@ -46,21 +46,24 @@ namespace MenuGames
         private void Form1_Load(object sender, EventArgs e)
         {
             eggtext.Visible = false;
+            click_btn.Visible = false;
         }
 
         private void easteregg_CheckedChanged(object sender, EventArgs e)
         {
             if (easteregg.Checked)
             {
-            SoundPlayer opening = new SoundPlayer("eastereggpicss/eemusicwaw.wav");
-            opening.Play();
-            Image img = Image.FromFile("eastereggpicss/hnmenu.jpg");
-            eggtext.Visible = true;
-            BackgroundImage = img;
-            blackjack.BackColor = Color.DeepPink;
-            Akaszto.BackColor = Color.DeepPink;
-            Slot.BackColor = Color.DeepPink;
-            creators.BackColor = Color.DeepPink;
+                SoundPlayer opening = new SoundPlayer("eastereggpicss/eemusicwaw.wav");
+                opening.Play();
+                Image img = Image.FromFile("eastereggpicss/hnmenu.jpg");
+                eggtext.Visible = true;
+                BackgroundImage = img;
+                blackjack.BackColor = Color.DeepPink;
+                Akaszto.BackColor = Color.DeepPink;
+                Slot.BackColor = Color.DeepPink;
+                creators.BackColor = Color.DeepPink;
+                minigame.BackColor = Color.DeepPink;
+
             }
             else
             {
@@ -73,6 +76,7 @@ namespace MenuGames
                 Akaszto.BackColor = Color.White;
                 Slot.BackColor = Color.White;
                 creators.BackColor = Color.White;
+                minigame.BackColor = Color.White;
             }
         }
 
@@ -81,6 +85,44 @@ namespace MenuGames
             string text = "Fábián László, Karsai Bence, Mód Károly\nSegítők: Szieber Lili (Karesz barátnője)";
             string title = "Készítők";
             MessageBox.Show(text, title);
+        }
+
+        private void minigame_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Próbáld megnyomni a 'Nyomj meg!' gombot!", "MiniGame");
+            click_btn.Visible = true;
+        }
+        private int moveCount = 0;
+        private void click_btn_MouseEnter(object senedr, EventArgs e)
+        {
+            if (moveCount <= 10)
+            {
+                if (moveCount == 6)
+                {
+                    MessageBox.Show("Vagy mégsem?");
+                }
+                if (moveCount == 5)
+                {
+                    MessageBox.Show("Abba hagytam!");
+                }
+                Random rnd = new Random();
+                int x = Cursor.Position.X + rnd.Next(-300, 300);
+                int y = Cursor.Position.Y + rnd.Next(-300, 300);
+                Cursor.Position = new Point(x, y);
+                moveCount++;
+            }
+            else
+            {
+                minigame.MouseEnter -= click_btn_MouseEnter;
+            }
+        }
+
+        private void click_btn_Click(object sender, EventArgs e)
+        {
+            click_btn.Visible = false;
+            MessageBox.Show("Mivel kitartó voltál, ezért elárulok neked egy titkot!", "Minigame win");
+            MessageBox.Show("Nézd meg a bal alsó sarkot :D", "Secret");
+
         }
     }
 }

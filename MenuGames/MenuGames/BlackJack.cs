@@ -21,7 +21,7 @@ namespace MenuGames
 
         private void BlackJack_Load(object sender, EventArgs e)
         {
-            
+
             dealernewcardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
             cardspanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
             pcnewcardpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
@@ -39,8 +39,6 @@ namespace MenuGames
             stop.Enabled = false;
             dealerponts.Visible = false;
             bet.Text = "0";
-
-
         }
 
         private void limebg_Click(object sender, EventArgs e)
@@ -64,27 +62,6 @@ namespace MenuGames
 
             dealernewcardpanel.BackgroundImage = lbg;
 
-        }
-
-        private void greenbg_Click(object sender, EventArgs e)
-        {
-            Image gbg = Image.FromFile("bjfiles/backg/zoldbg.jpg");
-            playerpoint.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
-            chips.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
-            winpont.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
-            losepont.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
-            winbet.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
-            losebet.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
-            nowbet.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
-            label1.Image = Image.FromFile("bjfiles/backg/zoldbg.jpg");
-            cardspanel.BackgroundImage = gbg;
-            buttonpanel.BackgroundImage = gbg;
-            dc1.BackgroundImage = gbg;
-            dc2.BackgroundImage = gbg;
-            pc1.BackgroundImage = gbg;
-            pc2.BackgroundImage = gbg;
-            pcnewcardpanel.BackgroundImage = gbg;
-            dealernewcardpanel.BackgroundImage = gbg;
         }
 
         private void redbg_Click(object sender, EventArgs e)
@@ -113,6 +90,7 @@ namespace MenuGames
             string title = "Segítség";
             string text = "A játék lényege, hogy több pontod legyen, mint az osztónak.\n" +
                 "Viszont kevesebb kell legyen, mint 21, de ha instant 21-et kapsz, akkor nyertél!\n" +
+                "Ha 21-nél több van, akkor besokkaltál\n" +
                 "Az ász minden esetben 11-et ér. Sajnálom :c\n" +
                 "Minden kártyának az értéke a rajta látható szám.\n" +
                 "A Jumbó, Dáma, Király kártyák 10-et érnek minden esetben.\n" +
@@ -123,7 +101,7 @@ namespace MenuGames
         private void betting_Click(object sender, EventArgs e)
         {
             cardback.Image = Image.FromFile("bjfiles/cards/hatlap.png");
-            
+
             int betnum;
             if (!int.TryParse(bet.Text, out betnum))
             {
@@ -211,11 +189,11 @@ namespace MenuGames
         {
             int nyer = int.Parse(bet.Text);
             int alapchips = int.Parse(chips.Text);
-             int playerbet21 = int.Parse(bet.Text);
-             nyer = ((playerbet21 * 2) + playerbet21);
-             winbet.Text = $"{nyer}";
-             chips.Text = $"{nyer + alapchips}";
-             ResetGame();
+            int playerbet21 = int.Parse(bet.Text);
+            nyer = ((playerbet21 * 2) + playerbet21);
+            winbet.Text = $"{nyer}";
+            chips.Text = $"{nyer + alapchips}";
+            ResetGame();
         }
 
         private async void Vegevizsga()
@@ -349,7 +327,7 @@ namespace MenuGames
             {
                 Vegevizsga();
             }
-            
+
 
         }
 
@@ -391,7 +369,7 @@ namespace MenuGames
             stop.Enabled = false;
             betting.Enabled = false;
             newcard.Enabled = false;
-            
+
             Dealermove();
             Vegevizsga();
         }

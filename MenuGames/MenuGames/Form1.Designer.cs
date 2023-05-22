@@ -35,6 +35,8 @@
             this.eggtext = new System.Windows.Forms.Label();
             this.easteregg = new System.Windows.Forms.CheckBox();
             this.creators = new System.Windows.Forms.Button();
+            this.minigame = new System.Windows.Forms.Button();
+            this.click_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // blackjack
@@ -42,7 +44,7 @@
             this.blackjack.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.blackjack.Location = new System.Drawing.Point(326, 153);
+            this.blackjack.Location = new System.Drawing.Point(329, 131);
             this.blackjack.Name = "blackjack";
             this.blackjack.Size = new System.Drawing.Size(107, 33);
             this.blackjack.TabIndex = 0;
@@ -52,7 +54,7 @@
             // 
             // Slot
             // 
-            this.Slot.Location = new System.Drawing.Point(326, 202);
+            this.Slot.Location = new System.Drawing.Point(329, 180);
             this.Slot.Name = "Slot";
             this.Slot.Size = new System.Drawing.Size(107, 33);
             this.Slot.TabIndex = 1;
@@ -62,7 +64,7 @@
             // 
             // Akaszto
             // 
-            this.Akaszto.Location = new System.Drawing.Point(326, 253);
+            this.Akaszto.Location = new System.Drawing.Point(329, 231);
             this.Akaszto.Name = "Akaszto";
             this.Akaszto.Size = new System.Drawing.Size(107, 33);
             this.Akaszto.TabIndex = 2;
@@ -96,7 +98,7 @@
             // 
             // creators
             // 
-            this.creators.Location = new System.Drawing.Point(326, 301);
+            this.creators.Location = new System.Drawing.Point(329, 279);
             this.creators.Name = "creators";
             this.creators.Size = new System.Drawing.Size(107, 33);
             this.creators.TabIndex = 7;
@@ -104,11 +106,34 @@
             this.creators.UseVisualStyleBackColor = true;
             this.creators.Click += new System.EventHandler(this.creators_Click);
             // 
+            // minigame
+            // 
+            this.minigame.Location = new System.Drawing.Point(329, 330);
+            this.minigame.Name = "minigame";
+            this.minigame.Size = new System.Drawing.Size(107, 33);
+            this.minigame.TabIndex = 8;
+            this.minigame.Text = "Minigame";
+            this.minigame.UseVisualStyleBackColor = true;
+            this.minigame.Click += new System.EventHandler(this.minigame_Click);
+            // 
+            // click_btn
+            // 
+            this.click_btn.Location = new System.Drawing.Point(662, 371);
+            this.click_btn.Name = "click_btn";
+            this.click_btn.Size = new System.Drawing.Size(78, 24);
+            this.click_btn.TabIndex = 9;
+            this.click_btn.Text = "Nyomj Meg!";
+            this.click_btn.UseVisualStyleBackColor = true;
+            this.click_btn.Click += new System.EventHandler(this.click_btn_Click);
+            this.click_btn.MouseEnter += new System.EventHandler(this.click_btn_MouseEnter);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.click_btn);
+            this.Controls.Add(this.minigame);
             this.Controls.Add(this.creators);
             this.Controls.Add(this.easteregg);
             this.Controls.Add(this.eggtext);
@@ -134,6 +159,8 @@
         private System.Windows.Forms.Label eggtext;
         private System.Windows.Forms.CheckBox easteregg;
         private System.Windows.Forms.Button creators;
+        private System.Windows.Forms.Button minigame;
+        private System.Windows.Forms.Button click_btn;
     }
 }
 

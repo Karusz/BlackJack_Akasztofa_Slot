@@ -33,7 +33,6 @@
             this.beállításokToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.háttérToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.limebg = new System.Windows.Forms.ToolStripMenuItem();
-            this.greenbg = new System.Windows.Forms.ToolStripMenuItem();
             this.redbg = new System.Windows.Forms.ToolStripMenuItem();
             this.segítségToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backmenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -95,31 +94,22 @@
             // 
             this.háttérToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.limebg,
-            this.greenbg,
             this.redbg});
             this.háttérToolStripMenuItem.Name = "háttérToolStripMenuItem";
-            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.háttérToolStripMenuItem.Text = "Háttér";
             // 
             // limebg
             // 
             this.limebg.Name = "limebg";
-            this.limebg.Size = new System.Drawing.Size(100, 22);
+            this.limebg.Size = new System.Drawing.Size(180, 22);
             this.limebg.Text = "Lime";
             this.limebg.Click += new System.EventHandler(this.limebg_Click);
-            // 
-            // greenbg
-            // 
-            this.greenbg.Name = "greenbg";
-            this.greenbg.Size = new System.Drawing.Size(100, 22);
-            this.greenbg.Text = "Zöld";
-            this.greenbg.Visible = false;
-            this.greenbg.Click += new System.EventHandler(this.greenbg_Click);
             // 
             // redbg
             // 
             this.redbg.Name = "redbg";
-            this.redbg.Size = new System.Drawing.Size(100, 22);
+            this.redbg.Size = new System.Drawing.Size(180, 22);
             this.redbg.Text = "Piros";
             this.redbg.Click += new System.EventHandler(this.redbg_Click);
             // 
@@ -419,7 +409,6 @@
         private System.Windows.Forms.ToolStripMenuItem beállításokToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem háttérToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem limebg;
-        private System.Windows.Forms.ToolStripMenuItem greenbg;
         private System.Windows.Forms.ToolStripMenuItem redbg;
         private System.Windows.Forms.ToolStripMenuItem segítségToolStripMenuItem;
         private System.Windows.Forms.Button betting;
