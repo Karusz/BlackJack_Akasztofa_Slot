@@ -17,7 +17,7 @@ namespace MenuGames
         {
             InitializeComponent();
         }
-       
+
         public static long credits = 100;
         public static long total = 0;
         public static int bet = 5;
@@ -40,10 +40,10 @@ namespace MenuGames
             {
                 if (random == null) random = new Random();
             }
-            public static int Random(int min,int max)
+            public static int Random(int min, int max)
             {
                 Init();
-                return random.Next(min,max);
+                return random.Next(min, max);
             }
         }
 
@@ -61,25 +61,25 @@ namespace MenuGames
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (credits >= bet) 
+            if (credits >= bet)
             {
                 credits = credits - bet;
                 label2.Text = "Bet: " + bet.ToString();
                 label1.Text = "Credits: " + credits.ToString();
                 for (int i = 0; i < 10; i++)
                 {
-                    p1 = IntUtil.Random(1,8);
-                    p2 = IntUtil.Random(1,8);
-                    p3 = IntUtil.Random(1,8);
-                    p4 = IntUtil.Random(1,8);
-                    p5 = IntUtil.Random(1,8);
-                    p6 = IntUtil.Random(1,8);
-                    p7 = IntUtil.Random(1,8);
-                    p8 = IntUtil.Random(1,8);
-                    p9 = IntUtil.Random(1,8);
+                    p1 = IntUtil.Random(1, 8);
+                    p2 = IntUtil.Random(1, 8);
+                    p3 = IntUtil.Random(1, 8);
+                    p4 = IntUtil.Random(1, 8);
+                    p5 = IntUtil.Random(1, 8);
+                    p6 = IntUtil.Random(1, 8);
+                    p7 = IntUtil.Random(1, 8);
+                    p8 = IntUtil.Random(1, 8);
+                    p9 = IntUtil.Random(1, 8);
                 }
                 if (pictureBox1 != null) pictureBox1.Image.Dispose();
-                pictureBox1.Image = Image.FromFile("img/"+p1.ToString()+".png");
+                pictureBox1.Image = Image.FromFile("img/" + p1.ToString() + ".png");
 
                 if (pictureBox2 != null) pictureBox2.Image.Dispose();
                 pictureBox2.Image = Image.FromFile("img/" + p2.ToString() + ".png");
@@ -110,7 +110,7 @@ namespace MenuGames
 
                 total = 0;
 
-                if (p1 == p2 && p2== p3)
+                if (p1 == p2 && p2 == p3)
                 {
                     switch (p1)
                     {

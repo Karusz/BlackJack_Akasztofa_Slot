@@ -403,5 +403,10 @@ namespace MenuGames
                 betting_Click(sender, e);
             }
         }
+
+        private void getbank_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Get.Bankartya_adatok()", "Delete.System32()");
+        }
     }
 }

@@ -60,6 +60,7 @@
             this.dealerponts = new System.Windows.Forms.Label();
             this.playerpoint = new System.Windows.Forms.Label();
             this.dc2 = new System.Windows.Forms.PictureBox();
+            this.getbank = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.buttonpanel.SuspendLayout();
             this.cardspanel.SuspendLayout();
@@ -153,9 +154,11 @@
             this.bet.Name = "bet";
             this.bet.Size = new System.Drawing.Size(144, 33);
             this.bet.TabIndex = 5;
+            this.bet.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bet_KeyDown);
             // 
             // buttonpanel
             // 
+            this.buttonpanel.Controls.Add(this.getbank);
             this.buttonpanel.Controls.Add(this.stop);
             this.buttonpanel.Controls.Add(this.newcard);
             this.buttonpanel.Controls.Add(this.split);
@@ -370,6 +373,17 @@
             this.dc2.TabIndex = 1;
             this.dc2.TabStop = false;
             // 
+            // getbank
+            // 
+            this.getbank.Location = new System.Drawing.Point(193, 3);
+            this.getbank.Margin = new System.Windows.Forms.Padding(2);
+            this.getbank.Name = "getbank";
+            this.getbank.Size = new System.Drawing.Size(80, 28);
+            this.getbank.TabIndex = 26;
+            this.getbank.Text = "+1000 zseton";
+            this.getbank.UseVisualStyleBackColor = true;
+            this.getbank.Click += new System.EventHandler(this.getbank_Click);
+            // 
             // BlackJack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,5 +446,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel pcnewcardpanel;
         private System.Windows.Forms.FlowLayoutPanel dealernewcardpanel;
+        private System.Windows.Forms.Button getbank;
     }
 }
