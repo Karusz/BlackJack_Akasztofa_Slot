@@ -330,7 +330,7 @@ namespace MenuGames
             int ert = int.Parse(playerpoint.Text);
             int sum = ert + int.Parse(playerNewCard1.Ertek);
             playerpoint.Text = $"{sum}";
-            Vegevizsga();
+            
 
         }
 
