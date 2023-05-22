@@ -192,8 +192,9 @@ namespace MenuGames
             int ert2 = int.Parse(playerCard2.Ertek);
             playerpoint.Text = $"{ert1 + ert2}";
 
-            if (playerpoint.Text == "21")
+            if (int.Parse(playerpoint.Text) == 21)
             {
+                BlackJackwin();
                 Vegevizsga();
             }
 
@@ -205,22 +206,27 @@ namespace MenuGames
 
         }
 
-        private void Vegevizsga()
+        private void BlackJackwin()
+        {
+            int nyer = int.Parse(bet.Text);
+            int alapchips = int.Parse(chips.Text);
+             int playerbet21 = int.Parse(bet.Text);
+             nyer = ((playerbet21 * 2) + playerbet21);
+             winbet.Text = $"{nyer}";
+             chips.Text = $"{nyer + alapchips}";
+             ResetGame();
+        }
+
+        private async void Vegevizsga()
         {
             bool playerwin = false;
-            bool playerwinin21 = false;
             bool dealerwin = false;
             bool tie = false;
             int nyer;
-            int alapchips = int.Parse(chips.Text);//jelenlegi zseton 
-
-            if (int.Parse(playerpoint.Text) == 21)
+            int alapchips = int.Parse(chips.Text); //jelenlegi zseton 
+            if (int.Parse(playerpoint.Text) > int.Parse(dealerponts.Text))
             {
-
-            }
-            else if (int.Parse(playerpoint.Text) > int.Parse(dealerponts.Text))
-            {
-                playerwinin21 = true;
+                playerwin = true;
             }
             else if (int.Parse(dealerponts.Text) > int.Parse(playerpoint.Text))
             {
@@ -231,20 +237,14 @@ namespace MenuGames
             //Ha a játékos nyert = 2x ezze a zsetont
             // Jóváírás
             //Reset game
-            if (playerwinin21)
-            {
-                int playerbet21 = int.Parse(bet.Text);
-                nyer = ((playerbet21 * 2) + playerbet21);
-                winbet.Text = $"{nyer}";
-                chips.Text = $"{nyer + alapchips}";
-                ResetGame();
-            }
-            else if (playerwin)
+            
+            if (playerwin)
             {
                 int playerbet = int.Parse(bet.Text);
                 winbet.Text = $"{playerbet * 2}";
                 nyer = playerbet * 2;
                 chips.Text = $"{nyer + alapchips}";
+                await Task.Delay(5000);
                 ResetGame();
             }
             //Ha a gép nyert = Zseton elvesztés
@@ -254,6 +254,7 @@ namespace MenuGames
                 int playerbetlose = int.Parse(bet.Text);
                 losebet.Text = $"{playerbetlose}";
                 chips.Text = $"{alapchips - playerbetlose}";
+                await Task.Delay(5000);
                 ResetGame();
             }
 
@@ -263,6 +264,7 @@ namespace MenuGames
             {
                 int playerbettie = int.Parse(bet.Text); //Feltett tét
                 chips.Text = $"{playerbettie + alapchips}";
+                await Task.Delay(5000);
                 ResetGame();
             }
 
@@ -353,16 +355,24 @@ namespace MenuGames
             form1.Show();
         }
 
-        private void stop_Click(object sender, EventArgs e)
+        private async void stop_Click(object sender, EventArgs e)
         {
             cardback.BackgroundImage = null;
             cardback.Visible = false;
-            cardback.BackColor = Color.Transparent;
             stop.Enabled = false;
             betting.Enabled = false;
             newcard.Enabled = false;
+            
             Dealermove();
             Vegevizsga();
+        }
+
+        private void bet_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                betting_Click(sender, e);
+            }
         }
     }
 }
