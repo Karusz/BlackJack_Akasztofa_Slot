@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MenuGames",
+    "\\MenuGames\\MenuGames"
   ],
+  "SelectedNode": "\\MenuGames\\MenuGames\\BlackJack.cs",
   "PreviewInSolutionExplorer": false
 }

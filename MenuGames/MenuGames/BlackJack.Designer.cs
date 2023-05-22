@@ -97,20 +97,20 @@
             this.greenbg,
             this.redbg});
             this.háttérToolStripMenuItem.Name = "háttérToolStripMenuItem";
-            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.háttérToolStripMenuItem.Text = "Háttér";
             // 
             // limebg
             // 
             this.limebg.Name = "limebg";
-            this.limebg.Size = new System.Drawing.Size(180, 22);
+            this.limebg.Size = new System.Drawing.Size(100, 22);
             this.limebg.Text = "Lime";
             this.limebg.Click += new System.EventHandler(this.limebg_Click);
             // 
             // greenbg
             // 
             this.greenbg.Name = "greenbg";
-            this.greenbg.Size = new System.Drawing.Size(180, 22);
+            this.greenbg.Size = new System.Drawing.Size(100, 22);
             this.greenbg.Text = "Zöld";
             this.greenbg.Visible = false;
             this.greenbg.Click += new System.EventHandler(this.greenbg_Click);
@@ -118,7 +118,7 @@
             // redbg
             // 
             this.redbg.Name = "redbg";
-            this.redbg.Size = new System.Drawing.Size(180, 22);
+            this.redbg.Size = new System.Drawing.Size(100, 22);
             this.redbg.Text = "Piros";
             this.redbg.Click += new System.EventHandler(this.redbg_Click);
             // 
