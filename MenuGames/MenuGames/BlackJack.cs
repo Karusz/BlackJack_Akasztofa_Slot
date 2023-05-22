@@ -167,10 +167,10 @@ namespace MenuGames
             int ert1 = int.Parse(dealerCard1.Ertek);
             int ert2 = int.Parse(dealerCard2.Ertek);
             dealerponts.Text = $"{ert1 + ert2}";
-            //if (dealerponts.Text == "21")
-            //{
-            //    Vegevizsga();
-            //}
+            if (dealerponts.Text == "21")
+            {
+                Vegevizsga();
+            }
         }
 
         private void Jatekkez()
@@ -224,54 +224,57 @@ namespace MenuGames
             bool tie = false;
             int nyer;
             int alapchips = int.Parse(chips.Text); //jelenlegi zseton 
-            if (int.Parse(playerpoint.Text) > int.Parse(dealerponts.Text))
+            if (int.Parse(playerpoint.Text) < 22)
             {
-                playerwin = true;
-            }
-            else if (int.Parse(dealerponts.Text) > int.Parse(playerpoint.Text))
-            {
-                dealerwin = true;
-            }
-            else { tie = true; }
+                if (int.Parse(playerpoint.Text) > int.Parse(dealerponts.Text))
+                {
+                    playerwin = true;
+                }
+                else if (int.Parse(dealerponts.Text) > int.Parse(playerpoint.Text))
+                {
+                    dealerwin = true;
+                }
+                else { tie = true; }
 
-            //Ha a játékos nyert = 2x ezze a zsetont
-            // Jóváírás
-            //Reset game
-            
-            if (playerwin)
-            {
-                int playerbet = int.Parse(bet.Text);
-                winbet.Text = $"{playerbet * 2}";
-                nyer = playerbet * 2;
-                chips.Text = $"{nyer + alapchips}";
-                MessageBox.Show($"Nyertél {nyer} zsetont!", "Win");
-                await Task.Delay(3500);
-               
-                ResetGame();
-            }
-            //Ha a gép nyert = Zseton elvesztés
-            //Reset game
-            else if (dealerwin)
-            {
-                int playerbetlose = int.Parse(bet.Text);
-                losebet.Text = $"{playerbetlose}";
-                chips.Text = $"{alapchips - playerbetlose}";
-                MessageBox.Show($"Vesztettél {playerbetlose} zsetont!", "Lose");
-                await Task.Delay(3500);
-                
-                ResetGame();
-            }
+                //Ha a játékos nyert = 2x ezze a zsetont
+                // Jóváírás
+                //Reset game
 
-            //Ha Döntetlen = Zseton visszakap
-            //Reset game
-            else if (tie)
-            {
-                int playerbettie = int.Parse(bet.Text); //Feltett tét
-                chips.Text = $"{playerbettie + alapchips}";
-                MessageBox.Show("Döntetlen!", "Tie");
-                await Task.Delay(3500);
-                
-                ResetGame();
+                if (playerwin)
+                {
+                    int playerbet = int.Parse(bet.Text);
+                    winbet.Text = $"{playerbet * 2}";
+                    nyer = playerbet * 2;
+                    chips.Text = $"{nyer + alapchips}";
+                    MessageBox.Show($"Nyertél {nyer} zsetont!", "Win");
+                    await Task.Delay(3500);
+
+                    ResetGame();
+                }
+                //Ha a gép nyert = Zseton elvesztés
+                //Reset game
+                else if (dealerwin)
+                {
+                    int playerbetlose = int.Parse(bet.Text);
+                    losebet.Text = $"{playerbetlose}";
+                    chips.Text = $"{alapchips - playerbetlose}";
+                    MessageBox.Show($"Vesztettél {playerbetlose} zsetont!", "Lose");
+                    await Task.Delay(3500);
+
+                    ResetGame();
+                }
+
+                //Ha Döntetlen = Zseton visszakap
+                //Reset game
+                else if (tie)
+                {
+                    int playerbettie = int.Parse(bet.Text); //Feltett tét
+                    chips.Text = $"{playerbettie + alapchips}";
+                    MessageBox.Show("Döntetlen!", "Tie");
+                    await Task.Delay(3500);
+
+                    ResetGame();
+                }
             }
 
 
@@ -327,6 +330,7 @@ namespace MenuGames
             int ert = int.Parse(playerpoint.Text);
             int sum = ert + int.Parse(playerNewCard1.Ertek);
             playerpoint.Text = $"{sum}";
+            Vegevizsga();
 
         }
 
