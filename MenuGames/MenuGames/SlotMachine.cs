@@ -16,50 +16,23 @@ namespace MenuGames
         public SlotMachine()
         {
             InitializeComponent();
-            InitializeArray();
         }
+       
         public static long credits = 100;
         public static long total = 0;
         public static int bet = 5;
 
-        public string[,] pics = new string[7, 4];
-        private void InitializeArray()
-        {
-            pics[0, 0] = "img//alma1.png";
-            pics[0, 1] = "img//alma2.png";
-            pics[0, 2] = "img//alma3.png";
-            pics[0, 3] = "img//alma4.png";
+        public static int p1;
+        public static int p2;
+        public static int p3;
+        public static int p4;
+        public static int p5;
+        public static int p6;
+        public static int p7;
+        public static int p8;
+        public static int p9;
 
-            pics[1, 0] = "img//amogus1.png";
-            pics[1, 1] = "img//amogus2.png";
-            pics[1, 2] = "img//amogus3.png";
-            pics[1, 3] = "img//amogus4.png";
 
-            pics[2, 0] = "img//cherry1.png";
-            pics[2, 1] = "img//cherry2.png";
-            pics[2, 2] = "img//cherry3.png";
-            pics[2, 3] = "img//cherry4.png";
-
-            pics[3, 0] = "img//sor1.png";
-            pics[3, 1] = "img//sor2.png";
-            pics[3, 2] = "img//sor3.png";
-            pics[3, 3] = "img//sor4.png";
-
-            pics[4, 0] = "img//penz1.png";
-            pics[4, 1] = "img//penz2.png";
-            pics[4, 2] = "img//penz3.png";
-            pics[4, 3] = "img//penz4.png";
-
-            pics[5, 0] = "img//hetes1.png";
-            pics[5, 1] = "img//hetes2.png";
-            pics[5, 2] = "img//hetes3.png";
-            pics[5, 3] = "img//hetes4.png";
-
-            pics[6, 0] = "img//java1.png";
-            pics[6, 1] = "img//java2.png";
-            pics[6, 2] = "img//java3.png";
-            pics[6, 3] = "img//java4.png";
-        }
         public static class IntUtil
         {
             private static Random random;
@@ -74,94 +47,218 @@ namespace MenuGames
             }
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SlotMachine_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("img//alma1.png");
-            pictureBox2.Image = Image.FromFile("img//alma1.png");
-            pictureBox3.Image = Image.FromFile("img//alma1.png");
-            pictureBox4.Image = Image.FromFile("img//alma1.png");
-            pictureBox5.Image = Image.FromFile("img//alma1.png");
-            pictureBox6.Image = Image.FromFile("img//alma1.png");
-            pictureBox7.Image = Image.FromFile("img//alma1.png");
-            pictureBox8.Image = Image.FromFile("img//alma1.png");
-            pictureBox9.Image = Image.FromFile("img//alma1.png");
+            pictureBox1.Image = Image.FromFile("img/1.png");
+            pictureBox2.Image = Image.FromFile("img/2.png");
+            pictureBox3.Image = Image.FromFile("img/3.png");
+            pictureBox4.Image = Image.FromFile("img/4.png");
+            pictureBox5.Image = Image.FromFile("img/5.png");
+            pictureBox6.Image = Image.FromFile("img/6.png");
+            pictureBox7.Image = Image.FromFile("img/7.png");
+            pictureBox8.Image = Image.FromFile("img/1.png");
+            pictureBox9.Image = Image.FromFile("img/2.png");
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            if (credits <=bet) 
+            if (credits >= bet) 
             {
                 credits = credits - bet;
+                label2.Text = "Bet: " + bet.ToString();
                 label1.Text = "Credits: " + credits.ToString();
                 for (int i = 0; i < 10; i++)
                 {
-                    pictureBox1.Image = Image.FromFile(pics[IntUtil.Random(0, 7), IntUtil.Random(0, 4)]);
-                    pictureBox2.Image = Image.FromFile(pics[IntUtil.Random(0, 7), IntUtil.Random(0, 4)]);
-                    pictureBox3.Image = Image.FromFile(pics[IntUtil.Random(0, 7), IntUtil.Random(0, 4)]);
-                    pictureBox4.Image = Image.FromFile(pics[IntUtil.Random(0, 7), IntUtil.Random(0, 4)]);
-                    pictureBox5.Image = Image.FromFile(pics[IntUtil.Random(0, 7), IntUtil.Random(0, 4)]);
-                    pictureBox6.Image = Image.FromFile(pics[IntUtil.Random(0, 7), IntUtil.Random(0, 4)]);
-                    pictureBox7.Image = Image.FromFile(pics[IntUtil.Random(0, 7), IntUtil.Random(0, 4)]);
-                    pictureBox8.Image = Image.FromFile(pics[IntUtil.Random(0, 7), IntUtil.Random(0, 4)]);
-                    pictureBox9.Image = Image.FromFile(pics[IntUtil.Random(0, 7), IntUtil.Random(0, 4)]);
+                    p1 = IntUtil.Random(1,8);
+                    p2 = IntUtil.Random(1,8);
+                    p3 = IntUtil.Random(1,8);
+                    p4 = IntUtil.Random(1,8);
+                    p5 = IntUtil.Random(1,8);
+                    p6 = IntUtil.Random(1,8);
+                    p7 = IntUtil.Random(1,8);
+                    p8 = IntUtil.Random(1,8);
+                    p9 = IntUtil.Random(1,8);
                 }
+                if (pictureBox1 != null) pictureBox1.Image.Dispose();
+                pictureBox1.Image = Image.FromFile("img/"+p1.ToString()+".png");
+
+                if (pictureBox2 != null) pictureBox2.Image.Dispose();
+                pictureBox2.Image = Image.FromFile("img/" + p2.ToString() + ".png");
+
+                if (pictureBox3 != null) pictureBox3.Image.Dispose();
+                pictureBox3.Image = Image.FromFile("img/" + p3.ToString() + ".png");
+
+                if (pictureBox4 != null) pictureBox4.Image.Dispose();
+                pictureBox4.Image = Image.FromFile("img/" + p4.ToString() + ".png");
+
+                if (pictureBox5 != null) pictureBox5.Image.Dispose();
+                pictureBox5.Image = Image.FromFile("img/" + p5.ToString() + ".png");
+
+                if (pictureBox6 != null) pictureBox6.Image.Dispose();
+                pictureBox6.Image = Image.FromFile("img/" + p6.ToString() + ".png");
+
+                if (pictureBox6 != null) pictureBox6.Image.Dispose();
+                pictureBox6.Image = Image.FromFile("img/" + p6.ToString() + ".png");
+
+                if (pictureBox7 != null) pictureBox7.Image.Dispose();
+                pictureBox7.Image = Image.FromFile("img/" + p7.ToString() + ".png");
+
+                if (pictureBox8 != null) pictureBox8.Image.Dispose();
+                pictureBox8.Image = Image.FromFile("img/" + p8.ToString() + ".png");
+
+                if (pictureBox9 != null) pictureBox9.Image.Dispose();
+                pictureBox9.Image = Image.FromFile("img/" + p9.ToString() + ".png");
+
                 total = 0;
-                
+
+                if (p1 == p2 && p2== p3)
+                {
+                    switch (p1)
+                    {
+                        case 1:
+                            total += 10;
+                            break;
+                        case 2:
+                            total += 20;
+                            break;
+                        case 3:
+                            total += 50;
+                            break;
+                        case 4:
+                            total += 100;
+                            break;
+                        case 5:
+                            total += 150;
+                            break;
+                        case 6:
+                            total += 200;
+                            break;
+                        case 7:
+                            total += 500;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                if (p4 == p5 && p5 == p6)
+                {
+                    switch (p4)
+                    {
+                        case 1:
+                            total += 10;
+                            break;
+                        case 2:
+                            total += 20;
+                            break;
+                        case 3:
+                            total += 50;
+                            break;
+                        case 4:
+                            total += 100;
+                            break;
+                        case 5:
+                            total += 150;
+                            break;
+                        case 6:
+                            total += 200;
+                            break;
+                        case 7:
+                            total += 500;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                if (p7 == p8 && p8 == p9)
+                {
+                    switch (p7)
+                    {
+                        case 1:
+                            total += 10;
+                            break;
+                        case 2:
+                            total += 20;
+                            break;
+                        case 3:
+                            total += 50;
+                            break;
+                        case 4:
+                            total += 100;
+                            break;
+                        case 5:
+                            total += 150;
+                            break;
+                        case 6:
+                            total += 200;
+                            break;
+                        case 7:
+                            total += 500;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                if (p1 == p5 && p5 == p9)
+                {
+                    switch (p9)
+                    {
+                        case 1:
+                            total += 10;
+                            break;
+                        case 2:
+                            credits += 20;
+                            total += 20;
+                            break;
+                        case 3:
+                            total += 50;
+                            break;
+                        case 4:
+                            total += 100;
+                            break;
+                        case 5:
+                            total += 150;
+                            break;
+                        case 6:
+                            total += 200;
+                            break;
+                        case 7:
+                            total += 500;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                if (p3 == p5 && p5 == p7)
+                {
+                    switch (p3)
+                    {
+                        case 1:
+                            total += 10;
+                            break;
+                        case 2:
+                            total += 20;
+                            break;
+                        case 3:
+                            total += 50;
+                            break;
+                        case 4:
+                            total += 100;
+                            break;
+                        case 5:
+                            total += 150;
+                            break;
+                        case 6:
+                            total += 200;
+                            break;
+                        case 7:
+                            total += 500;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                credits += total;
+                label3.Text = "Win: " + total.ToString();
+                label1.Text = "Credit: " + credits.ToString();
             }
         }
     }
