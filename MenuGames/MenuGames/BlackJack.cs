@@ -244,7 +244,9 @@ namespace MenuGames
                 winbet.Text = $"{playerbet * 2}";
                 nyer = playerbet * 2;
                 chips.Text = $"{nyer + alapchips}";
-                await Task.Delay(5000);
+                MessageBox.Show($"Nyertél {nyer} zsetont!", "Win");
+                await Task.Delay(3500);
+               
                 ResetGame();
             }
             //Ha a gép nyert = Zseton elvesztés
@@ -254,7 +256,9 @@ namespace MenuGames
                 int playerbetlose = int.Parse(bet.Text);
                 losebet.Text = $"{playerbetlose}";
                 chips.Text = $"{alapchips - playerbetlose}";
-                await Task.Delay(5000);
+                MessageBox.Show($"Vesztettél {playerbetlose} zsetont!", "Lose");
+                await Task.Delay(3500);
+                
                 ResetGame();
             }
 
@@ -264,7 +268,9 @@ namespace MenuGames
             {
                 int playerbettie = int.Parse(bet.Text); //Feltett tét
                 chips.Text = $"{playerbettie + alapchips}";
-                await Task.Delay(5000);
+                MessageBox.Show("Döntetlen!", "Tie");
+                await Task.Delay(3500);
+                
                 ResetGame();
             }
 
