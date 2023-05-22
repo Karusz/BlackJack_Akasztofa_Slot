@@ -42,6 +42,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.txt_bet = new System.Windows.Forms.TextBox();
+            this.btn_bet = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -171,11 +173,31 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txt_bet
+            // 
+            this.txt_bet.Location = new System.Drawing.Point(459, 316);
+            this.txt_bet.Name = "txt_bet";
+            this.txt_bet.Size = new System.Drawing.Size(100, 20);
+            this.txt_bet.TabIndex = 13;
+            this.txt_bet.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bet_KeyDown);
+            // 
+            // btn_bet
+            // 
+            this.btn_bet.Location = new System.Drawing.Point(459, 359);
+            this.btn_bet.Name = "btn_bet";
+            this.btn_bet.Size = new System.Drawing.Size(75, 23);
+            this.btn_bet.TabIndex = 14;
+            this.btn_bet.Text = "Tétrakás";
+            this.btn_bet.UseVisualStyleBackColor = true;
+            this.btn_bet.Click += new System.EventHandler(this.btn_bet_Click);
+            // 
             // SlotMachine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(747, 464);
+            this.Controls.Add(this.btn_bet);
+            this.Controls.Add(this.txt_bet);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -222,5 +244,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt_bet;
+        private System.Windows.Forms.Button btn_bet;
     }
 }

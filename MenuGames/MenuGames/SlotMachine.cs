@@ -261,5 +261,18 @@ namespace MenuGames
                 label1.Text = "Credit: " + credits.ToString();
             }
         }
+        private void bet_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_bet_Click(sender, e);
+            }
+        }
+
+        private void btn_bet_Click(object sender, EventArgs e)
+        {
+            //Pars-old a txt_bet.Text-et (Ahova majd a felhasználó írja be, hogy mennyit akar beadni)
+            //tárold el
+        }
     }
 }

@@ -118,7 +118,7 @@
             // 
             // click_btn
             // 
-            this.click_btn.Location = new System.Drawing.Point(662, 371);
+            this.click_btn.Location = new System.Drawing.Point(38, 61);
             this.click_btn.Name = "click_btn";
             this.click_btn.Size = new System.Drawing.Size(78, 24);
             this.click_btn.TabIndex = 9;

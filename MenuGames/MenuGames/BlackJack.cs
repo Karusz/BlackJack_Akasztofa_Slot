@@ -279,6 +279,7 @@ namespace MenuGames
             pc2.Image = Image.FromFile("bjfiles/backg/sajatbg.png"); ;
             dc1.Image = Image.FromFile("bjfiles/backg/sajatbg.png"); ;
             dc2.Image = Image.FromFile("bjfiles/backg/sajatbg.png"); ;
+            dealerponts.Visible = false;
             betting.Enabled = true;
             pcnewcardpanel.Controls.Clear();
             dealernewcardpanel.Controls.Clear();
@@ -333,6 +334,7 @@ namespace MenuGames
 
         private void Dealermove()
         {
+            dealerponts.Visible = true;
             int dealernewpont;
             int dealerpont = int.Parse(dealerponts.Text);
             cardback.Visible = false;

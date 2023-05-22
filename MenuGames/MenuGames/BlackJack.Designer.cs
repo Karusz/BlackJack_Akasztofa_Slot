@@ -39,6 +39,7 @@
             this.betting = new System.Windows.Forms.Button();
             this.bet = new System.Windows.Forms.TextBox();
             this.buttonpanel = new System.Windows.Forms.Panel();
+            this.getbank = new System.Windows.Forms.Button();
             this.stop = new System.Windows.Forms.Button();
             this.newcard = new System.Windows.Forms.Button();
             this.split = new System.Windows.Forms.Button();
@@ -59,7 +60,6 @@
             this.dealerponts = new System.Windows.Forms.Label();
             this.playerpoint = new System.Windows.Forms.Label();
             this.dc2 = new System.Windows.Forms.PictureBox();
-            this.getbank = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.buttonpanel.SuspendLayout();
             this.cardspanel.SuspendLayout();
@@ -96,20 +96,20 @@
             this.limebg,
             this.redbg});
             this.háttérToolStripMenuItem.Name = "háttérToolStripMenuItem";
-            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.háttérToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.háttérToolStripMenuItem.Text = "Háttér";
             // 
             // limebg
             // 
             this.limebg.Name = "limebg";
-            this.limebg.Size = new System.Drawing.Size(180, 22);
+            this.limebg.Size = new System.Drawing.Size(100, 22);
             this.limebg.Text = "Lime";
             this.limebg.Click += new System.EventHandler(this.limebg_Click);
             // 
             // redbg
             // 
             this.redbg.Name = "redbg";
-            this.redbg.Size = new System.Drawing.Size(180, 22);
+            this.redbg.Size = new System.Drawing.Size(100, 22);
             this.redbg.Text = "Piros";
             this.redbg.Click += new System.EventHandler(this.redbg_Click);
             // 
@@ -129,7 +129,7 @@
             // 
             // betting
             // 
-            this.betting.Location = new System.Drawing.Point(84, 367);
+            this.betting.Location = new System.Drawing.Point(93, 367);
             this.betting.Name = "betting";
             this.betting.Size = new System.Drawing.Size(104, 32);
             this.betting.TabIndex = 6;
@@ -139,10 +139,9 @@
             // 
             // bet
             // 
-            this.bet.Location = new System.Drawing.Point(69, 328);
-            this.bet.Multiline = true;
+            this.bet.Location = new System.Drawing.Point(74, 341);
             this.bet.Name = "bet";
-            this.bet.Size = new System.Drawing.Size(144, 33);
+            this.bet.Size = new System.Drawing.Size(144, 20);
             this.bet.TabIndex = 5;
             this.bet.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bet_KeyDown);
             // 
@@ -165,9 +164,20 @@
             this.buttonpanel.Size = new System.Drawing.Size(275, 422);
             this.buttonpanel.TabIndex = 7;
             // 
+            // getbank
+            // 
+            this.getbank.Location = new System.Drawing.Point(193, 3);
+            this.getbank.Margin = new System.Windows.Forms.Padding(2);
+            this.getbank.Name = "getbank";
+            this.getbank.Size = new System.Drawing.Size(80, 28);
+            this.getbank.TabIndex = 26;
+            this.getbank.Text = "+1000 zseton";
+            this.getbank.UseVisualStyleBackColor = true;
+            this.getbank.Click += new System.EventHandler(this.getbank_Click);
+            // 
             // stop
             // 
-            this.stop.Location = new System.Drawing.Point(96, 295);
+            this.stop.Location = new System.Drawing.Point(96, 292);
             this.stop.Margin = new System.Windows.Forms.Padding(2);
             this.stop.Name = "stop";
             this.stop.Size = new System.Drawing.Size(92, 28);
@@ -337,10 +347,11 @@
             // dealerponts
             // 
             this.dealerponts.AutoSize = true;
-            this.dealerponts.Location = new System.Drawing.Point(444, 56);
+            this.dealerponts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dealerponts.Location = new System.Drawing.Point(463, 52);
             this.dealerponts.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dealerponts.Name = "dealerponts";
-            this.dealerponts.Size = new System.Drawing.Size(13, 13);
+            this.dealerponts.Size = new System.Drawing.Size(18, 20);
             this.dealerponts.TabIndex = 17;
             this.dealerponts.Text = "0";
             // 
@@ -362,17 +373,6 @@
             this.dc2.Size = new System.Drawing.Size(71, 95);
             this.dc2.TabIndex = 1;
             this.dc2.TabStop = false;
-            // 
-            // getbank
-            // 
-            this.getbank.Location = new System.Drawing.Point(193, 3);
-            this.getbank.Margin = new System.Windows.Forms.Padding(2);
-            this.getbank.Name = "getbank";
-            this.getbank.Size = new System.Drawing.Size(80, 28);
-            this.getbank.TabIndex = 26;
-            this.getbank.Text = "+1000 zseton";
-            this.getbank.UseVisualStyleBackColor = true;
-            this.getbank.Click += new System.EventHandler(this.getbank_Click);
             // 
             // BlackJack
             // 
