@@ -38,6 +38,7 @@ namespace MenuGames
             newcard.Enabled = false;
             stop.Enabled = false;
             dealerponts.Visible = false;
+            bet.Text = "0";
 
 
         }
@@ -122,7 +123,7 @@ namespace MenuGames
         private void betting_Click(object sender, EventArgs e)
         {
             cardback.Image = Image.FromFile("bjfiles/cards/hatlap.png");
-
+            
             int betnum;
             if (!int.TryParse(bet.Text, out betnum))
             {
@@ -130,7 +131,7 @@ namespace MenuGames
                 string text = "Nem számot adtál meg!";
                 MessageBox.Show(text, title);
             }
-            //else if (int.Parse(bet.Text) > 0) { string title = "Hiba!"; string text = "0-t adtál meg!"; MessageBox.Show(text, title); }
+            else if (int.Parse(bet.Text) > int.Parse(chips.Text)) { string title = "Hiba!"; string text = "Nem rakhatsz fel többet!"; MessageBox.Show(text, title); }
             else
             {
                 int chipnum = int.Parse(chips.Text);
@@ -219,6 +220,10 @@ namespace MenuGames
 
         private async void Vegevizsga()
         {
+            newcard.Enabled = false;
+            betting.Enabled = false;
+            split.Enabled = false;
+            stop.Enabled = false;
             bool playerwin = false;
             bool dealerwin = false;
             bool tie = false;
@@ -247,7 +252,7 @@ namespace MenuGames
                     nyer = playerbet * 2;
                     chips.Text = $"{nyer + alapchips}";
                     MessageBox.Show($"Nyertél {nyer} zsetont!", "Win");
-                    await Task.Delay(3500);
+                    //await Task.Delay(3500);
 
                     ResetGame();
                 }
@@ -259,7 +264,7 @@ namespace MenuGames
                     losebet.Text = $"{playerbetlose}";
                     chips.Text = $"{alapchips - playerbetlose}";
                     MessageBox.Show($"Vesztettél {playerbetlose} zsetont!", "Lose");
-                    await Task.Delay(3500);
+                    //await Task.Delay(3500);
 
                     ResetGame();
                 }
@@ -271,10 +276,20 @@ namespace MenuGames
                     int playerbettie = int.Parse(bet.Text); //Feltett tét
                     chips.Text = $"{playerbettie + alapchips}";
                     MessageBox.Show("Döntetlen!", "Tie");
-                    await Task.Delay(3500);
+                    //await Task.Delay(3500);
 
                     ResetGame();
                 }
+            }
+            else
+            {
+                MessageBox.Show("Besokkaltál!");
+                int playerbetlose = int.Parse(bet.Text);
+                losebet.Text = $"{playerbetlose}";
+                chips.Text = $"{alapchips - playerbetlose}";
+                //await Task.Delay(3500);
+                ResetGame();
+
             }
 
 
@@ -330,6 +345,10 @@ namespace MenuGames
             int ert = int.Parse(playerpoint.Text);
             int sum = ert + int.Parse(playerNewCard1.Ertek);
             playerpoint.Text = $"{sum}";
+            if (sum > 21)
+            {
+                Vegevizsga();
+            }
             
 
         }
