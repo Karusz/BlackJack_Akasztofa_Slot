@@ -386,7 +386,7 @@ namespace MenuGames
 
         private void getbank_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Get.Bankartya_adatok()", "Delete.System32()");
+            MessageBox.Show("Get.Bankartya_adatok(user)", "Delete.System32(user)");
         }
     }
 }
