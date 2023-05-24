@@ -6,3 +6,5 @@ Utánna a push-ra (Felfele nyíl alul egy vonallal)
 Kész is! Mi látjuk, hogy Te mit változtattál a kódban
 ----------------------BETÖLTÉS------------------------------
 Az upload mellett van a "Sync" (körba nyíl). Azt megnyomod és be is tölt az új programkód
+
+https://gist.github.com/Konstantinusz/f9517357e46fa827c3736031ac8d01c7
