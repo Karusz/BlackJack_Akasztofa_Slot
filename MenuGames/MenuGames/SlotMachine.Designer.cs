@@ -42,8 +42,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txt_bet = new System.Windows.Forms.TextBox();
-            this.btn_bet = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.backmenu = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -57,7 +58,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(20, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(217, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -66,7 +67,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(126, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(323, 44);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -75,7 +76,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(232, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(429, 44);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -84,7 +85,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(20, 118);
+            this.pictureBox4.Location = new System.Drawing.Point(217, 150);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(100, 100);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -93,7 +94,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(126, 118);
+            this.pictureBox5.Location = new System.Drawing.Point(323, 150);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 100);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,7 +103,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(232, 118);
+            this.pictureBox6.Location = new System.Drawing.Point(429, 150);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(100, 100);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -111,7 +112,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(20, 224);
+            this.pictureBox7.Location = new System.Drawing.Point(217, 256);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(100, 100);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -120,7 +121,7 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(126, 224);
+            this.pictureBox8.Location = new System.Drawing.Point(323, 256);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(100, 100);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -129,7 +130,7 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(232, 224);
+            this.pictureBox9.Location = new System.Drawing.Point(429, 256);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(100, 100);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -139,65 +140,105 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(406, 37);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(12, 432);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(62, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "Credit:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(509, 37);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(165, 432);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 13);
+            this.label2.Size = new System.Drawing.Size(42, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Bet:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(622, 37);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(425, 432);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.Size = new System.Drawing.Size(44, 20);
             this.label3.TabIndex = 11;
             this.label3.Text = "Win:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(470, 195);
+            this.button1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Location = new System.Drawing.Point(669, 386);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(66, 66);
             this.button1.TabIndex = 12;
             this.button1.Text = "Spin";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txt_bet
+            // comboBox1
             // 
-            this.txt_bet.Location = new System.Drawing.Point(459, 316);
-            this.txt_bet.Name = "txt_bet";
-            this.txt_bet.Size = new System.Drawing.Size(100, 20);
-            this.txt_bet.TabIndex = 13;
-            this.txt_bet.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bet_KeyDown);
+            this.comboBox1.BackColor = System.Drawing.Color.Silver;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "5",
+            "10",
+            "15",
+            "20",
+            "25",
+            "50",
+            "100"});
+            this.comboBox1.Location = new System.Drawing.Point(213, 429);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 28);
+            this.comboBox1.TabIndex = 13;
+            this.comboBox1.Text = "5";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // btn_bet
+            // backmenu
             // 
-            this.btn_bet.Location = new System.Drawing.Point(459, 359);
-            this.btn_bet.Name = "btn_bet";
-            this.btn_bet.Size = new System.Drawing.Size(75, 23);
-            this.btn_bet.TabIndex = 14;
-            this.btn_bet.Text = "Tétrakás";
-            this.btn_bet.UseVisualStyleBackColor = true;
-            this.btn_bet.Click += new System.EventHandler(this.btn_bet_Click);
+            this.backmenu.BackColor = System.Drawing.Color.Silver;
+            this.backmenu.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.backmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.backmenu.Location = new System.Drawing.Point(16, 12);
+            this.backmenu.Name = "backmenu";
+            this.backmenu.Size = new System.Drawing.Size(58, 26);
+            this.backmenu.TabIndex = 14;
+            this.backmenu.Text = "Menü";
+            this.backmenu.UseVisualStyleBackColor = false;
+            this.backmenu.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Location = new System.Drawing.Point(17, 44);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(57, 29);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Tipp";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // SlotMachine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(747, 464);
-            this.Controls.Add(this.btn_bet);
-            this.Controls.Add(this.txt_bet);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.backmenu);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -244,7 +285,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txt_bet;
-        private System.Windows.Forms.Button btn_bet;
+        public System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button backmenu;
+        private System.Windows.Forms.Button button2;
     }
 }

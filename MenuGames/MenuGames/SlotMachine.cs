@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -58,13 +59,13 @@ namespace MenuGames
             pictureBox7.Image = Image.FromFile("img/7.png");
             pictureBox8.Image = Image.FromFile("img/1.png");
             pictureBox9.Image = Image.FromFile("img/2.png");
+            label1.Text = "Credits: " + credits.ToString();
         }
         private void button1_Click(object sender, EventArgs e)
         {
             if (credits >= bet)
             {
-                credits = credits - bet;
-                label2.Text = "Bet: " + bet.ToString();
+                credits -= bet;
                 label1.Text = "Credits: " + credits.ToString();
                 for (int i = 0; i < 10; i++)
                 {
@@ -115,25 +116,25 @@ namespace MenuGames
                     switch (p1)
                     {
                         case 1:
-                            total += 10;
+                            total += bet * 2;
                             break;
                         case 2:
-                            total += 20;
+                            total += bet * 4;
                             break;
                         case 3:
-                            total += 50;
+                            total += bet * 10;
                             break;
                         case 4:
-                            total += 100;
+                            total += bet * 20;
                             break;
                         case 5:
-                            total += 150;
+                            total += bet * 30;
                             break;
                         case 6:
-                            total += 200;
+                            total += bet * 40;
                             break;
                         case 7:
-                            total += 500;
+                            total += bet * 100;
                             break;
                         default:
                             break;
@@ -144,25 +145,25 @@ namespace MenuGames
                     switch (p4)
                     {
                         case 1:
-                            total += 10;
+                            total += bet * 2;
                             break;
                         case 2:
-                            total += 20;
+                            total += bet * 4;
                             break;
                         case 3:
-                            total += 50;
+                            total += bet * 10;
                             break;
                         case 4:
-                            total += 100;
+                            total += bet * 20;
                             break;
                         case 5:
-                            total += 150;
+                            total += bet * 30;
                             break;
                         case 6:
-                            total += 200;
+                            total += bet * 40;
                             break;
                         case 7:
-                            total += 500;
+                            total += bet * 100;
                             break;
                         default:
                             break;
@@ -173,25 +174,25 @@ namespace MenuGames
                     switch (p7)
                     {
                         case 1:
-                            total += 10;
+                            total += bet * 2;
                             break;
                         case 2:
-                            total += 20;
+                            total += bet * 4;
                             break;
                         case 3:
-                            total += 50;
+                            total += bet * 10;
                             break;
                         case 4:
-                            total += 100;
+                            total += bet * 20;
                             break;
                         case 5:
-                            total += 150;
+                            total += bet * 30;
                             break;
                         case 6:
-                            total += 200;
+                            total += bet * 40;
                             break;
                         case 7:
-                            total += 500;
+                            total += bet * 100;
                             break;
                         default:
                             break;
@@ -202,26 +203,25 @@ namespace MenuGames
                     switch (p9)
                     {
                         case 1:
-                            total += 10;
+                            total += bet * 2;
                             break;
                         case 2:
-                            credits += 20;
-                            total += 20;
+                            total += bet * 4;
                             break;
                         case 3:
-                            total += 50;
+                            total += bet * 10;
                             break;
                         case 4:
-                            total += 100;
+                            total += bet * 20;
                             break;
                         case 5:
-                            total += 150;
+                            total += bet * 30;
                             break;
                         case 6:
-                            total += 200;
+                            total += bet * 40;
                             break;
                         case 7:
-                            total += 500;
+                            total += bet * 100;
                             break;
                         default:
                             break;
@@ -232,25 +232,25 @@ namespace MenuGames
                     switch (p3)
                     {
                         case 1:
-                            total += 10;
+                            total += bet * 2;
                             break;
                         case 2:
-                            total += 20;
+                            total += bet * 4;
                             break;
                         case 3:
-                            total += 50;
+                            total += bet * 10;
                             break;
                         case 4:
-                            total += 100;
+                            total += bet * 20;
                             break;
                         case 5:
-                            total += 150;
+                            total += bet * 30;
                             break;
                         case 6:
-                            total += 200;
+                            total += bet * 40;
                             break;
                         case 7:
-                            total += 500;
+                            total += bet * 100;
                             break;
                         default:
                             break;
@@ -261,18 +261,23 @@ namespace MenuGames
                 label1.Text = "Credit: " + credits.ToString();
             }
         }
-        private void bet_KeyDown(object sender, KeyEventArgs e)
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btn_bet_Click(sender, e);
-            }
+            bet = int.Parse(comboBox1.Text);
         }
 
-        private void btn_bet_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            //Pars-old a txt_bet.Text-et (Ahova majd a felhasználó írja be, hogy mennyit akar beadni)
-            //tárold el
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.FormClosed += (s, args) => this.Close();
+            form1.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ne feledd, akár a pénzed 2000% is megnyerheted egy kör alatt, de csak a 100%-át veszítheted el!");
         }
     }
 }
