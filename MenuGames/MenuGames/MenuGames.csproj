@@ -369,5 +369,8 @@
   <ItemGroup>
     <None Include="bin\Debug\allcards.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blk.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

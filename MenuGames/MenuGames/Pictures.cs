@@ -15,6 +15,7 @@ namespace MenuGames
     {
         static SoundPlayer hm = new SoundPlayer("eastereggpicss/eemusicwaw.wav");
         static SoundPlayer gu = new SoundPlayer("giveup.wav");
+        static SoundPlayer fullgu = new SoundPlayer("TeljesGive.wav");
         static SoundPlayer go = new SoundPlayer("gosound.wav");
         
         public Pictures()
@@ -37,11 +38,7 @@ namespace MenuGames
             hm.Stop();
             gu.Stop();
             go.Stop();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
+            fullgu.Stop();
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
@@ -55,6 +52,11 @@ namespace MenuGames
             Form1 form1 = new Form1();
             form1.FormClosed += (s, args) => this.Close();
             form1.Show();
+        }
+
+        private void btn_teljes_Click(object sender, EventArgs e)
+        {
+            fullgu.Play();
         }
     }
 }

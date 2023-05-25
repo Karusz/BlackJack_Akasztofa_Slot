@@ -121,9 +121,6 @@
   <data name="TJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\TJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ka10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\bjfiles\cards\Ka10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="T2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\T2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,9 +142,6 @@
   <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\akaszto_img\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\bjfiles\cards\P5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="hatlap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\hatlap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,11 +154,20 @@
   <data name="PA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\PA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KoJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bjfiles\cards\KoJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ka7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\Ka7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="allcards" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\allcards.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ka4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\Ka4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\PJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -183,9 +186,6 @@
   </data>
   <data name="51" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\img\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="T10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\bjfiles\cards\T10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="61" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\img\6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +208,14 @@
   <data name="P4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\P4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KaJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bjfiles\cards\KaJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ka6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\Ka6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\akaszto_img\0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ka8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\Ka8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -228,9 +234,6 @@
   </data>
   <data name="T9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\T9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\img\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\akaszto_img\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,8 +292,8 @@
   <data name="TA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\TA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\img\7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="T10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bjfiles\cards\T10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\PK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,8 +304,8 @@
   <data name="TD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\TD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\akaszto_img\0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ka10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bjfiles\cards\Ka10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="P3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\P3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,8 +313,8 @@
   <data name="P6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\P6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KaJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\bjfiles\cards\KaJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="P5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\bjfiles\cards\P5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\img\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,8 +322,8 @@
   <data name="P8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\P8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KoJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\bjfiles\cards\KoJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\KoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,7 +331,7 @@
   <data name="Ko2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\bjfiles\cards\Ko2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="allcards" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\allcards.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="blk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\blk.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
