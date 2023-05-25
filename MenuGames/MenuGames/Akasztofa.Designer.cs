@@ -29,522 +29,506 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Akasztofa));
-            this.sor_1 = new System.Windows.Forms.Panel();
-            this.sor_2 = new System.Windows.Forms.Panel();
-            this.sor_3 = new System.Windows.Forms.Panel();
-            this.sor_4 = new System.Windows.Forms.Panel();
-            this.sor_5 = new System.Windows.Forms.Panel();
-            this.sor_6 = new System.Windows.Forms.Panel();
-            this._1_1 = new System.Windows.Forms.TextBox();
-            this._1_2 = new System.Windows.Forms.TextBox();
-            this._1_3 = new System.Windows.Forms.TextBox();
-            this._1_4 = new System.Windows.Forms.TextBox();
-            this._1_5 = new System.Windows.Forms.TextBox();
-            this._2_5 = new System.Windows.Forms.TextBox();
-            this._2_4 = new System.Windows.Forms.TextBox();
-            this._2_3 = new System.Windows.Forms.TextBox();
-            this._2_2 = new System.Windows.Forms.TextBox();
-            this._2_1 = new System.Windows.Forms.TextBox();
-            this._3_5 = new System.Windows.Forms.TextBox();
-            this._3_4 = new System.Windows.Forms.TextBox();
-            this._3_3 = new System.Windows.Forms.TextBox();
-            this._3_2 = new System.Windows.Forms.TextBox();
-            this._3_1 = new System.Windows.Forms.TextBox();
-            this._4_5 = new System.Windows.Forms.TextBox();
-            this._4_4 = new System.Windows.Forms.TextBox();
-            this._4_3 = new System.Windows.Forms.TextBox();
-            this._4_2 = new System.Windows.Forms.TextBox();
-            this._4_1 = new System.Windows.Forms.TextBox();
-            this._5_5 = new System.Windows.Forms.TextBox();
-            this._5_4 = new System.Windows.Forms.TextBox();
-            this._5_3 = new System.Windows.Forms.TextBox();
-            this._5_2 = new System.Windows.Forms.TextBox();
-            this._5_1 = new System.Windows.Forms.TextBox();
-            this._6_5 = new System.Windows.Forms.TextBox();
-            this._6_4 = new System.Windows.Forms.TextBox();
-            this._6_3 = new System.Windows.Forms.TextBox();
-            this._6_2 = new System.Windows.Forms.TextBox();
-            this._6_1 = new System.Windows.Forms.TextBox();
-            this.sor_1.SuspendLayout();
-            this.sor_2.SuspendLayout();
-            this.sor_3.SuspendLayout();
-            this.sor_4.SuspendLayout();
-            this.sor_5.SuspendLayout();
-            this.sor_6.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_w = new System.Windows.Forms.Button();
+            this.btn_a = new System.Windows.Forms.Button();
+            this.btn_s = new System.Windows.Forms.Button();
+            this.btn_y = new System.Windows.Forms.Button();
+            this.btn_d = new System.Windows.Forms.Button();
+            this.btn_f = new System.Windows.Forms.Button();
+            this.btn_g = new System.Windows.Forms.Button();
+            this.btn_h = new System.Windows.Forms.Button();
+            this.btn_j = new System.Windows.Forms.Button();
+            this.btn_k = new System.Windows.Forms.Button();
+            this.btn_l = new System.Windows.Forms.Button();
+            this.btn_he = new System.Windows.Forms.Button();
+            this.btn_ha = new System.Windows.Forms.Button();
+            this.btn_huu = new System.Windows.Forms.Button();
+            this.btn_hi = new System.Windows.Forms.Button();
+            this.btn_x = new System.Windows.Forms.Button();
+            this.btn_oo = new System.Windows.Forms.Button();
+            this.btn_uu = new System.Windows.Forms.Button();
+            this.btn_ho = new System.Windows.Forms.Button();
+            this.btn_hu = new System.Windows.Forms.Button();
+            this.btn_hoo = new System.Windows.Forms.Button();
+            this.btn_p = new System.Windows.Forms.Button();
+            this.btn_o = new System.Windows.Forms.Button();
+            this.btn_i = new System.Windows.Forms.Button();
+            this.btn_u = new System.Windows.Forms.Button();
+            this.btn_z = new System.Windows.Forms.Button();
+            this.btn_t = new System.Windows.Forms.Button();
+            this.btn_r = new System.Windows.Forms.Button();
+            this.btn_e = new System.Windows.Forms.Button();
+            this.btn_q = new System.Windows.Forms.Button();
+            this.btn_m = new System.Windows.Forms.Button();
+            this.btn_n = new System.Windows.Forms.Button();
+            this.btn_b = new System.Windows.Forms.Button();
+            this.btn_v = new System.Windows.Forms.Button();
+            this.btn_c = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // sor_1
-            // 
-            this.sor_1.Controls.Add(this._1_5);
-            this.sor_1.Controls.Add(this._1_4);
-            this.sor_1.Controls.Add(this._1_3);
-            this.sor_1.Controls.Add(this._1_2);
-            this.sor_1.Controls.Add(this._1_1);
-            this.sor_1.Location = new System.Drawing.Point(346, 23);
-            this.sor_1.Name = "sor_1";
-            this.sor_1.Size = new System.Drawing.Size(342, 74);
-            this.sor_1.TabIndex = 0;
-            // 
-            // sor_2
-            // 
-            this.sor_2.Controls.Add(this._2_5);
-            this.sor_2.Controls.Add(this._2_4);
-            this.sor_2.Controls.Add(this._2_3);
-            this.sor_2.Controls.Add(this._2_2);
-            this.sor_2.Controls.Add(this._2_1);
-            this.sor_2.Location = new System.Drawing.Point(346, 103);
-            this.sor_2.Name = "sor_2";
-            this.sor_2.Size = new System.Drawing.Size(342, 74);
-            this.sor_2.TabIndex = 1;
-            // 
-            // sor_3
-            // 
-            this.sor_3.Controls.Add(this._3_5);
-            this.sor_3.Controls.Add(this._3_4);
-            this.sor_3.Controls.Add(this._3_3);
-            this.sor_3.Controls.Add(this._3_2);
-            this.sor_3.Controls.Add(this._3_1);
-            this.sor_3.Location = new System.Drawing.Point(346, 183);
-            this.sor_3.Name = "sor_3";
-            this.sor_3.Size = new System.Drawing.Size(342, 74);
-            this.sor_3.TabIndex = 1;
-            // 
-            // sor_4
-            // 
-            this.sor_4.Controls.Add(this._4_5);
-            this.sor_4.Controls.Add(this._4_4);
-            this.sor_4.Controls.Add(this._4_3);
-            this.sor_4.Controls.Add(this._4_2);
-            this.sor_4.Controls.Add(this._4_1);
-            this.sor_4.Location = new System.Drawing.Point(346, 263);
-            this.sor_4.Name = "sor_4";
-            this.sor_4.Size = new System.Drawing.Size(342, 74);
-            this.sor_4.TabIndex = 1;
-            // 
-            // sor_5
-            // 
-            this.sor_5.Controls.Add(this._5_5);
-            this.sor_5.Controls.Add(this._5_4);
-            this.sor_5.Controls.Add(this._5_3);
-            this.sor_5.Controls.Add(this._5_2);
-            this.sor_5.Controls.Add(this._5_1);
-            this.sor_5.Location = new System.Drawing.Point(346, 343);
-            this.sor_5.Name = "sor_5";
-            this.sor_5.Size = new System.Drawing.Size(342, 74);
-            this.sor_5.TabIndex = 1;
-            // 
-            // sor_6
-            // 
-            this.sor_6.Controls.Add(this._6_5);
-            this.sor_6.Controls.Add(this._6_4);
-            this.sor_6.Controls.Add(this._6_3);
-            this.sor_6.Controls.Add(this._6_2);
-            this.sor_6.Controls.Add(this._6_1);
-            this.sor_6.Location = new System.Drawing.Point(346, 423);
-            this.sor_6.Name = "sor_6";
-            this.sor_6.Size = new System.Drawing.Size(342, 74);
-            this.sor_6.TabIndex = 1;
-            // 
-            // _1_1
-            // 
-            this._1_1.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._1_1.Location = new System.Drawing.Point(5, 3);
-            this._1_1.MaxLength = 1;
-            this._1_1.Multiline = true;
-            this._1_1.Name = "_1_1";
-            this._1_1.Size = new System.Drawing.Size(61, 68);
-            this._1_1.TabIndex = 0;
-            this._1_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._1_1.TextChanged += new System.EventHandler(this._1_1_TextChanged);
-            // 
-            // _1_2
-            // 
-            this._1_2.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._1_2.Location = new System.Drawing.Point(71, 3);
-            this._1_2.MaxLength = 1;
-            this._1_2.Multiline = true;
-            this._1_2.Name = "_1_2";
-            this._1_2.Size = new System.Drawing.Size(61, 68);
-            this._1_2.TabIndex = 1;
-            this._1_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _1_3
-            // 
-            this._1_3.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._1_3.Location = new System.Drawing.Point(139, 3);
-            this._1_3.MaxLength = 1;
-            this._1_3.Multiline = true;
-            this._1_3.Name = "_1_3";
-            this._1_3.Size = new System.Drawing.Size(61, 68);
-            this._1_3.TabIndex = 2;
-            this._1_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _1_4
-            // 
-            this._1_4.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._1_4.Location = new System.Drawing.Point(207, 3);
-            this._1_4.MaxLength = 1;
-            this._1_4.Multiline = true;
-            this._1_4.Name = "_1_4";
-            this._1_4.Size = new System.Drawing.Size(61, 68);
-            this._1_4.TabIndex = 3;
-            this._1_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _1_5
-            // 
-            this._1_5.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._1_5.Location = new System.Drawing.Point(275, 3);
-            this._1_5.MaxLength = 1;
-            this._1_5.Multiline = true;
-            this._1_5.Name = "_1_5";
-            this._1_5.Size = new System.Drawing.Size(61, 68);
-            this._1_5.TabIndex = 4;
-            this._1_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _2_5
-            // 
-            this._2_5.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._2_5.Location = new System.Drawing.Point(277, 3);
-            this._2_5.MaxLength = 1;
-            this._2_5.Multiline = true;
-            this._2_5.Name = "_2_5";
-            this._2_5.Size = new System.Drawing.Size(61, 68);
-            this._2_5.TabIndex = 9;
-            this._2_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _2_4
-            // 
-            this._2_4.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._2_4.Location = new System.Drawing.Point(209, 3);
-            this._2_4.MaxLength = 1;
-            this._2_4.Multiline = true;
-            this._2_4.Name = "_2_4";
-            this._2_4.Size = new System.Drawing.Size(61, 68);
-            this._2_4.TabIndex = 8;
-            this._2_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _2_3
-            // 
-            this._2_3.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._2_3.Location = new System.Drawing.Point(141, 3);
-            this._2_3.MaxLength = 1;
-            this._2_3.Multiline = true;
-            this._2_3.Name = "_2_3";
-            this._2_3.Size = new System.Drawing.Size(61, 68);
-            this._2_3.TabIndex = 7;
-            this._2_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _2_2
-            // 
-            this._2_2.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._2_2.Location = new System.Drawing.Point(73, 3);
-            this._2_2.MaxLength = 1;
-            this._2_2.Multiline = true;
-            this._2_2.Name = "_2_2";
-            this._2_2.Size = new System.Drawing.Size(61, 68);
-            this._2_2.TabIndex = 6;
-            this._2_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _2_1
-            // 
-            this._2_1.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._2_1.Location = new System.Drawing.Point(5, 3);
-            this._2_1.MaxLength = 1;
-            this._2_1.Multiline = true;
-            this._2_1.Name = "_2_1";
-            this._2_1.Size = new System.Drawing.Size(61, 68);
-            this._2_1.TabIndex = 5;
-            this._2_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _3_5
-            // 
-            this._3_5.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._3_5.Location = new System.Drawing.Point(277, 3);
-            this._3_5.MaxLength = 1;
-            this._3_5.Multiline = true;
-            this._3_5.Name = "_3_5";
-            this._3_5.Size = new System.Drawing.Size(61, 68);
-            this._3_5.TabIndex = 9;
-            this._3_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _3_4
-            // 
-            this._3_4.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._3_4.Location = new System.Drawing.Point(209, 3);
-            this._3_4.MaxLength = 1;
-            this._3_4.Multiline = true;
-            this._3_4.Name = "_3_4";
-            this._3_4.Size = new System.Drawing.Size(61, 68);
-            this._3_4.TabIndex = 8;
-            this._3_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _3_3
-            // 
-            this._3_3.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._3_3.Location = new System.Drawing.Point(141, 3);
-            this._3_3.MaxLength = 1;
-            this._3_3.Multiline = true;
-            this._3_3.Name = "_3_3";
-            this._3_3.Size = new System.Drawing.Size(61, 68);
-            this._3_3.TabIndex = 7;
-            this._3_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _3_2
-            // 
-            this._3_2.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._3_2.Location = new System.Drawing.Point(73, 3);
-            this._3_2.MaxLength = 1;
-            this._3_2.Multiline = true;
-            this._3_2.Name = "_3_2";
-            this._3_2.Size = new System.Drawing.Size(61, 68);
-            this._3_2.TabIndex = 6;
-            this._3_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _3_1
-            // 
-            this._3_1.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._3_1.Location = new System.Drawing.Point(5, 3);
-            this._3_1.MaxLength = 1;
-            this._3_1.Multiline = true;
-            this._3_1.Name = "_3_1";
-            this._3_1.Size = new System.Drawing.Size(61, 68);
-            this._3_1.TabIndex = 5;
-            this._3_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _4_5
-            // 
-            this._4_5.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._4_5.Location = new System.Drawing.Point(277, 3);
-            this._4_5.MaxLength = 1;
-            this._4_5.Multiline = true;
-            this._4_5.Name = "_4_5";
-            this._4_5.Size = new System.Drawing.Size(61, 68);
-            this._4_5.TabIndex = 9;
-            this._4_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _4_4
-            // 
-            this._4_4.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._4_4.Location = new System.Drawing.Point(209, 3);
-            this._4_4.MaxLength = 1;
-            this._4_4.Multiline = true;
-            this._4_4.Name = "_4_4";
-            this._4_4.Size = new System.Drawing.Size(61, 68);
-            this._4_4.TabIndex = 8;
-            this._4_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _4_3
-            // 
-            this._4_3.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._4_3.Location = new System.Drawing.Point(141, 3);
-            this._4_3.MaxLength = 1;
-            this._4_3.Multiline = true;
-            this._4_3.Name = "_4_3";
-            this._4_3.Size = new System.Drawing.Size(61, 68);
-            this._4_3.TabIndex = 7;
-            this._4_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _4_2
-            // 
-            this._4_2.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._4_2.Location = new System.Drawing.Point(73, 3);
-            this._4_2.MaxLength = 1;
-            this._4_2.Multiline = true;
-            this._4_2.Name = "_4_2";
-            this._4_2.Size = new System.Drawing.Size(61, 68);
-            this._4_2.TabIndex = 6;
-            this._4_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _4_1
-            // 
-            this._4_1.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._4_1.Location = new System.Drawing.Point(5, 3);
-            this._4_1.MaxLength = 1;
-            this._4_1.Multiline = true;
-            this._4_1.Name = "_4_1";
-            this._4_1.Size = new System.Drawing.Size(61, 68);
-            this._4_1.TabIndex = 5;
-            this._4_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _5_5
-            // 
-            this._5_5.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._5_5.Location = new System.Drawing.Point(277, 3);
-            this._5_5.MaxLength = 1;
-            this._5_5.Multiline = true;
-            this._5_5.Name = "_5_5";
-            this._5_5.Size = new System.Drawing.Size(61, 68);
-            this._5_5.TabIndex = 9;
-            this._5_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _5_4
-            // 
-            this._5_4.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._5_4.Location = new System.Drawing.Point(209, 3);
-            this._5_4.MaxLength = 1;
-            this._5_4.Multiline = true;
-            this._5_4.Name = "_5_4";
-            this._5_4.Size = new System.Drawing.Size(61, 68);
-            this._5_4.TabIndex = 8;
-            this._5_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _5_3
-            // 
-            this._5_3.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._5_3.Location = new System.Drawing.Point(141, 3);
-            this._5_3.MaxLength = 1;
-            this._5_3.Multiline = true;
-            this._5_3.Name = "_5_3";
-            this._5_3.Size = new System.Drawing.Size(61, 68);
-            this._5_3.TabIndex = 7;
-            this._5_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _5_2
-            // 
-            this._5_2.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._5_2.Location = new System.Drawing.Point(73, 3);
-            this._5_2.MaxLength = 1;
-            this._5_2.Multiline = true;
-            this._5_2.Name = "_5_2";
-            this._5_2.Size = new System.Drawing.Size(61, 68);
-            this._5_2.TabIndex = 6;
-            this._5_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _5_1
-            // 
-            this._5_1.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this._5_1.Location = new System.Drawing.Point(5, 3);
-            this._5_1.MaxLength = 1;
-            this._5_1.Multiline = true;
-            this._5_1.Name = "_5_1";
-            this._5_1.Size = new System.Drawing.Size(61, 68);
-            this._5_1.TabIndex = 5;
-            this._5_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _6_5
-            // 
-            this._6_5.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._6_5.Location = new System.Drawing.Point(277, 3);
-            this._6_5.MaxLength = 1;
-            this._6_5.Multiline = true;
-            this._6_5.Name = "_6_5";
-            this._6_5.Size = new System.Drawing.Size(61, 68);
-            this._6_5.TabIndex = 9;
-            this._6_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _6_4
-            // 
-            this._6_4.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._6_4.Location = new System.Drawing.Point(209, 3);
-            this._6_4.MaxLength = 1;
-            this._6_4.Multiline = true;
-            this._6_4.Name = "_6_4";
-            this._6_4.Size = new System.Drawing.Size(61, 68);
-            this._6_4.TabIndex = 8;
-            this._6_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _6_3
-            // 
-            this._6_3.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._6_3.Location = new System.Drawing.Point(141, 3);
-            this._6_3.MaxLength = 1;
-            this._6_3.Multiline = true;
-            this._6_3.Name = "_6_3";
-            this._6_3.Size = new System.Drawing.Size(61, 68);
-            this._6_3.TabIndex = 7;
-            this._6_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _6_2
-            // 
-            this._6_2.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._6_2.Location = new System.Drawing.Point(73, 3);
-            this._6_2.MaxLength = 1;
-            this._6_2.Multiline = true;
-            this._6_2.Name = "_6_2";
-            this._6_2.Size = new System.Drawing.Size(61, 68);
-            this._6_2.TabIndex = 6;
-            this._6_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _6_1
-            // 
-            this._6_1.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._6_1.Location = new System.Drawing.Point(5, 3);
-            this._6_1.MaxLength = 1;
-            this._6_1.Multiline = true;
-            this._6_1.Name = "_6_1";
-            this._6_1.Size = new System.Drawing.Size(61, 68);
-            this._6_1.TabIndex = 5;
-            this._6_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // pictureBox1
+            // 
+            this.pictureBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(350, 400);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_w
+            // 
+            this.btn_w.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_w.Location = new System.Drawing.Point(442, 321);
+            this.btn_w.Name = "btn_w";
+            this.btn_w.Size = new System.Drawing.Size(25, 25);
+            this.btn_w.TabIndex = 2;
+            this.btn_w.Text = "w";
+            this.btn_w.UseVisualStyleBackColor = true;
+            // 
+            // btn_a
+            // 
+            this.btn_a.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_a.Location = new System.Drawing.Point(422, 352);
+            this.btn_a.Name = "btn_a";
+            this.btn_a.Size = new System.Drawing.Size(25, 25);
+            this.btn_a.TabIndex = 3;
+            this.btn_a.Text = "a";
+            this.btn_a.UseVisualStyleBackColor = true;
+            // 
+            // btn_s
+            // 
+            this.btn_s.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_s.Location = new System.Drawing.Point(453, 352);
+            this.btn_s.Name = "btn_s";
+            this.btn_s.Size = new System.Drawing.Size(25, 25);
+            this.btn_s.TabIndex = 4;
+            this.btn_s.Text = "s";
+            this.btn_s.UseVisualStyleBackColor = true;
+            // 
+            // btn_y
+            // 
+            this.btn_y.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_y.Location = new System.Drawing.Point(429, 383);
+            this.btn_y.Name = "btn_y";
+            this.btn_y.Size = new System.Drawing.Size(25, 25);
+            this.btn_y.TabIndex = 5;
+            this.btn_y.Text = "y";
+            this.btn_y.UseVisualStyleBackColor = true;
+            // 
+            // btn_d
+            // 
+            this.btn_d.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_d.Location = new System.Drawing.Point(484, 352);
+            this.btn_d.Name = "btn_d";
+            this.btn_d.Size = new System.Drawing.Size(25, 25);
+            this.btn_d.TabIndex = 6;
+            this.btn_d.Text = "d";
+            this.btn_d.UseVisualStyleBackColor = true;
+            // 
+            // btn_f
+            // 
+            this.btn_f.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_f.Location = new System.Drawing.Point(515, 352);
+            this.btn_f.Name = "btn_f";
+            this.btn_f.Size = new System.Drawing.Size(25, 25);
+            this.btn_f.TabIndex = 7;
+            this.btn_f.Text = "f";
+            this.btn_f.UseVisualStyleBackColor = true;
+            // 
+            // btn_g
+            // 
+            this.btn_g.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_g.Location = new System.Drawing.Point(546, 352);
+            this.btn_g.Name = "btn_g";
+            this.btn_g.Size = new System.Drawing.Size(25, 25);
+            this.btn_g.TabIndex = 8;
+            this.btn_g.Text = "g";
+            this.btn_g.UseVisualStyleBackColor = true;
+            // 
+            // btn_h
+            // 
+            this.btn_h.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_h.Location = new System.Drawing.Point(577, 352);
+            this.btn_h.Name = "btn_h";
+            this.btn_h.Size = new System.Drawing.Size(25, 25);
+            this.btn_h.TabIndex = 9;
+            this.btn_h.Text = "h";
+            this.btn_h.UseVisualStyleBackColor = true;
+            // 
+            // btn_j
+            // 
+            this.btn_j.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_j.Location = new System.Drawing.Point(608, 352);
+            this.btn_j.Name = "btn_j";
+            this.btn_j.Size = new System.Drawing.Size(25, 25);
+            this.btn_j.TabIndex = 10;
+            this.btn_j.Text = "j";
+            this.btn_j.UseVisualStyleBackColor = true;
+            // 
+            // btn_k
+            // 
+            this.btn_k.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_k.Location = new System.Drawing.Point(641, 352);
+            this.btn_k.Name = "btn_k";
+            this.btn_k.Size = new System.Drawing.Size(25, 25);
+            this.btn_k.TabIndex = 11;
+            this.btn_k.Text = "k";
+            this.btn_k.UseVisualStyleBackColor = true;
+            // 
+            // btn_l
+            // 
+            this.btn_l.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_l.Location = new System.Drawing.Point(672, 352);
+            this.btn_l.Name = "btn_l";
+            this.btn_l.Size = new System.Drawing.Size(25, 25);
+            this.btn_l.TabIndex = 12;
+            this.btn_l.Text = "l";
+            this.btn_l.UseVisualStyleBackColor = true;
+            // 
+            // btn_he
+            // 
+            this.btn_he.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_he.Location = new System.Drawing.Point(701, 352);
+            this.btn_he.Name = "btn_he";
+            this.btn_he.Size = new System.Drawing.Size(25, 25);
+            this.btn_he.TabIndex = 13;
+            this.btn_he.Text = "é";
+            this.btn_he.UseVisualStyleBackColor = true;
+            // 
+            // btn_ha
+            // 
+            this.btn_ha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_ha.Location = new System.Drawing.Point(732, 352);
+            this.btn_ha.Name = "btn_ha";
+            this.btn_ha.Size = new System.Drawing.Size(25, 25);
+            this.btn_ha.TabIndex = 14;
+            this.btn_ha.Text = "á";
+            this.btn_ha.UseVisualStyleBackColor = true;
+            // 
+            // btn_huu
+            // 
+            this.btn_huu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_huu.Location = new System.Drawing.Point(763, 352);
+            this.btn_huu.Name = "btn_huu";
+            this.btn_huu.Size = new System.Drawing.Size(25, 25);
+            this.btn_huu.TabIndex = 15;
+            this.btn_huu.Text = "ű";
+            this.btn_huu.UseVisualStyleBackColor = true;
+            // 
+            // btn_hi
+            // 
+            this.btn_hi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_hi.Location = new System.Drawing.Point(398, 383);
+            this.btn_hi.Name = "btn_hi";
+            this.btn_hi.Size = new System.Drawing.Size(25, 25);
+            this.btn_hi.TabIndex = 16;
+            this.btn_hi.Text = "í";
+            this.btn_hi.UseVisualStyleBackColor = true;
+            // 
+            // btn_x
+            // 
+            this.btn_x.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_x.Location = new System.Drawing.Point(460, 383);
+            this.btn_x.Name = "btn_x";
+            this.btn_x.Size = new System.Drawing.Size(25, 25);
+            this.btn_x.TabIndex = 17;
+            this.btn_x.Text = "x";
+            this.btn_x.UseVisualStyleBackColor = true;
+            // 
+            // btn_oo
+            // 
+            this.btn_oo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_oo.Location = new System.Drawing.Point(680, 290);
+            this.btn_oo.Name = "btn_oo";
+            this.btn_oo.Size = new System.Drawing.Size(25, 25);
+            this.btn_oo.TabIndex = 18;
+            this.btn_oo.Text = "ö";
+            this.btn_oo.UseVisualStyleBackColor = true;
+            // 
+            // btn_uu
+            // 
+            this.btn_uu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_uu.Location = new System.Drawing.Point(711, 290);
+            this.btn_uu.Name = "btn_uu";
+            this.btn_uu.Size = new System.Drawing.Size(25, 25);
+            this.btn_uu.TabIndex = 19;
+            this.btn_uu.Text = "ü";
+            this.btn_uu.UseVisualStyleBackColor = true;
+            // 
+            // btn_ho
+            // 
+            this.btn_ho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_ho.Location = new System.Drawing.Point(742, 290);
+            this.btn_ho.Name = "btn_ho";
+            this.btn_ho.Size = new System.Drawing.Size(25, 25);
+            this.btn_ho.TabIndex = 20;
+            this.btn_ho.Text = "ó";
+            this.btn_ho.UseVisualStyleBackColor = true;
+            // 
+            // btn_hu
+            // 
+            this.btn_hu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_hu.Location = new System.Drawing.Point(752, 321);
+            this.btn_hu.Name = "btn_hu";
+            this.btn_hu.Size = new System.Drawing.Size(25, 25);
+            this.btn_hu.TabIndex = 21;
+            this.btn_hu.Text = "ú";
+            this.btn_hu.UseVisualStyleBackColor = true;
+            // 
+            // btn_hoo
+            // 
+            this.btn_hoo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_hoo.Location = new System.Drawing.Point(721, 321);
+            this.btn_hoo.Name = "btn_hoo";
+            this.btn_hoo.Size = new System.Drawing.Size(25, 25);
+            this.btn_hoo.TabIndex = 22;
+            this.btn_hoo.Text = "ő";
+            this.btn_hoo.UseVisualStyleBackColor = true;
+            // 
+            // btn_p
+            // 
+            this.btn_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_p.Location = new System.Drawing.Point(690, 321);
+            this.btn_p.Name = "btn_p";
+            this.btn_p.Size = new System.Drawing.Size(25, 25);
+            this.btn_p.TabIndex = 23;
+            this.btn_p.Text = "p";
+            this.btn_p.UseVisualStyleBackColor = true;
+            // 
+            // btn_o
+            // 
+            this.btn_o.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_o.Location = new System.Drawing.Point(659, 321);
+            this.btn_o.Name = "btn_o";
+            this.btn_o.Size = new System.Drawing.Size(25, 25);
+            this.btn_o.TabIndex = 24;
+            this.btn_o.Text = "o";
+            this.btn_o.UseVisualStyleBackColor = true;
+            // 
+            // btn_i
+            // 
+            this.btn_i.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_i.Location = new System.Drawing.Point(628, 321);
+            this.btn_i.Name = "btn_i";
+            this.btn_i.Size = new System.Drawing.Size(25, 25);
+            this.btn_i.TabIndex = 25;
+            this.btn_i.Text = "i";
+            this.btn_i.UseVisualStyleBackColor = true;
+            // 
+            // btn_u
+            // 
+            this.btn_u.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_u.Location = new System.Drawing.Point(597, 321);
+            this.btn_u.Name = "btn_u";
+            this.btn_u.Size = new System.Drawing.Size(25, 25);
+            this.btn_u.TabIndex = 26;
+            this.btn_u.Text = "u";
+            this.btn_u.UseVisualStyleBackColor = true;
+            // 
+            // btn_z
+            // 
+            this.btn_z.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_z.Location = new System.Drawing.Point(566, 321);
+            this.btn_z.Name = "btn_z";
+            this.btn_z.Size = new System.Drawing.Size(25, 25);
+            this.btn_z.TabIndex = 27;
+            this.btn_z.Text = "z";
+            this.btn_z.UseVisualStyleBackColor = true;
+            // 
+            // btn_t
+            // 
+            this.btn_t.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_t.Location = new System.Drawing.Point(535, 321);
+            this.btn_t.Name = "btn_t";
+            this.btn_t.Size = new System.Drawing.Size(25, 25);
+            this.btn_t.TabIndex = 28;
+            this.btn_t.Text = "t";
+            this.btn_t.UseVisualStyleBackColor = true;
+            // 
+            // btn_r
+            // 
+            this.btn_r.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_r.Location = new System.Drawing.Point(504, 321);
+            this.btn_r.Name = "btn_r";
+            this.btn_r.Size = new System.Drawing.Size(25, 25);
+            this.btn_r.TabIndex = 29;
+            this.btn_r.Text = "r";
+            this.btn_r.UseVisualStyleBackColor = true;
+            // 
+            // btn_e
+            // 
+            this.btn_e.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_e.Location = new System.Drawing.Point(473, 321);
+            this.btn_e.Name = "btn_e";
+            this.btn_e.Size = new System.Drawing.Size(25, 25);
+            this.btn_e.TabIndex = 30;
+            this.btn_e.Text = "e";
+            this.btn_e.UseVisualStyleBackColor = true;
+            // 
+            // btn_q
+            // 
+            this.btn_q.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_q.Location = new System.Drawing.Point(411, 321);
+            this.btn_q.Name = "btn_q";
+            this.btn_q.Size = new System.Drawing.Size(25, 25);
+            this.btn_q.TabIndex = 31;
+            this.btn_q.Text = "q";
+            this.btn_q.UseVisualStyleBackColor = true;
+            // 
+            // btn_m
+            // 
+            this.btn_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_m.Location = new System.Drawing.Point(617, 383);
+            this.btn_m.Name = "btn_m";
+            this.btn_m.Size = new System.Drawing.Size(25, 25);
+            this.btn_m.TabIndex = 33;
+            this.btn_m.Text = "m";
+            this.btn_m.UseVisualStyleBackColor = true;
+            // 
+            // btn_n
+            // 
+            this.btn_n.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_n.Location = new System.Drawing.Point(584, 383);
+            this.btn_n.Name = "btn_n";
+            this.btn_n.Size = new System.Drawing.Size(25, 25);
+            this.btn_n.TabIndex = 34;
+            this.btn_n.Text = "n";
+            this.btn_n.UseVisualStyleBackColor = true;
+            // 
+            // btn_b
+            // 
+            this.btn_b.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_b.Location = new System.Drawing.Point(553, 383);
+            this.btn_b.Name = "btn_b";
+            this.btn_b.Size = new System.Drawing.Size(25, 25);
+            this.btn_b.TabIndex = 35;
+            this.btn_b.Text = "b";
+            this.btn_b.UseVisualStyleBackColor = true;
+            // 
+            // btn_v
+            // 
+            this.btn_v.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_v.Location = new System.Drawing.Point(522, 383);
+            this.btn_v.Name = "btn_v";
+            this.btn_v.Size = new System.Drawing.Size(25, 25);
+            this.btn_v.TabIndex = 36;
+            this.btn_v.Text = "v";
+            this.btn_v.UseVisualStyleBackColor = true;
+            // 
+            // btn_c
+            // 
+            this.btn_c.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_c.Location = new System.Drawing.Point(491, 383);
+            this.btn_c.Name = "btn_c";
+            this.btn_c.Size = new System.Drawing.Size(25, 25);
+            this.btn_c.TabIndex = 37;
+            this.btn_c.Text = "c";
+            this.btn_c.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(504, 89);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 19);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "label1";
             // 
             // Akasztofa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.sor_6);
-            this.Controls.Add(this.sor_5);
-            this.Controls.Add(this.sor_4);
-            this.Controls.Add(this.sor_3);
-            this.Controls.Add(this.sor_2);
-            this.Controls.Add(this.sor_1);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_c);
+            this.Controls.Add(this.btn_v);
+            this.Controls.Add(this.btn_b);
+            this.Controls.Add(this.btn_n);
+            this.Controls.Add(this.btn_m);
+            this.Controls.Add(this.btn_q);
+            this.Controls.Add(this.btn_e);
+            this.Controls.Add(this.btn_r);
+            this.Controls.Add(this.btn_t);
+            this.Controls.Add(this.btn_z);
+            this.Controls.Add(this.btn_u);
+            this.Controls.Add(this.btn_i);
+            this.Controls.Add(this.btn_o);
+            this.Controls.Add(this.btn_p);
+            this.Controls.Add(this.btn_hoo);
+            this.Controls.Add(this.btn_hu);
+            this.Controls.Add(this.btn_ho);
+            this.Controls.Add(this.btn_uu);
+            this.Controls.Add(this.btn_oo);
+            this.Controls.Add(this.btn_x);
+            this.Controls.Add(this.btn_hi);
+            this.Controls.Add(this.btn_huu);
+            this.Controls.Add(this.btn_ha);
+            this.Controls.Add(this.btn_he);
+            this.Controls.Add(this.btn_l);
+            this.Controls.Add(this.btn_k);
+            this.Controls.Add(this.btn_j);
+            this.Controls.Add(this.btn_h);
+            this.Controls.Add(this.btn_g);
+            this.Controls.Add(this.btn_f);
+            this.Controls.Add(this.btn_d);
+            this.Controls.Add(this.btn_y);
+            this.Controls.Add(this.btn_s);
+            this.Controls.Add(this.btn_a);
+            this.Controls.Add(this.btn_w);
+            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Akasztofa";
-            this.Text = "Akasztofa";
+            this.Text = "Akasztófa";
             this.Load += new System.EventHandler(this.Akasztofa_Load);
-            this.sor_1.ResumeLayout(false);
-            this.sor_1.PerformLayout();
-            this.sor_2.ResumeLayout(false);
-            this.sor_2.PerformLayout();
-            this.sor_3.ResumeLayout(false);
-            this.sor_3.PerformLayout();
-            this.sor_4.ResumeLayout(false);
-            this.sor_4.PerformLayout();
-            this.sor_5.ResumeLayout(false);
-            this.sor_5.PerformLayout();
-            this.sor_6.ResumeLayout(false);
-            this.sor_6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel sor_1;
-        private System.Windows.Forms.TextBox _1_5;
-        private System.Windows.Forms.TextBox _1_4;
-        private System.Windows.Forms.TextBox _1_3;
-        private System.Windows.Forms.TextBox _1_2;
-        private System.Windows.Forms.TextBox _1_1;
-        private System.Windows.Forms.Panel sor_2;
-        private System.Windows.Forms.TextBox _2_5;
-        private System.Windows.Forms.TextBox _2_4;
-        private System.Windows.Forms.TextBox _2_3;
-        private System.Windows.Forms.TextBox _2_2;
-        private System.Windows.Forms.TextBox _2_1;
-        private System.Windows.Forms.Panel sor_3;
-        private System.Windows.Forms.TextBox _3_5;
-        private System.Windows.Forms.TextBox _3_4;
-        private System.Windows.Forms.TextBox _3_3;
-        private System.Windows.Forms.TextBox _3_2;
-        private System.Windows.Forms.TextBox _3_1;
-        private System.Windows.Forms.Panel sor_4;
-        private System.Windows.Forms.TextBox _4_5;
-        private System.Windows.Forms.TextBox _4_4;
-        private System.Windows.Forms.TextBox _4_3;
-        private System.Windows.Forms.TextBox _4_2;
-        private System.Windows.Forms.TextBox _4_1;
-        private System.Windows.Forms.Panel sor_5;
-        private System.Windows.Forms.TextBox _5_5;
-        private System.Windows.Forms.TextBox _5_4;
-        private System.Windows.Forms.TextBox _5_3;
-        private System.Windows.Forms.TextBox _5_2;
-        private System.Windows.Forms.TextBox _5_1;
-        private System.Windows.Forms.Panel sor_6;
-        private System.Windows.Forms.TextBox _6_5;
-        private System.Windows.Forms.TextBox _6_4;
-        private System.Windows.Forms.TextBox _6_3;
-        private System.Windows.Forms.TextBox _6_2;
-        private System.Windows.Forms.TextBox _6_1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_w;
+        private System.Windows.Forms.Button btn_a;
+        private System.Windows.Forms.Button btn_s;
+        private System.Windows.Forms.Button btn_y;
+        private System.Windows.Forms.Button btn_d;
+        private System.Windows.Forms.Button btn_f;
+        private System.Windows.Forms.Button btn_g;
+        private System.Windows.Forms.Button btn_h;
+        private System.Windows.Forms.Button btn_j;
+        private System.Windows.Forms.Button btn_k;
+        private System.Windows.Forms.Button btn_l;
+        private System.Windows.Forms.Button btn_he;
+        private System.Windows.Forms.Button btn_ha;
+        private System.Windows.Forms.Button btn_huu;
+        private System.Windows.Forms.Button btn_hi;
+        private System.Windows.Forms.Button btn_x;
+        private System.Windows.Forms.Button btn_oo;
+        private System.Windows.Forms.Button btn_uu;
+        private System.Windows.Forms.Button btn_ho;
+        private System.Windows.Forms.Button btn_hu;
+        private System.Windows.Forms.Button btn_hoo;
+        private System.Windows.Forms.Button btn_p;
+        private System.Windows.Forms.Button btn_o;
+        private System.Windows.Forms.Button btn_i;
+        private System.Windows.Forms.Button btn_u;
+        private System.Windows.Forms.Button btn_z;
+        private System.Windows.Forms.Button btn_t;
+        private System.Windows.Forms.Button btn_r;
+        private System.Windows.Forms.Button btn_e;
+        private System.Windows.Forms.Button btn_q;
+        private System.Windows.Forms.Button btn_m;
+        private System.Windows.Forms.Button btn_n;
+        private System.Windows.Forms.Button btn_b;
+        private System.Windows.Forms.Button btn_v;
+        private System.Windows.Forms.Button btn_c;
+        public System.Windows.Forms.Label label1;
     }
 }

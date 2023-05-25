@@ -76,3 +76,16 @@ C:\Users\Karsai\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\M
 C:\Users\Karsai\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.CoreCompileInputs.cache
 C:\Users\Karsai\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.exe
 C:\Users\Karsai\Source\Repos\Karusz\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.pdb
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.exe.config
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.exe
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\bin\Debug\MenuGames.pdb
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csprojAssemblyReference.cache
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Akasztofa.resources
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.BlackJack.resources
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Form1.resources
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.Properties.Resources.resources
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.SlotMachine.resources
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.GenerateResource.cache
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.csproj.CoreCompileInputs.cache
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.exe
+Z:\csharp\DavidProjekt\DavidProjekt\MenuGames\MenuGames\obj\Debug\MenuGames.pdb
