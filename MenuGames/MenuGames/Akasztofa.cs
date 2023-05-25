@@ -113,6 +113,10 @@ namespace MenuGames
             SoundPlayer gameover_sound = new SoundPlayer("gosound.wav");
             gameover_sound.Play();
             MessageBox.Show($"Ez most nem jött össze.\nEzt kellet volna kitalálni: {szo.ToUpper()}","GAME OVER");
+            foreach (Button n in gombok)
+            {
+                n.Enabled = false;
+            }
             
         }
 
@@ -157,5 +161,17 @@ namespace MenuGames
 
         }
 
+        private void Menu_Vissza()
+        {
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.FormClosed += (s, args) => this.Close();
+            form1.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Menu_Vissza();
+        }
     }
 }
