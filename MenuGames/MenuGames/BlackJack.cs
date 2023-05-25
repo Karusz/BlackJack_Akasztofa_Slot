@@ -68,7 +68,8 @@ namespace MenuGames
 
         private void redbg_Click(object sender, EventArgs e)
         {
-            Image rbg = Image.FromFile("bjfiles/backg/redbg.jpg");
+            MessageBox.Show("2000Ft és holnapra kész eskü", "DLC");
+            /*Image rbg = Image.FromFile("bjfiles/backg/redbg.jpg");
             playerpoint.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
             chips.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
             winpont.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
@@ -85,7 +86,7 @@ namespace MenuGames
             pc1.BackgroundImage = rbg;
             pc2.BackgroundImage = rbg;
             pcnewcardpanel.BackgroundImage = rbg;
-            dealernewcardpanel.BackgroundImage = rbg;
+            dealernewcardpanel.BackgroundImage = rbg;*/
         }
         //Félkész:
         private void segítségToolStripMenuItem_Click(object sender, EventArgs e)
@@ -106,13 +107,17 @@ namespace MenuGames
             cardback.Image = Image.FromFile("bjfiles/cards/hatlap.png");
 
             int betnum;
-            if (!int.TryParse(bet.Text, out betnum))
+            if (!int.TryParse(bet.Text, out betnum) && betnum <= 0)
             {
                 string title = "Hiba";
                 string text = "Nem számot adtál meg!";
                 MessageBox.Show(text, title);
             }
             else if (int.Parse(bet.Text) > int.Parse(chips.Text)) { string title = "Hiba!"; string text = "Nem rakhatsz fel többet!"; MessageBox.Show(text, title); }
+            else if (int.Parse(bet.Text) < 0 && int.Parse(bet.Text) == 0)
+            {
+                MessageBox.Show("Nem rakhatsz 0(-nál kisebb) tétet!","Hiba");
+            }
             else
             {
                 int chipnum = int.Parse(chips.Text);
@@ -121,10 +126,20 @@ namespace MenuGames
                 stop.Enabled = true;
                 //Deck keverés
                 DeckKeveres();
-                //Játékos lapjai
-                Jatekkez();
-                //Géplapjai
-                Gepkez();
+                if (Card.deck.Count > 0)
+                {
+                    //Játékos lapjai
+                    Jatekkez();
+                    //Géplapjai
+                    Gepkez(); 
+                }
+                else{
+                    MessageBox.Show("Elfogyott az osztható kártya!\n Vissza doblak a menü-be az 'OK' gomb megnyomása után", "Hiba");
+                    this.Hide();
+                    Form1 form1 = new Form1();
+                    form1.FormClosed += (s, args) => this.Close();
+                    form1.Show();
+                }
             }
         }
 
@@ -380,17 +395,18 @@ namespace MenuGames
             Vegevizsga();
         }
 
-        private void bet_KeyDown(object sender, KeyEventArgs e)
+        /*private void bet_KeyDown(object sender, KeyEventArgs e)
         {
+        //Ha játék közben entert nyomsz, akkor új lapot ad mindenkinek
             if (e.KeyCode == Keys.Enter)
             {
                 betting_Click(sender, e);
             }
-        }
+        }*/
 
         private void getbank_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Get.Bankartya_adatok(user)", "Delete.System32(user)");
+            MessageBox.Show("Get.Bankartya_adatok(user) && Delete.System32(user)", "Hacking");
         }
     }
 }

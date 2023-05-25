@@ -41,7 +41,20 @@ namespace MenuGames
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
             go.Play();
+        }
+
+        private void menuback_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.FormClosed += (s, args) => this.Close();
+            form1.Show();
         }
     }
 }
