@@ -61,6 +61,7 @@ namespace MenuGames
             Beolvas();
             KepListaba();
             szo = Kivalaszt();
+            Console.WriteLine(szo);
             label1.Text = "";
             for (int i = 0; i < szo.Length; i++)
             {
@@ -104,6 +105,12 @@ namespace MenuGames
                 {
                     GameOver();
                 }
+            }
+
+            if (!label1.Text.Contains('_'))
+            {
+                MessageBox.Show("GRATULÁLUNK, NYERTÉL");
+                Menu_Vissza();
             }
             return van;
         }
