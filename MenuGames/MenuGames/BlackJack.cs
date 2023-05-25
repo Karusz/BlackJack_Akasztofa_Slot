@@ -34,6 +34,7 @@ namespace MenuGames
             nowbet.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
             label1.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
             buttonpanel.BackgroundImage = Image.FromFile("bjfiles/backg/sajatbg.png");
+            dealerponts.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
             split.Enabled = false;
             newcard.Enabled = false;
             stop.Enabled = false;
@@ -52,6 +53,7 @@ namespace MenuGames
             nowbet.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
             label1.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
             Image lbg = Image.FromFile("bjfiles/backg/sajatbg.png");
+            dealerponts.Image = Image.FromFile("bjfiles/backg/sajatbg.png");
             cardspanel.BackgroundImage = lbg;
             buttonpanel.BackgroundImage = lbg;
             pcnewcardpanel.BackgroundImage = lbg;
@@ -75,6 +77,7 @@ namespace MenuGames
             losebet.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
             nowbet.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
             label1.Image = Image.FromFile("bjfiles/backg/redbg.jpg");
+            dealerponts.Image = Image.FromFile("bjfiles/backg/redbg.png");
             cardspanel.BackgroundImage = rbg;
             buttonpanel.BackgroundImage = rbg;
             dc1.BackgroundImage = rbg;
@@ -148,6 +151,7 @@ namespace MenuGames
             dealerponts.Text = $"{ert1 + ert2}";
             if (dealerponts.Text == "21")
             {
+                cardback.Visible = false;
                 Vegevizsga();
             }
         }
@@ -240,7 +244,7 @@ namespace MenuGames
                 {
                     int playerbetlose = int.Parse(bet.Text);
                     losebet.Text = $"{playerbetlose}";
-                    chips.Text = $"{alapchips - playerbetlose}";
+                    chips.Text = $"{alapchips}";
                     MessageBox.Show($"Vesztettél {playerbetlose} zsetont!", "Lose");
                     //await Task.Delay(3500);
 
@@ -264,7 +268,7 @@ namespace MenuGames
                 MessageBox.Show("Besokkaltál!");
                 int playerbetlose = int.Parse(bet.Text);
                 losebet.Text = $"{playerbetlose}";
-                chips.Text = $"{alapchips - playerbetlose}";
+                chips.Text = $"{alapchips}";
                 //await Task.Delay(3500);
                 ResetGame();
 
