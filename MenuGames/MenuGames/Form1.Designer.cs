@@ -37,6 +37,7 @@
             this.creators = new System.Windows.Forms.Button();
             this.minigame = new System.Windows.Forms.Button();
             this.click_btn = new System.Windows.Forms.Button();
+            this.galleria = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // blackjack
@@ -44,7 +45,7 @@
             this.blackjack.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.blackjack.Location = new System.Drawing.Point(329, 131);
+            this.blackjack.Location = new System.Drawing.Point(329, 88);
             this.blackjack.Name = "blackjack";
             this.blackjack.Size = new System.Drawing.Size(107, 33);
             this.blackjack.TabIndex = 0;
@@ -54,7 +55,7 @@
             // 
             // Slot
             // 
-            this.Slot.Location = new System.Drawing.Point(329, 180);
+            this.Slot.Location = new System.Drawing.Point(329, 136);
             this.Slot.Name = "Slot";
             this.Slot.Size = new System.Drawing.Size(107, 33);
             this.Slot.TabIndex = 1;
@@ -64,7 +65,7 @@
             // 
             // Akaszto
             // 
-            this.Akaszto.Location = new System.Drawing.Point(329, 231);
+            this.Akaszto.Location = new System.Drawing.Point(329, 184);
             this.Akaszto.Name = "Akaszto";
             this.Akaszto.Size = new System.Drawing.Size(107, 33);
             this.Akaszto.TabIndex = 2;
@@ -98,7 +99,7 @@
             // 
             // creators
             // 
-            this.creators.Location = new System.Drawing.Point(329, 279);
+            this.creators.Location = new System.Drawing.Point(329, 280);
             this.creators.Name = "creators";
             this.creators.Size = new System.Drawing.Size(107, 33);
             this.creators.TabIndex = 7;
@@ -108,7 +109,7 @@
             // 
             // minigame
             // 
-            this.minigame.Location = new System.Drawing.Point(329, 330);
+            this.minigame.Location = new System.Drawing.Point(329, 232);
             this.minigame.Name = "minigame";
             this.minigame.Size = new System.Drawing.Size(107, 33);
             this.minigame.TabIndex = 8;
@@ -127,11 +128,25 @@
             this.click_btn.Click += new System.EventHandler(this.click_btn_Click);
             this.click_btn.MouseEnter += new System.EventHandler(this.click_btn_MouseEnter);
             // 
+            // galleria
+            // 
+            this.galleria.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.galleria.Location = new System.Drawing.Point(329, 328);
+            this.galleria.Name = "galleria";
+            this.galleria.Size = new System.Drawing.Size(107, 33);
+            this.galleria.TabIndex = 10;
+            this.galleria.Text = "Galléria";
+            this.galleria.UseVisualStyleBackColor = true;
+            this.galleria.Click += new System.EventHandler(this.galleria_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.galleria);
             this.Controls.Add(this.click_btn);
             this.Controls.Add(this.minigame);
             this.Controls.Add(this.creators);
@@ -161,6 +176,7 @@
         private System.Windows.Forms.Button creators;
         private System.Windows.Forms.Button minigame;
         private System.Windows.Forms.Button click_btn;
+        public System.Windows.Forms.Button galleria;
     }
 }
 

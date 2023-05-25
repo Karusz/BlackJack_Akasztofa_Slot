@@ -80,6 +80,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pictures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pictures.Designer.cs">
+      <DependentUpon>Pictures.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SlotMachine.cs">
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures.resx">
+      <DependentUpon>Pictures.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -155,6 +164,210 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\akaszto_img\rick-roll.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\akaszto_img\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\akaszto_img\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\akaszto_img\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\akaszto_img\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\akaszto_img\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\akaszto_img\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\akaszto_img\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\eastereggpicss\hnmenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ka2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ka3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ka4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ka5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ka6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ka7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ka8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ka9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ka10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\KaA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\KaD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\KaJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\KaK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ko2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ko3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ko4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ko5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ko6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ko7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ko8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ko9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\Ko10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\KoA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\KoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\KoJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\KoK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\P2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\P3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\P4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\P5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\P6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\P7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\P8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\P9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\P10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\PA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\PD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\PJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\PK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\T2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\T3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\T4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\T5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\T6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\T7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\T8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\T9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\T10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\TA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\TD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\TJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bjfiles\cards\TK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\allcards.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

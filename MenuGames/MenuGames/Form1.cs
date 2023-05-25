@@ -42,11 +42,19 @@ namespace MenuGames
             slotMachineForm.FormClosed += (s, args) => this.Close();
             slotMachineForm.Show();
         }
+        private void galleria_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Pictures blackjackForm = new Pictures();
+            blackjackForm.FormClosed += (s, args) => this.Close();
+            blackjackForm.Show();
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             eggtext.Visible = false;
             click_btn.Visible = false;
+            galleria.Visible = false;
         }
 
         private void easteregg_CheckedChanged(object sender, EventArgs e)
@@ -63,6 +71,7 @@ namespace MenuGames
                 Slot.BackColor = Color.DeepPink;
                 creators.BackColor = Color.DeepPink;
                 minigame.BackColor = Color.DeepPink;
+                galleria.BackColor = Color.DeepPink;
 
             }
             else
@@ -77,6 +86,7 @@ namespace MenuGames
                 Slot.BackColor = Color.White;
                 creators.BackColor = Color.White;
                 minigame.BackColor = Color.White;
+                galleria.BackColor= Color.White;
             }
         }
 
@@ -120,9 +130,12 @@ namespace MenuGames
         private void click_btn_Click(object sender, EventArgs e)
         {
             click_btn.Visible = false;
-            MessageBox.Show("Mivel kitartó voltál, ezért elárulok neked egy titkot!", "Minigame win");
+            galleria.Visible = true;
+            MessageBox.Show("Galléria létrehozva!", "Minigame win");
             MessageBox.Show("Nézd meg a bal alsó sarkot :D", "Secret");
 
         }
+
+        
     }
 }
