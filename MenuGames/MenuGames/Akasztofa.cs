@@ -16,6 +16,8 @@ namespace MenuGames
         static List<string> szavak;
         static Button[] gombok;
         static string szo;
+        static string[] kepek;
+        int counter;
 
         public Akasztofa()
         {
@@ -32,6 +34,17 @@ namespace MenuGames
                 }
             }
         }
+        private void KepListaba()
+        {
+            kepek = new string[7];
+            kepek[0] = "akaszto_img/0.png";
+            kepek[1] = "akaszto_img/1.png";
+            kepek[2] = "akaszto_img/2.png";
+            kepek[3] = "akaszto_img/3.png";
+            kepek[4] = "akaszto_img/4.png";
+            kepek[5] = "akaszto_img/5.png";
+            kepek[6] = "akaszto_img/6.png";
+        }
 
         private string Kivalaszt()
         {
@@ -42,7 +55,9 @@ namespace MenuGames
         private void Game()
         {
             szavak = new List<string>();
+            counter = 0;
             Beolvas();
+            KepListaba();
             szo = Kivalaszt();
             label1.Text = "";
             for (int i = 0; i < szo.Length; i++)
@@ -65,6 +80,8 @@ namespace MenuGames
         private bool CheckLetter(string letter)
         {
             char[] tmp;
+            bool van = false;
+            
             if (szo.Contains(letter))
             {
                 tmp = label1.Text.ToCharArray();
@@ -76,12 +93,29 @@ namespace MenuGames
                     }
                 }
                 label1.Text = new string(tmp);
-                return true;
+                van = true;
             }
-            return false;
+            else
+            {
+                KepBetolt(counter);
+                counter++;
+                if (counter == 7)
+                {
+                    GameOver();
+                }
+            }
+            return van;
         }
 
+        private void GameOver()
+        {
+            MessageBox.Show($"Ez most nem jött össze.\nEzt kellet volna kitalálni: {szo.ToUpper()}","GAME OVER");
+        }
 
+        private void KepBetolt(int counter)
+        {
+            pictureBox1.Image = Image.FromFile(kepek[counter]);
+        }
 
         private void allBtn_Click(object sender, EventArgs e)
         {
