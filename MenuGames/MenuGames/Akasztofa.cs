@@ -47,7 +47,7 @@ namespace MenuGames
             label1.Text = "";
             for (int i = 0; i < szo.Length; i++)
             {
-                label1.Text += $" _";
+                label1.Text += "_ ";
             }
             gombok = Controls.OfType<Button>().ToArray();
             Feliratkoztat();
@@ -62,28 +62,41 @@ namespace MenuGames
             }
         }
 
-        private void CheckLetter(string letter)
+        private bool CheckLetter(string letter)
         {
             char[] tmp;
             if (szo.Contains(letter))
             {
+                tmp = label1.Text.ToCharArray();
                 for (int i = 0; i < szo.Length; i++)
                 {
                     if (szo[i] == letter[0])
                     {
-                        tmp = label1.Text.ToCharArray();
-                        tmp[i + 1] = letter[0];
-                        label1.Text = new string(tmp);
+                        tmp[i * 2] = letter[0];
                     }
                 }
+                label1.Text = new string(tmp);
+                return true;
             }
+            return false;
         }
+
+
 
         private void allBtn_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            CheckLetter(btn.Text);
-            
+            if (CheckLetter(btn.Text))
+            {
+                btn.BackColor = Color.Green;
+                
+            }
+            else
+            {
+                btn.BackColor = Color.Red;
+            }
+            btn.Enabled = false;
+
         }
 
         private void Akasztofa_Load(object sender, EventArgs e)
