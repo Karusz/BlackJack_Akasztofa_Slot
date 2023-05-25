@@ -39,7 +39,7 @@ namespace MenuGames
             newcard.Enabled = false;
             stop.Enabled = false;
             dealerponts.Visible = false;
-            bet.Text = "0";
+            bet.Text = "1";
         }
 
         private void limebg_Click(object sender, EventArgs e)
@@ -302,7 +302,7 @@ namespace MenuGames
             betting.Enabled = true;
             pcnewcardpanel.Controls.Clear();
             dealernewcardpanel.Controls.Clear();
-            bet.Text = string.Empty;
+            bet.Text = "1";
         }
 
         private void DeckKeveres()
