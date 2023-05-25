@@ -19,7 +19,7 @@ namespace MenuGames
             InitializeComponent();
         }
 
-        public static long credits = 100;
+        public static long credits = 1000;
         public static long total = 0;
         public static int bet = 5;
 
