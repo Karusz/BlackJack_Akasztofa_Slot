@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Media;
+using System.Threading;
 
 namespace MenuGames
 {
@@ -66,7 +68,6 @@ namespace MenuGames
             }
             gombok = Controls.OfType<Button>().ToArray();
             Feliratkoztat();
-            
         }
 
         private void Feliratkoztat()
@@ -109,7 +110,10 @@ namespace MenuGames
 
         private void GameOver()
         {
+            SoundPlayer gameover_sound = new SoundPlayer("gosound.wav");
+            gameover_sound.Play();
             MessageBox.Show($"Ez most nem jött össze.\nEzt kellet volna kitalálni: {szo.ToUpper()}","GAME OVER");
+            
         }
 
         private void KepBetolt(int counter)
@@ -135,6 +139,22 @@ namespace MenuGames
 
         private void Akasztofa_Load(object sender, EventArgs e)
         {
+            pctBox_giveUp.Visible = false;
+        }
+
+        private void button1_ClickAsync(object sender, EventArgs e)
+        {
+            SoundPlayer giveup_sound = new SoundPlayer("giveup.wav");
+            pctBox_giveUp.Visible = true;
+            pctBox_giveUp.Refresh();
+            giveup_sound.Play();
+            Task.Delay(5000).ContinueWith(_ =>
+            {
+                giveup_sound.Stop();
+                pctBox_giveUp.Invoke((MethodInvoker)(() => pctBox_giveUp.Visible = false));
+            });
+            pctBox_giveUp.Refresh();
+
         }
 
     }
